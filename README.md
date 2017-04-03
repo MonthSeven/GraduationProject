@@ -12,7 +12,7 @@ discovery, our approach can reduce the delay of the prefix and service discovery
 services (e.g., cooperative adaptive cruise control for collision avoidance) in vehicular environment.
 
 ### For setting developing environments...
-* #####Install **SUMO**(Simulation of Urban MObility)
+* **Install SUMO(Simulation of Urban MObility)**
   * STEP 1: DOWNLOAD LATEST RELEASE VERSION OF SUMO FROM OFFICLE SITE OF SUMO http://sumo.dlr.de/wiki/Main_Page OR FROM GIVEN DIRECT LINK  http://sourceforge.net/projects/sumo/...
   * STEP 2: NEED TO INSTALL DEPENDENCIES FIRST REQUIRED FOR SUMO WORKING CORRECTLY; OPEN TERMINAL BY PRESSING "CTRL + ALT + T" AND TYPE :-   "$ sudo apt-get install libgdal1h libgdal-dev g++ libxerces-c3.1 libxerces-c-dev libicu-dev libproj-dev libfox-1.6-dev libgl1-mesa-dev   libglu1-mesa-dev python" PRESS ENTER
   * STEP 3: Decompress the tarball:(MY SUMO TAR FILE LOCATED IN MY DOWNLOAD FOLDER YOU MAY BE SOME OTHER PLACE) "cd /home/batth/Downloads"   PRESS ENTER "$ sudo tar -xzvf sumo-src-0.25.0.tar.gz" PRESS ENTER
@@ -23,4 +23,4 @@ services (e.g., cooperative adaptive cruise control for collision avoidance) in 
   * THIRD ONE: "$ sudo make install"
   * STEP 7: YOUR INSTALATION COMPLETE NOW ENJOY USING IT BY TYPING THIS COMMAND IN TERMINAL: "$ sumo-gui"
 
-* #####Install OMNET++
+* **Install OMNET++**
