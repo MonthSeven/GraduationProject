@@ -19,9 +19,9 @@ estimated considering the temporal-and-spatial rendezvous of the packet and the 
 > To the best of our knowledge, our Trajectory-based Statistical Forwarding (TSF) is the first work to investigate the reverse data forwarding based on the vehicle trajectory guided by GPS-based navigation systems for the efficient-and-safe driving. To ensure the rendezvous of a packet and a destination vehicle, an optimal target point is identified as a packet destination position in the road
 network in order to minimize the packet delivery delay while satisfying the user-required packet delivery probability. In order to search such an optimal target point, our key idea is to use the two delay distributions: 1) the packet delivery delay distribution from the AP to the target point and 2) the vehicle travel delay distribution from the destination vehicle’s current position to the target point. Once the target point is decided, our TSF adopts the source routing technique, i.e., forwards the packet toward the target point by using the shortest delay forwarding path specified by multiple intersections in the target road network. Our intellectual contributions are as follows:
 
-*An infrastructure-to-vehicle data delivery architecture,
-*The delay modeling for packet and vehicle, and
-*An optimal target point selection algorithm.
+* An infrastructure-to-vehicle data delivery architecture,
+* The delay modeling for packet and vehicle, and
+* An optimal target point selection algorithm.
 
 
 ### For setting developing environments...
