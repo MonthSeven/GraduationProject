@@ -25,14 +25,8 @@ network in order to minimize the packet delivery delay while satisfying the user
 ### For setting developing environments...
 1. **Install SUMO(Simulation of Urban MObility)**.
 
-If you run debian or ubuntu, SUMO is part of the regular distribution and can be installed like this:
->sudo apt-get install sumo sumo-tools sumo-doc.
-
-If you need a more up-to-date ubuntu version, it may be found in a separate ppa, which is added like this:
->sudo add-apt-repository ppa:sumo/stable >sudo apt-get update.
-
-and then again
->sudo apt-get install sumo sumo-tools sumo-doc.
-
-
 2. **Install OMNET++**.
+
+3. **Install Veins**.
+
+4. **For futher infomation, check (Part1_Installation)**
