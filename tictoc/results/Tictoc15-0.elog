@@ -1,0 +1,746 @@
+E # 0 t 0 m 1 ce -1 msg -1
+SB v 1030 rid Tictoc15-0-20171119-16:37:14-6594 b 1000
+KF p -1 c "" s ""
+MC id 1 c cModule t Tictoc15 n Tictoc15 cm 1
+MS id 1 d ""
+MC id 2 c Txc15 t Txc15 pid 1 n tic[0]
+MS id 2 d i=block/routing
+MC id 3 c Txc15 t Txc15 pid 1 n tic[1]
+MS id 3 d i=block/routing
+MC id 4 c Txc15 t Txc15 pid 1 n tic[2]
+MS id 4 d i=block/routing
+MC id 5 c Txc15 t Txc15 pid 1 n tic[3]
+MS id 5 d i=block/routing
+MC id 6 c Txc15 t Txc15 pid 1 n tic[4]
+MS id 6 d i=block/routing
+MC id 7 c Txc15 t Txc15 pid 1 n tic[5]
+MS id 7 d i=block/routing
+GC m 2 g 1048576 n gate$i i 0 o 0
+GC m 2 g 1572864 n gate$o i 0 o 1
+GC m 3 g 1048576 n gate$i i 0 o 0
+GC m 3 g 1572864 n gate$o i 0 o 1
+CC sm 2 sg 1572864 dm 3 dg 1048576
+CS sm 2 sg 1572864 d ""
+CC sm 3 sg 1572864 dm 2 dg 1048576
+CS sm 3 sg 1572864 d ""
+GC m 3 g 1048577 n gate$i i 1 o 0
+GC m 3 g 1572865 n gate$o i 1 o 1
+GC m 4 g 1048576 n gate$i i 0 o 0
+GC m 4 g 1572864 n gate$o i 0 o 1
+CC sm 3 sg 1572865 dm 4 dg 1048576
+CS sm 3 sg 1572865 d ""
+CC sm 4 sg 1572864 dm 3 dg 1048577
+CS sm 4 sg 1572864 d ""
+GC m 3 g 1048578 n gate$i i 2 o 0
+GC m 3 g 1572866 n gate$o i 2 o 1
+GC m 6 g 1048576 n gate$i i 0 o 0
+GC m 6 g 1572864 n gate$o i 0 o 1
+CC sm 3 sg 1572866 dm 6 dg 1048576
+CS sm 3 sg 1572866 d ""
+CC sm 6 sg 1572864 dm 3 dg 1048578
+CS sm 6 sg 1572864 d ""
+GC m 5 g 1048576 n gate$i i 0 o 0
+GC m 5 g 1572864 n gate$o i 0 o 1
+GC m 6 g 1048577 n gate$i i 1 o 0
+GC m 6 g 1572865 n gate$o i 1 o 1
+CC sm 5 sg 1572864 dm 6 dg 1048577
+CS sm 5 sg 1572864 d ""
+CC sm 6 sg 1572865 dm 5 dg 1048576
+CS sm 6 sg 1572865 d ""
+GC m 6 g 1048578 n gate$i i 2 o 0
+GC m 6 g 1572866 n gate$o i 2 o 1
+GC m 7 g 1048576 n gate$i i 0 o 0
+GC m 7 g 1572864 n gate$o i 0 o 1
+CC sm 6 sg 1572866 dm 7 dg 1048576
+CS sm 6 sg 1572866 d ""
+CC sm 7 sg 1572864 dm 6 dg 1048578
+CS sm 7 sg 1572864 d ""
+MB sm 1 tm 2 m initialize(0)
+CM id 0 tid 0 eid 0 etid 0 c cMessage n tic-0-to-5 pe -1
+BS id 0 tid 0 eid 0 etid 0 c TicTocMsg15 n tic-0-to-5 pe 0
+ES t 0
+ME
+MB sm 1 tm 3 m initialize(0)
+ME
+MB sm 1 tm 4 m initialize(0)
+ME
+MB sm 1 tm 5 m initialize(0)
+ME
+MB sm 1 tm 6 m initialize(0)
+ME
+MB sm 1 tm 7 m initialize(0)
+ME
+
+E # 1 t 0 m 2 ce 0 msg 0
+- Forwarding message (TicTocMsg15)tic-0-to-5 on gate[0]
+BS id 0 tid 0 eid 0 etid 0 c TicTocMsg15 n tic-0-to-5 pe 1
+CL id 0 tid 0 eid 0 etid 0 c TicTocMsg15 n tic-0-to-5 pe 1 cid 1
+SH sm 2 sg 1572864 pd 0.1
+ES t 0.1
+
+E # 2 t 0.1 m 3 ce 1 msg 0
+- Forwarding message (TicTocMsg15)tic-0-to-5 on gate[1]
+BS id 0 tid 0 eid 0 etid 0 c TicTocMsg15 n tic-0-to-5 pe 2
+CL id 0 tid 0 eid 0 etid 0 c TicTocMsg15 n tic-0-to-5 pe 2 cid 2
+SH sm 3 sg 1572865 pd 0.1
+ES t 0.2
+
+E # 3 t 0.2 m 4 ce 2 msg 0
+- Forwarding message (TicTocMsg15)tic-0-to-5 on gate[0]
+BS id 0 tid 0 eid 0 etid 0 c TicTocMsg15 n tic-0-to-5 pe 3
+CL id 0 tid 0 eid 0 etid 0 c TicTocMsg15 n tic-0-to-5 pe 3 cid 3
+SH sm 4 sg 1572864 pd 0.1
+ES t 0.3
+
+E # 4 t 0.3 m 3 ce 3 msg 0
+- Forwarding message (TicTocMsg15)tic-0-to-5 on gate[1]
+BS id 0 tid 0 eid 0 etid 0 c TicTocMsg15 n tic-0-to-5 pe 4
+CL id 0 tid 0 eid 0 etid 0 c TicTocMsg15 n tic-0-to-5 pe 4 cid 4
+SH sm 3 sg 1572865 pd 0.1
+ES t 0.4
+
+E # 5 t 0.4 m 4 ce 4 msg 0
+- Forwarding message (TicTocMsg15)tic-0-to-5 on gate[0]
+BS id 0 tid 0 eid 0 etid 0 c TicTocMsg15 n tic-0-to-5 pe 5
+CL id 0 tid 0 eid 0 etid 0 c TicTocMsg15 n tic-0-to-5 pe 5 cid 5
+SH sm 4 sg 1572864 pd 0.1
+ES t 0.5
+
+E # 6 t 0.5 m 3 ce 5 msg 0
+- Forwarding message (TicTocMsg15)tic-0-to-5 on gate[1]
+BS id 0 tid 0 eid 0 etid 0 c TicTocMsg15 n tic-0-to-5 pe 6
+CL id 0 tid 0 eid 0 etid 0 c TicTocMsg15 n tic-0-to-5 pe 6 cid 6
+SH sm 3 sg 1572865 pd 0.1
+ES t 0.6
+
+E # 7 t 0.6 m 4 ce 6 msg 0
+- Forwarding message (TicTocMsg15)tic-0-to-5 on gate[0]
+BS id 0 tid 0 eid 0 etid 0 c TicTocMsg15 n tic-0-to-5 pe 7
+CL id 0 tid 0 eid 0 etid 0 c TicTocMsg15 n tic-0-to-5 pe 7 cid 7
+SH sm 4 sg 1572864 pd 0.1
+ES t 0.7
+
+E # 8 t 0.7 m 3 ce 7 msg 0
+- Forwarding message (TicTocMsg15)tic-0-to-5 on gate[0]
+BS id 0 tid 0 eid 0 etid 0 c TicTocMsg15 n tic-0-to-5 pe 8
+CL id 0 tid 0 eid 0 etid 0 c TicTocMsg15 n tic-0-to-5 pe 8 cid 8
+SH sm 3 sg 1572864 pd 0.1
+ES t 0.8
+
+E # 9 t 0.8 m 2 ce 8 msg 0
+- Forwarding message (TicTocMsg15)tic-0-to-5 on gate[0]
+BS id 0 tid 0 eid 0 etid 0 c TicTocMsg15 n tic-0-to-5 pe 9
+CL id 0 tid 0 eid 0 etid 0 c TicTocMsg15 n tic-0-to-5 pe 9 cid 9
+SH sm 2 sg 1572864 pd 0.1
+ES t 0.9
+
+E # 10 t 0.9 m 3 ce 9 msg 0
+- Forwarding message (TicTocMsg15)tic-0-to-5 on gate[2]
+BS id 0 tid 0 eid 0 etid 0 c TicTocMsg15 n tic-0-to-5 pe 10
+CL id 0 tid 0 eid 0 etid 0 c TicTocMsg15 n tic-0-to-5 pe 10 cid 10
+SH sm 3 sg 1572866 pd 0.1
+ES t 1
+
+E # 11 t 1 m 6 ce 10 msg 0
+- Forwarding message (TicTocMsg15)tic-0-to-5 on gate[0]
+BS id 0 tid 0 eid 0 etid 0 c TicTocMsg15 n tic-0-to-5 pe 11
+CL id 0 tid 0 eid 0 etid 0 c TicTocMsg15 n tic-0-to-5 pe 11 cid 11
+SH sm 6 sg 1572864 pd 0.1
+ES t 1.1
+
+E # 12 t 1.1 m 3 ce 11 msg 0
+- Forwarding message (TicTocMsg15)tic-0-to-5 on gate[0]
+BS id 0 tid 0 eid 0 etid 0 c TicTocMsg15 n tic-0-to-5 pe 12
+CL id 0 tid 0 eid 0 etid 0 c TicTocMsg15 n tic-0-to-5 pe 12 cid 12
+SH sm 3 sg 1572864 pd 0.1
+ES t 1.2
+
+E # 13 t 1.2 m 2 ce 12 msg 0
+- Forwarding message (TicTocMsg15)tic-0-to-5 on gate[0]
+BS id 0 tid 0 eid 0 etid 0 c TicTocMsg15 n tic-0-to-5 pe 13
+CL id 0 tid 0 eid 0 etid 0 c TicTocMsg15 n tic-0-to-5 pe 13 cid 13
+SH sm 2 sg 1572864 pd 0.1
+ES t 1.3
+
+E # 14 t 1.3 m 3 ce 13 msg 0
+- Forwarding message (TicTocMsg15)tic-0-to-5 on gate[2]
+BS id 0 tid 0 eid 0 etid 0 c TicTocMsg15 n tic-0-to-5 pe 14
+CL id 0 tid 0 eid 0 etid 0 c TicTocMsg15 n tic-0-to-5 pe 14 cid 14
+SH sm 3 sg 1572866 pd 0.1
+ES t 1.4
+
+E # 15 t 1.4 m 6 ce 14 msg 0
+- Forwarding message (TicTocMsg15)tic-0-to-5 on gate[1]
+BS id 0 tid 0 eid 0 etid 0 c TicTocMsg15 n tic-0-to-5 pe 15
+CL id 0 tid 0 eid 0 etid 0 c TicTocMsg15 n tic-0-to-5 pe 15 cid 15
+SH sm 6 sg 1572865 pd 0.1
+ES t 1.5
+
+E # 16 t 1.5 m 5 ce 15 msg 0
+- Forwarding message (TicTocMsg15)tic-0-to-5 on gate[0]
+BS id 0 tid 0 eid 0 etid 0 c TicTocMsg15 n tic-0-to-5 pe 16
+CL id 0 tid 0 eid 0 etid 0 c TicTocMsg15 n tic-0-to-5 pe 16 cid 16
+SH sm 5 sg 1572864 pd 0.1
+ES t 1.6
+
+E # 17 t 1.6 m 6 ce 16 msg 0
+- Forwarding message (TicTocMsg15)tic-0-to-5 on gate[2]
+BS id 0 tid 0 eid 0 etid 0 c TicTocMsg15 n tic-0-to-5 pe 17
+CL id 0 tid 0 eid 0 etid 0 c TicTocMsg15 n tic-0-to-5 pe 17 cid 17
+SH sm 6 sg 1572866 pd 0.1
+ES t 1.7
+
+E # 18 t 1.7 m 7 ce 17 msg 0
+- Message (TicTocMsg15)tic-0-to-5 arrived after 17 hops.
+BU id 7 txt "ARRIVED, starting new one!"
+DM id 0 tid 0 eid 0 etid 0 c cMessage n tic-0-to-5 pe 18
+CM id 18 tid 18 eid 18 etid 18 c cMessage n tic-5-to-0 pe -1
+- Generating another message: (TicTocMsg15)tic-5-to-0
+- Forwarding message (TicTocMsg15)tic-5-to-0 on gate[0]
+BS id 18 tid 18 eid 18 etid 18 c TicTocMsg15 n tic-5-to-0 pe 18
+CL id 18 tid 18 eid 18 etid 18 c TicTocMsg15 n tic-5-to-0 pe 18 cid 19
+SH sm 7 sg 1572864 pd 0.1
+ES t 1.8
+
+E # 19 t 1.8 m 6 ce 18 msg 18
+- Forwarding message (TicTocMsg15)tic-5-to-0 on gate[1]
+BS id 18 tid 18 eid 18 etid 18 c TicTocMsg15 n tic-5-to-0 pe 19
+CL id 18 tid 18 eid 18 etid 18 c TicTocMsg15 n tic-5-to-0 pe 19 cid 20
+SH sm 6 sg 1572865 pd 0.1
+ES t 1.9
+
+E # 20 t 1.9 m 5 ce 19 msg 18
+- Forwarding message (TicTocMsg15)tic-5-to-0 on gate[0]
+BS id 18 tid 18 eid 18 etid 18 c TicTocMsg15 n tic-5-to-0 pe 20
+CL id 18 tid 18 eid 18 etid 18 c TicTocMsg15 n tic-5-to-0 pe 20 cid 21
+SH sm 5 sg 1572864 pd 0.1
+ES t 2
+
+E # 21 t 2 m 6 ce 20 msg 18
+- Forwarding message (TicTocMsg15)tic-5-to-0 on gate[1]
+BS id 18 tid 18 eid 18 etid 18 c TicTocMsg15 n tic-5-to-0 pe 21
+CL id 18 tid 18 eid 18 etid 18 c TicTocMsg15 n tic-5-to-0 pe 21 cid 22
+SH sm 6 sg 1572865 pd 0.1
+ES t 2.1
+
+E # 22 t 2.1 m 5 ce 21 msg 18
+- Forwarding message (TicTocMsg15)tic-5-to-0 on gate[0]
+BS id 18 tid 18 eid 18 etid 18 c TicTocMsg15 n tic-5-to-0 pe 22
+CL id 18 tid 18 eid 18 etid 18 c TicTocMsg15 n tic-5-to-0 pe 22 cid 23
+SH sm 5 sg 1572864 pd 0.1
+ES t 2.2
+
+E # 23 t 2.2 m 6 ce 22 msg 18
+- Forwarding message (TicTocMsg15)tic-5-to-0 on gate[1]
+BS id 18 tid 18 eid 18 etid 18 c TicTocMsg15 n tic-5-to-0 pe 23
+CL id 18 tid 18 eid 18 etid 18 c TicTocMsg15 n tic-5-to-0 pe 23 cid 24
+SH sm 6 sg 1572865 pd 0.1
+ES t 2.3
+
+E # 24 t 2.3 m 5 ce 23 msg 18
+- Forwarding message (TicTocMsg15)tic-5-to-0 on gate[0]
+BS id 18 tid 18 eid 18 etid 18 c TicTocMsg15 n tic-5-to-0 pe 24
+CL id 18 tid 18 eid 18 etid 18 c TicTocMsg15 n tic-5-to-0 pe 24 cid 25
+SH sm 5 sg 1572864 pd 0.1
+ES t 2.4
+
+E # 25 t 2.4 m 6 ce 24 msg 18
+- Forwarding message (TicTocMsg15)tic-5-to-0 on gate[0]
+BS id 18 tid 18 eid 18 etid 18 c TicTocMsg15 n tic-5-to-0 pe 25
+CL id 18 tid 18 eid 18 etid 18 c TicTocMsg15 n tic-5-to-0 pe 25 cid 26
+SH sm 6 sg 1572864 pd 0.1
+ES t 2.5
+
+E # 26 t 2.5 m 3 ce 25 msg 18
+- Forwarding message (TicTocMsg15)tic-5-to-0 on gate[1]
+BS id 18 tid 18 eid 18 etid 18 c TicTocMsg15 n tic-5-to-0 pe 26
+CL id 18 tid 18 eid 18 etid 18 c TicTocMsg15 n tic-5-to-0 pe 26 cid 27
+SH sm 3 sg 1572865 pd 0.1
+ES t 2.6
+
+E # 27 t 2.6 m 4 ce 26 msg 18
+- Forwarding message (TicTocMsg15)tic-5-to-0 on gate[0]
+BS id 18 tid 18 eid 18 etid 18 c TicTocMsg15 n tic-5-to-0 pe 27
+CL id 18 tid 18 eid 18 etid 18 c TicTocMsg15 n tic-5-to-0 pe 27 cid 28
+SH sm 4 sg 1572864 pd 0.1
+ES t 2.7
+
+E # 28 t 2.7 m 3 ce 27 msg 18
+- Forwarding message (TicTocMsg15)tic-5-to-0 on gate[0]
+BS id 18 tid 18 eid 18 etid 18 c TicTocMsg15 n tic-5-to-0 pe 28
+CL id 18 tid 18 eid 18 etid 18 c TicTocMsg15 n tic-5-to-0 pe 28 cid 29
+SH sm 3 sg 1572864 pd 0.1
+ES t 2.8
+
+E # 29 t 2.8 m 2 ce 28 msg 18
+- Message (TicTocMsg15)tic-5-to-0 arrived after 11 hops.
+BU id 2 txt "ARRIVED, starting new one!"
+DM id 18 tid 18 eid 18 etid 18 c cMessage n tic-5-to-0 pe 29
+CM id 30 tid 30 eid 30 etid 30 c cMessage n tic-0-to-3 pe -1
+- Generating another message: (TicTocMsg15)tic-0-to-3
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[0]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 29
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 29 cid 31
+SH sm 2 sg 1572864 pd 0.1
+ES t 2.9
+
+E # 30 t 2.9 m 3 ce 29 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[0]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 30
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 30 cid 32
+SH sm 3 sg 1572864 pd 0.1
+ES t 3
+
+E # 31 t 3 m 2 ce 30 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[0]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 31
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 31 cid 33
+SH sm 2 sg 1572864 pd 0.1
+ES t 3.1
+
+E # 32 t 3.1 m 3 ce 31 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[1]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 32
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 32 cid 34
+SH sm 3 sg 1572865 pd 0.1
+ES t 3.2
+
+E # 33 t 3.2 m 4 ce 32 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[0]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 33
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 33 cid 35
+SH sm 4 sg 1572864 pd 0.1
+ES t 3.3
+
+E # 34 t 3.3 m 3 ce 33 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[2]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 34
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 34 cid 36
+SH sm 3 sg 1572866 pd 0.1
+ES t 3.4
+
+E # 35 t 3.4 m 6 ce 34 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[0]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 35
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 35 cid 37
+SH sm 6 sg 1572864 pd 0.1
+ES t 3.5
+
+E # 36 t 3.5 m 3 ce 35 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[1]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 36
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 36 cid 38
+SH sm 3 sg 1572865 pd 0.1
+ES t 3.6
+
+E # 37 t 3.6 m 4 ce 36 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[0]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 37
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 37 cid 39
+SH sm 4 sg 1572864 pd 0.1
+ES t 3.7
+
+E # 38 t 3.7 m 3 ce 37 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[1]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 38
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 38 cid 40
+SH sm 3 sg 1572865 pd 0.1
+ES t 3.8
+
+E # 39 t 3.8 m 4 ce 38 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[0]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 39
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 39 cid 41
+SH sm 4 sg 1572864 pd 0.1
+ES t 3.9
+
+E # 40 t 3.9 m 3 ce 39 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[0]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 40
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 40 cid 42
+SH sm 3 sg 1572864 pd 0.1
+ES t 4
+
+E # 41 t 4 m 2 ce 40 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[0]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 41
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 41 cid 43
+SH sm 2 sg 1572864 pd 0.1
+ES t 4.1
+
+E # 42 t 4.1 m 3 ce 41 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[2]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 42
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 42 cid 44
+SH sm 3 sg 1572866 pd 0.1
+ES t 4.2
+
+E # 43 t 4.2 m 6 ce 42 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[0]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 43
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 43 cid 45
+SH sm 6 sg 1572864 pd 0.1
+ES t 4.3
+
+E # 44 t 4.3 m 3 ce 43 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[2]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 44
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 44 cid 46
+SH sm 3 sg 1572866 pd 0.1
+ES t 4.4
+
+E # 45 t 4.4 m 6 ce 44 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[2]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 45
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 45 cid 47
+SH sm 6 sg 1572866 pd 0.1
+ES t 4.5
+
+E # 46 t 4.5 m 7 ce 45 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[0]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 46
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 46 cid 48
+SH sm 7 sg 1572864 pd 0.1
+ES t 4.6
+
+E # 47 t 4.6 m 6 ce 46 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[0]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 47
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 47 cid 49
+SH sm 6 sg 1572864 pd 0.1
+ES t 4.7
+
+E # 48 t 4.7 m 3 ce 47 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[2]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 48
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 48 cid 50
+SH sm 3 sg 1572866 pd 0.1
+ES t 4.8
+
+E # 49 t 4.8 m 6 ce 48 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[0]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 49
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 49 cid 51
+SH sm 6 sg 1572864 pd 0.1
+ES t 4.9
+
+E # 50 t 4.9 m 3 ce 49 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[0]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 50
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 50 cid 52
+SH sm 3 sg 1572864 pd 0.1
+ES t 5
+
+E # 51 t 5 m 2 ce 50 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[0]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 51
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 51 cid 53
+SH sm 2 sg 1572864 pd 0.1
+ES t 5.1
+
+E # 52 t 5.1 m 3 ce 51 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[1]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 52
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 52 cid 54
+SH sm 3 sg 1572865 pd 0.1
+ES t 5.2
+
+E # 53 t 5.2 m 4 ce 52 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[0]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 53
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 53 cid 55
+SH sm 4 sg 1572864 pd 0.1
+ES t 5.3
+
+E # 54 t 5.3 m 3 ce 53 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[2]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 54
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 54 cid 56
+SH sm 3 sg 1572866 pd 0.1
+ES t 5.4
+
+E # 55 t 5.4 m 6 ce 54 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[0]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 55
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 55 cid 57
+SH sm 6 sg 1572864 pd 0.1
+ES t 5.5
+
+E # 56 t 5.5 m 3 ce 55 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[0]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 56
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 56 cid 58
+SH sm 3 sg 1572864 pd 0.1
+ES t 5.6
+
+E # 57 t 5.6 m 2 ce 56 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[0]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 57
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 57 cid 59
+SH sm 2 sg 1572864 pd 0.1
+ES t 5.7
+
+E # 58 t 5.7 m 3 ce 57 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[0]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 58
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 58 cid 60
+SH sm 3 sg 1572864 pd 0.1
+ES t 5.8
+
+E # 59 t 5.8 m 2 ce 58 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[0]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 59
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 59 cid 61
+SH sm 2 sg 1572864 pd 0.1
+ES t 5.9
+
+E # 60 t 5.9 m 3 ce 59 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[2]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 60
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 60 cid 62
+SH sm 3 sg 1572866 pd 0.1
+ES t 6
+
+E # 61 t 6 m 6 ce 60 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[2]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 61
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 61 cid 63
+SH sm 6 sg 1572866 pd 0.1
+ES t 6.1
+
+E # 62 t 6.1 m 7 ce 61 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[0]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 62
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 62 cid 64
+SH sm 7 sg 1572864 pd 0.1
+ES t 6.2
+
+E # 63 t 6.2 m 6 ce 62 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[0]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 63
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 63 cid 65
+SH sm 6 sg 1572864 pd 0.1
+ES t 6.3
+
+E # 64 t 6.3 m 3 ce 63 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[1]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 64
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 64 cid 66
+SH sm 3 sg 1572865 pd 0.1
+ES t 6.4
+
+E # 65 t 6.4 m 4 ce 64 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[0]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 65
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 65 cid 67
+SH sm 4 sg 1572864 pd 0.1
+ES t 6.5
+
+E # 66 t 6.5 m 3 ce 65 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[1]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 66
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 66 cid 68
+SH sm 3 sg 1572865 pd 0.1
+ES t 6.6
+
+E # 67 t 6.6 m 4 ce 66 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[0]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 67
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 67 cid 69
+SH sm 4 sg 1572864 pd 0.1
+ES t 6.7
+
+E # 68 t 6.7 m 3 ce 67 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[2]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 68
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 68 cid 70
+SH sm 3 sg 1572866 pd 0.1
+ES t 6.8
+
+E # 69 t 6.8 m 6 ce 68 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[2]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 69
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 69 cid 71
+SH sm 6 sg 1572866 pd 0.1
+ES t 6.9
+
+E # 70 t 6.9 m 7 ce 69 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[0]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 70
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 70 cid 72
+SH sm 7 sg 1572864 pd 0.1
+ES t 7
+
+E # 71 t 7 m 6 ce 70 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[0]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 71
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 71 cid 73
+SH sm 6 sg 1572864 pd 0.1
+ES t 7.1
+
+E # 72 t 7.1 m 3 ce 71 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[2]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 72
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 72 cid 74
+SH sm 3 sg 1572866 pd 0.1
+ES t 7.2
+
+E # 73 t 7.2 m 6 ce 72 msg 30
+- Forwarding message (TicTocMsg15)tic-0-to-3 on gate[1]
+BS id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 73
+CL id 30 tid 30 eid 30 etid 30 c TicTocMsg15 n tic-0-to-3 pe 73 cid 75
+SH sm 6 sg 1572865 pd 0.1
+ES t 7.3
+
+E # 74 t 7.3 m 5 ce 73 msg 30
+- Message (TicTocMsg15)tic-0-to-3 arrived after 45 hops.
+BU id 5 txt "ARRIVED, starting new one!"
+DM id 30 tid 30 eid 30 etid 30 c cMessage n tic-0-to-3 pe 74
+CM id 76 tid 76 eid 76 etid 76 c cMessage n tic-3-to-5 pe -1
+- Generating another message: (TicTocMsg15)tic-3-to-5
+- Forwarding message (TicTocMsg15)tic-3-to-5 on gate[0]
+BS id 76 tid 76 eid 76 etid 76 c TicTocMsg15 n tic-3-to-5 pe 74
+CL id 76 tid 76 eid 76 etid 76 c TicTocMsg15 n tic-3-to-5 pe 74 cid 77
+SH sm 5 sg 1572864 pd 0.1
+ES t 7.4
+
+E # 75 t 7.4 m 6 ce 74 msg 76
+- Forwarding message (TicTocMsg15)tic-3-to-5 on gate[2]
+BS id 76 tid 76 eid 76 etid 76 c TicTocMsg15 n tic-3-to-5 pe 75
+CL id 76 tid 76 eid 76 etid 76 c TicTocMsg15 n tic-3-to-5 pe 75 cid 78
+SH sm 6 sg 1572866 pd 0.1
+ES t 7.5
+
+E # 76 t 7.5 m 7 ce 75 msg 76
+- Message (TicTocMsg15)tic-3-to-5 arrived after 2 hops.
+BU id 7 txt "ARRIVED, starting new one!"
+DM id 76 tid 76 eid 76 etid 76 c cMessage n tic-3-to-5 pe 76
+CM id 79 tid 79 eid 79 etid 79 c cMessage n tic-5-to-4 pe -1
+- Generating another message: (TicTocMsg15)tic-5-to-4
+- Forwarding message (TicTocMsg15)tic-5-to-4 on gate[0]
+BS id 79 tid 79 eid 79 etid 79 c TicTocMsg15 n tic-5-to-4 pe 76
+CL id 79 tid 79 eid 79 etid 79 c TicTocMsg15 n tic-5-to-4 pe 76 cid 80
+SH sm 7 sg 1572864 pd 0.1
+ES t 7.6
+
+E # 77 t 7.6 m 6 ce 76 msg 79
+- Message (TicTocMsg15)tic-5-to-4 arrived after 1 hops.
+BU id 6 txt "ARRIVED, starting new one!"
+DM id 79 tid 79 eid 79 etid 79 c cMessage n tic-5-to-4 pe 77
+CM id 81 tid 81 eid 81 etid 81 c cMessage n tic-4-to-5 pe -1
+- Generating another message: (TicTocMsg15)tic-4-to-5
+- Forwarding message (TicTocMsg15)tic-4-to-5 on gate[2]
+BS id 81 tid 81 eid 81 etid 81 c TicTocMsg15 n tic-4-to-5 pe 77
+CL id 81 tid 81 eid 81 etid 81 c TicTocMsg15 n tic-4-to-5 pe 77 cid 82
+SH sm 6 sg 1572866 pd 0.1
+ES t 7.7
+
+E # 78 t 7.7 m 7 ce 77 msg 81
+- Message (TicTocMsg15)tic-4-to-5 arrived after 1 hops.
+BU id 7 txt "ARRIVED, starting new one!"
+DM id 81 tid 81 eid 81 etid 81 c cMessage n tic-4-to-5 pe 78
+CM id 83 tid 83 eid 83 etid 83 c cMessage n tic-5-to-4 pe -1
+- Generating another message: (TicTocMsg15)tic-5-to-4
+- Forwarding message (TicTocMsg15)tic-5-to-4 on gate[0]
+BS id 83 tid 83 eid 83 etid 83 c TicTocMsg15 n tic-5-to-4 pe 78
+CL id 83 tid 83 eid 83 etid 83 c TicTocMsg15 n tic-5-to-4 pe 78 cid 84
+SH sm 7 sg 1572864 pd 0.1
+ES t 7.8
+
+E # 79 t 7.8 m 6 ce 78 msg 83
+- Message (TicTocMsg15)tic-5-to-4 arrived after 1 hops.
+BU id 6 txt "ARRIVED, starting new one!"
+DM id 83 tid 83 eid 83 etid 83 c cMessage n tic-5-to-4 pe 79
+CM id 85 tid 85 eid 85 etid 85 c cMessage n tic-4-to-5 pe -1
+- Generating another message: (TicTocMsg15)tic-4-to-5
+- Forwarding message (TicTocMsg15)tic-4-to-5 on gate[0]
+BS id 85 tid 85 eid 85 etid 85 c TicTocMsg15 n tic-4-to-5 pe 79
+CL id 85 tid 85 eid 85 etid 85 c TicTocMsg15 n tic-4-to-5 pe 79 cid 86
+SH sm 6 sg 1572864 pd 0.1
+ES t 7.9
+
+E # 80 t 7.9 m 3 ce 79 msg 85
+- Forwarding message (TicTocMsg15)tic-4-to-5 on gate[0]
+BS id 85 tid 85 eid 85 etid 85 c TicTocMsg15 n tic-4-to-5 pe 80
+CL id 85 tid 85 eid 85 etid 85 c TicTocMsg15 n tic-4-to-5 pe 80 cid 87
+SH sm 3 sg 1572864 pd 0.1
+ES t 8
+
+E # 81 t 8 m 2 ce 80 msg 85
+- Forwarding message (TicTocMsg15)tic-4-to-5 on gate[0]
+BS id 85 tid 85 eid 85 etid 85 c TicTocMsg15 n tic-4-to-5 pe 81
+CL id 85 tid 85 eid 85 etid 85 c TicTocMsg15 n tic-4-to-5 pe 81 cid 88
+SH sm 2 sg 1572864 pd 0.1
+ES t 8.1
+
+E # 82 t 8.1 m 3 ce 81 msg 85
+- Forwarding message (TicTocMsg15)tic-4-to-5 on gate[0]
+BS id 85 tid 85 eid 85 etid 85 c TicTocMsg15 n tic-4-to-5 pe 82
+CL id 85 tid 85 eid 85 etid 85 c TicTocMsg15 n tic-4-to-5 pe 82 cid 89
+SH sm 3 sg 1572864 pd 0.1
+ES t 8.2
+
+E # 83 t 8.2 m 2 ce 82 msg 85
+- Forwarding message (TicTocMsg15)tic-4-to-5 on gate[0]
+BS id 85 tid 85 eid 85 etid 85 c TicTocMsg15 n tic-4-to-5 pe 83
+CL id 85 tid 85 eid 85 etid 85 c TicTocMsg15 n tic-4-to-5 pe 83 cid 90
+SH sm 2 sg 1572864 pd 0.1
+ES t 8.3
+
+E # 84 t 8.3 m 3 ce 83 msg 85
+- Forwarding message (TicTocMsg15)tic-4-to-5 on gate[0]
+BS id 85 tid 85 eid 85 etid 85 c TicTocMsg15 n tic-4-to-5 pe 84
+CL id 85 tid 85 eid 85 etid 85 c TicTocMsg15 n tic-4-to-5 pe 84 cid 91
+SH sm 3 sg 1572864 pd 0.1
+ES t 8.4
+
+E # 85 t 8.4 m 2 ce 84 msg 85
+- Forwarding message (TicTocMsg15)tic-4-to-5 on gate[0]
+BS id 85 tid 85 eid 85 etid 85 c TicTocMsg15 n tic-4-to-5 pe 85
+CL id 85 tid 85 eid 85 etid 85 c TicTocMsg15 n tic-4-to-5 pe 85 cid 92
+SH sm 2 sg 1572864 pd 0.1
+ES t 8.5
+
+E # 86 t 8.5 m 3 ce 85 msg 85
+- Forwarding message (TicTocMsg15)tic-4-to-5 on gate[2]
+BS id 85 tid 85 eid 85 etid 85 c TicTocMsg15 n tic-4-to-5 pe 86
+CL id 85 tid 85 eid 85 etid 85 c TicTocMsg15 n tic-4-to-5 pe 86 cid 93
+SH sm 3 sg 1572866 pd 0.1
+ES t 8.6
+SE e 0 c 9 m "The user has finished the simulation at event #87, t=8.5."
+- Sent:     1
+- Received: 1
+- Hop count, min:    11
+- Hop count, max:    11
+- Hop count, mean:   11
+- Hop count, stddev: -nan
+- Sent:     0
+- Received: 0
+- Hop count, min:    -nan
+- Hop count, max:    -nan
+- Hop count, mean:   -nan
+- Hop count, stddev: -nan
+- Sent:     0
+- Received: 0
+- Hop count, min:    -nan
+- Hop count, max:    -nan
+- Hop count, mean:   -nan
+- Hop count, stddev: -nan
+- Sent:     1
+- Received: 1
+- Hop count, min:    45
+- Hop count, max:    45
+- Hop count, mean:   45
+- Hop count, stddev: -nan
+- Sent:     2
+- Received: 2
+- Hop count, min:    1
+- Hop count, max:    1
+- Hop count, mean:   1
+- Hop count, stddev: 0
+- Sent:     3
+- Received: 3
+- Hop count, min:    1
+- Hop count, max:    17
+- Hop count, mean:   6.66667
+- Hop count, stddev: 8.96289
