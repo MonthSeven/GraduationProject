@@ -18,13 +18,13 @@
 // Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 //
 
-cplusplus {{
+cplusplus 
+{{
 #include "veins/base/utils/Coord.h"
 }}
-
 class noncobject Coord;
-
-packet WaveShortMessage {
+packet WaveShortMessage 
+{
 	//Version of the Wave Short Message
 	int wsmVersion = 0;
 	//Determine which security mechanism was used
@@ -43,7 +43,6 @@ packet WaveShortMessage {
 	int wsmLength;
 	//Data of Wave Short Message
 	string wsmData = "Some Data";
-
 	int senderAddress = 0;
 	int recipientAddress = -1;
 	int serial = 0;

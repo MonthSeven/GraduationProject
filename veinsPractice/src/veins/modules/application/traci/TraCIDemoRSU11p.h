@@ -29,6 +29,8 @@ using Veins::AnnotationManager;
 /**
  * Small RSU Demo using 11p
  */
+
+/*
 class TraCIDemoRSU11p : public BaseWaveApplLayer {
 	public:
 		virtual void initialize(int stage);
@@ -42,5 +44,18 @@ class TraCIDemoRSU11p : public BaseWaveApplLayer {
 		void sendMessage(std::string blockedRoadId);
 		virtual void sendWSM(WaveShortMessage* wsm);
 };
-
+*/
+class TraCIDemoRSU11p : public BaseWaveApplLayer {
+    public:
+        virtual void initialize(int stage);
+    protected:
+        AnnotationManager* annotations;
+        BaseMobility* mobi;
+        bool sentMessage;
+    protected:
+        virtual void onBeacon(kwon* kpm);
+        virtual void onData(kwon* kpm);
+        void sendMessage(std::string blockedRoadId);
+        virtual void sendKPM(kwon* kpm);
+};
 #endif

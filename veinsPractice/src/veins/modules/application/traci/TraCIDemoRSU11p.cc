@@ -23,7 +23,7 @@
 using Veins::AnnotationManagerAccess;
 
 Define_Module(TraCIDemoRSU11p);
-
+/*
 void TraCIDemoRSU11p::initialize(int stage) {
 	BaseWaveApplLayer::initialize(stage);
 	if (stage == 0) {
@@ -56,4 +56,42 @@ void TraCIDemoRSU11p::sendMessage(std::string blockedRoadId) {
 }
 void TraCIDemoRSU11p::sendWSM(WaveShortMessage* wsm) {
 	sendDelayedDown(wsm,individualOffset);
+}
+*/
+void TraCIDemoRSU11p::initialize(int stage) {
+    std::cout << "TraCIDemoRSU11p::initialize" << endl;
+    BaseWaveApplLayer::initialize(stage);
+    if (stage == 0) {
+        mobi = dynamic_cast<BaseMobility*> (getParentModule()->getSubmodule("mobility"));
+        ASSERT(mobi);
+        annotations = AnnotationManagerAccess().getIfExists();
+        ASSERT(annotations);
+        sentMessage = false;
+    }
+}
+
+void TraCIDemoRSU11p::onBeacon(kwon* kpm) {
+    std::cout << "TraCIDemoRSU11p::onBeacon" << endl;
+}
+
+void TraCIDemoRSU11p::onData(kwon* kpm) {
+    std::cout << "TraCIDemoRSU11p::onData" << endl;
+    findHost()->getDisplayString().updateWith("r=16,green");
+
+  //  annotations->scheduleErase(1, annotations->drawLine(kpm->getSenderPos(), mobi->getCurrentPosition(), "blue"));
+
+    if (!sentMessage) sendMessage(kpm->getKwonData());
+}
+
+void TraCIDemoRSU11p::sendMessage(std::string blockedRoadId) {
+    std::cout << "TraCIDemoRSU11p::sendMessage" << endl;
+    sentMessage = true;
+    t_channel channel = dataOnSch ? type_SCH : type_CCH;
+    kwon* kpm = prepareKP("data", dataLengthBits, channel, dataPriority, -1,2);
+    kpm->setKwonData(blockedRoadId.c_str());
+    sendKPM(kpm);
+}
+void TraCIDemoRSU11p::sendKPM(kwon* kpm) {
+    std::cout << "TraCIDemoRSU11p::sendKPM" << endl;
+    sendDelayedDown(kpm,individualOffset);
 }

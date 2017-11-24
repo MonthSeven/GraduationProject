@@ -32,6 +32,7 @@ using Veins::AnnotationManager;
 /**
  * Small IVC Demo using 11p
  */
+/*
 class TraCIDemo11p : public BaseWaveApplLayer {
 	public:
 		virtual void initialize(int stage);
@@ -53,6 +54,30 @@ class TraCIDemo11p : public BaseWaveApplLayer {
 		virtual void handlePositionUpdate(cObject* obj);
 		virtual void handleParkingUpdate(cObject* obj);
 		virtual void sendWSM(WaveShortMessage* wsm);
+};
+*/
+// new
+class TraCIDemo11p : public BaseWaveApplLayer {
+    public:
+        virtual void initialize(int stage);
+        virtual void receiveSignal(cComponent* source, simsignal_t signalID, cObject* obj);
+    protected:
+        TraCIMobility* mobility;
+        TraCICommandInterface* traci;
+        TraCICommandInterface::Vehicle* traciVehicle;
+        AnnotationManager* annotations;
+        simtime_t lastDroveAt;
+        bool sentMessage;
+        bool isParking;
+        bool sendWhileParking;
+        static const simsignalwrap_t parkingStateChangedSignal;
+    protected:
+        virtual void onBeacon(kwon* kpm);
+        virtual void onData(kwon* kpm);
+        void sendMessage(std::string blockedRoadId);
+        virtual void handlePositionUpdate(cObject* obj);
+        virtual void handleParkingUpdate(cObject* obj);
+        virtual void sendKPM(kwon* kpm);
 };
 
 #endif

@@ -18,21 +18,20 @@
 // Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 //
 
+
 #ifndef BASEWAVEAPPLLAYER_H_
 #define BASEWAVEAPPLLAYER_H_
-
 #include <map>
 #include "veins/base/modules/BaseApplLayer.h"
 #include "veins/modules/utility/Consts80211p.h"
-#include "veins/modules/messages/WaveShortMessage_m.h"
+//#include "veins/modules/messages/WaveShortMessage_m.h" // modified
+#include "veins/modules/messages/KwonPractice_m.h"
 #include "veins/base/connectionManager/ChannelAccess.h"
 #include "veins/modules/mac/ieee80211p/WaveAppToMac1609_4Interface.h"
-
 #ifndef DBG
 #define DBG EV
 #endif
 //#define DBG std::cerr << "[" << simTime().raw() << "] " << getParentModule()->getFullPath() << " "
-
 /**
  * @brief
  * WAVE application layer base class.
@@ -46,36 +45,33 @@
  * @see PhyLayer80211p
  * @see Decider80211p
  */
-class BaseWaveApplLayer : public BaseApplLayer {
-
+class BaseWaveApplLayer : public BaseApplLayer // inherit BaseApplLayer
+{
 	public:
 		~BaseWaveApplLayer();
 		virtual void initialize(int stage);
 		virtual void finish();
-
 		virtual  void receiveSignal(cComponent* source, simsignal_t signalID, cObject* obj);
-
-		enum WaveApplMessageKinds {
-			SERVICE_PROVIDER = LAST_BASE_APPL_MESSAGE_KIND,
-			SEND_BEACON_EVT
+		enum WaveApplMessageKinds
+		{
+			SERVICE_PROVIDER = LAST_BASE_APPL_MESSAGE_KIND, SEND_BEACON_EVT
 		};
-
 	protected:
-
 		static const simsignalwrap_t mobilityStateChangedSignal;
-
 		/** @brief handle messages from below */
 		virtual void handleLowerMsg(cMessage* msg);
 		/** @brief handle self messages */
 		virtual void handleSelfMsg(cMessage* msg);
-
-		virtual WaveShortMessage* prepareWSM(std::string name, int dataLengthBits, t_channel channel, int priority, int rcvId, int serial=0);
-		virtual void sendWSM(WaveShortMessage* wsm);
-		virtual void onBeacon(WaveShortMessage* wsm) = 0;
-		virtual void onData(WaveShortMessage* wsm) = 0;
-
+		//virtual WaveShortMessage* prepareWSM(std::string name, int dataLengthBits, t_channel channel, int priority, int rcvId, int serial=0); // modified
+		virtual kwon* prepareKP(std::string name, int dataLengthBits, t_channel channel, int priority, int rcvId, int serial=0);
+		kwon* examplepkt();
+		//virtual void sendWSM(WaveShortMessage* wsm); // modi
+		virtual void sendKPM(kwon* kp);
+		//virtual void onBeacon(WaveShortMessage* wsm) = 0; // modi
+		virtual void onBeacon(kwon* kp) = 0;
+		//virtual void onData(WaveShortMessage* wsm) = 0; // modi
+		virtual void onData(kwon* kp) = 0;
 		virtual void handlePositionUpdate(cObject* obj);
-
 	protected:
 		int beaconLengthBits;
 		int beaconPriority;
@@ -85,13 +81,11 @@ class BaseWaveApplLayer : public BaseApplLayer {
 		int dataLengthBits;
 		bool dataOnSch;
 		int dataPriority;
-		Coord curPosition;
+		//Coord curPosition; // modi
 		int mySCH;
 		int myId;
-
 		cMessage* sendBeaconEvt;
-
+		cMessage* exampleMSG;
 		WaveAppToMac1609_4Interface* myMac;
 };
-
 #endif /* BASEWAVEAPPLLAYER_H_ */

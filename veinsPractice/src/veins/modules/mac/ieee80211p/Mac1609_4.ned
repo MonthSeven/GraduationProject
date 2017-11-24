@@ -19,9 +19,7 @@
 //
 
 package org.car2x.veins.modules.mac.ieee80211p;
-
 import org.car2x.veins.base.modules.BaseMacLayer;
-
 //
 // Manages timeslots for CCH and SCH listening and sending.
 //
@@ -36,30 +34,21 @@ simple Mac1609_4 extends BaseMacLayer
 {
     parameters:
         @class(Mac1609_4);
-
         // cycle between an SCH and the CCH (or stay on CCH all the time)
         bool useServiceChannel = default(true);
-
         // the service channel this maclayer listens on
         int serviceChannel = default(1);
-
         // debug switch
         bool debug = default(false);
-
         // length of MAC header, header is already added at 1609_4
         headerLength @unit(bit) = default(0 bit);
-
         // bit rate 
         double bitrate @unit(bps) = default(18 Mbps);
-
         // little asynchronization between cars
         double syncOffset @unit(s) = default(0.0003s);
-
         //tx power [mW]
         double txPower @unit(mW);
-
         int queueSize = default(0);
-
         // signal informing interested application about channel busy state
         @signal[sigChannelBusy](type=bool);
         // signal informing interested application about a collision

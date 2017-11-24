@@ -28,6 +28,7 @@ const simsignalwrap_t TraCIDemo11p::parkingStateChangedSignal = simsignalwrap_t(
 Define_Module(TraCIDemo11p);
 
 void TraCIDemo11p::initialize(int stage) {
+    std::cout << "TraCIDemo11p::initialize" << endl;
 	BaseWaveApplLayer::initialize(stage);
 	if (stage == 0) {
 		mobility = TraCIMobilityAccess().get(getParentModule());
@@ -43,10 +44,15 @@ void TraCIDemo11p::initialize(int stage) {
 		sendWhileParking = par("sendWhileParking").boolValue();
 	}
 }
-
+/*
 void TraCIDemo11p::onBeacon(WaveShortMessage* wsm) {
 }
-
+*/
+// new
+void TraCIDemo11p::onBeacon(kwon* kpm)
+{
+}
+/*
 void TraCIDemo11p::onData(WaveShortMessage* wsm) {
 	findHost()->getDisplayString().updateWith("r=16,green");
 	annotations->scheduleErase(1, annotations->drawLine(wsm->getSenderPos(), mobility->getPositionAt(simTime()), "blue"));
@@ -54,7 +60,16 @@ void TraCIDemo11p::onData(WaveShortMessage* wsm) {
 	if (mobility->getRoadId()[0] != ':') traciVehicle->changeRoute(wsm->getWsmData(), 9999);
 	if (!sentMessage) sendMessage(wsm->getWsmData());
 }
+*/
+void TraCIDemo11p::onData(kwon* kpm)
+{
+    findHost()->getDisplayString().updateWith("r=16,green");
+   // annotations->scheduleErase(1, annotations->drawLine(kpm->getSenderPos(), mobility->getPositionAt(simTime()), "blue"));
 
+    if (mobility->getRoadId()[0] != ':') traciVehicle->changeRoute(kpm->getKwonData(), 9999);
+    if (!sentMessage) sendMessage(kpm->getKwonData());
+}
+/*
 void TraCIDemo11p::sendMessage(std::string blockedRoadId) {
 	sentMessage = true;
 
@@ -63,6 +78,16 @@ void TraCIDemo11p::sendMessage(std::string blockedRoadId) {
 	wsm->setWsmData(blockedRoadId.c_str());
 	sendWSM(wsm);
 }
+*/
+void TraCIDemo11p::sendMessage(std::string blockedRoadId)
+{
+    sentMessage = true;
+    t_channel channel = dataOnSch ? type_SCH : type_CCH;
+    kwon* kpm = prepareKP("data", dataLengthBits, channel, dataPriority, -1,2);
+    kpm->setKwonData(blockedRoadId.c_str());
+    sendKPM(kpm);
+}
+/*
 void TraCIDemo11p::receiveSignal(cComponent* source, simsignal_t signalID, cObject* obj) {
 	Enter_Method_Silent();
 	if (signalID == mobilityStateChangedSignal) {
@@ -71,6 +96,16 @@ void TraCIDemo11p::receiveSignal(cComponent* source, simsignal_t signalID, cObje
 	else if (signalID == parkingStateChangedSignal) {
 		handleParkingUpdate(obj);
 	}
+}
+*/
+void TraCIDemo11p::receiveSignal(cComponent* source, simsignal_t signalID, cObject* obj) {
+    Enter_Method_Silent();
+    if (signalID == mobilityStateChangedSignal) {
+        handlePositionUpdate(obj);
+    }
+    else if (signalID == parkingStateChangedSignal) {
+        handleParkingUpdate(obj);
+    }
 }
 void TraCIDemo11p::handleParkingUpdate(cObject* obj) {
 	isParking = mobility->getParkingState();
@@ -98,7 +133,14 @@ void TraCIDemo11p::handlePositionUpdate(cObject* obj) {
 		lastDroveAt = simTime();
 	}
 }
+/*
 void TraCIDemo11p::sendWSM(WaveShortMessage* wsm) {
 	if (isParking && !sendWhileParking) return;
 	sendDelayedDown(wsm,individualOffset);
+}
+*/
+void TraCIDemo11p::sendKPM(kwon* kpm)
+{
+    if (isParking && !sendWhileParking) return;
+    sendDelayedDown(kpm,individualOffset);
 }
