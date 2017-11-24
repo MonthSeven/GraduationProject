@@ -1,4 +1,3 @@
-//
-// Documentation for these modules is at http://veins.car2x.org/
-//
+Veins Practice Done At July ~ September, 2017
 
+Build the road network, Run vehicle in the road network, collect vehicular traffic statistics
