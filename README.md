@@ -65,7 +65,7 @@ network in order to minimize the packet delivery delay while satisfying the user
 ##### 구현해야할 것
 1. **Implementation of Target Point Selection**
 >Based on delivery probability that the packet will arrive earlier than the destination vehicle at the target point Can be computed by (1) packet's delivery delay distribution (2) destination vehicle's travel delay distribution
-![ss6]()
+![ss6](https://github.com/HyunJunKwon/GraduationProject/blob/master/TrajectoryBasedStatisticalForwardingforMultihopInfrastructure_to_VehicleDataDelivery/screenshots/sys6.png?raw=true)
 
 ![sssdf](https://github.com/HyunJunKwon/GraduationProject/blob/master/TrajectoryBasedStatisticalForwardingforMultihopInfrastructure_to_VehicleDataDelivery/screenshots/ss1.png?raw=true)
 ![ddd](https://github.com/HyunJunKwon/GraduationProject/blob/master/TrajectoryBasedStatisticalForwardingforMultihopInfrastructure_to_VehicleDataDelivery/screenshots/ss2.png?raw=true)
