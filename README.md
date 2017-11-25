@@ -68,7 +68,7 @@ network in order to minimize the packet delivery delay while satisfying the user
 ![ss6]()
 
 ![sssdf](https://github.com/HyunJunKwon/GraduationProject/blob/master/TrajectoryBasedStatisticalForwardingforMultihopInfrastructure_to_VehicleDataDelivery/screenshots/ss1.png?raw=true)
-![ddd}(https://github.com/HyunJunKwon/GraduationProject/blob/master/TrajectoryBasedStatisticalForwardingforMultihopInfrastructure_to_VehicleDataDelivery/screenshots/ss2.png?raw=true)
+![ddd](https://github.com/HyunJunKwon/GraduationProject/blob/master/TrajectoryBasedStatisticalForwardingforMultihopInfrastructure_to_VehicleDataDelivery/screenshots/ss2.png?raw=true)
 ![df](https://github.com/HyunJunKwon/GraduationProject/blob/master/TrajectoryBasedStatisticalForwardingforMultihopInfrastructure_to_VehicleDataDelivery/screenshots/ss3.png?raw=true)
 ![ddds](https://github.com/HyunJunKwon/GraduationProject/blob/master/TrajectoryBasedStatisticalForwardingforMultihopInfrastructure_to_VehicleDataDelivery/screenshots/ss4.png?raw=true)
 
