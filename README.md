@@ -40,5 +40,41 @@ network in order to minimize the packet delivery delay while satisfying the user
 
 
 ##### 시스템 구성
+![ss1](https://github.com/HyunJunKwon/GraduationProject/blob/master/TrajectoryBasedStatisticalForwardingforMultihopInfrastructure_to_VehicleDataDelivery/screenshots/system1.jpg?raw=true)
+
+1. **Destination Vehicle:** 
+>Destination Vehicle은 자신의 Trajectory 정보를 AP(Access Point)에 전송합니다.
+
+2. **Trajectory:** 
+>Relay Node 2 -> 3 -> 4 -> 5 -> 10 -> 15 -> 20
+
+3. **Source Vehicle:** 
+>Source Vehicle은 전달할 정보를 Expected Packet-Delivery Delay를 계산하여 좀 더 빠르게 전달 가능한 AP에 전달합니다.(위 그림에서는 AP1)
+
+4. **Expected Packet-Delivery Delay:**
+![ss2](https://github.com/HyunJunKwon/GraduationProject/blob/master/TrajectoryBasedStatisticalForwardingforMultihopInfrastructure_to_VehicleDataDelivery/screenshots/system2.png?raw=true)
+![ss3](https://github.com/HyunJunKwon/GraduationProject/blob/master/TrajectoryBasedStatisticalForwardingforMultihopInfrastructure_to_VehicleDataDelivery/screenshots/system3.png?raw=true)
+
+5. **AP1 (Access Point):** 
+>AP1은 Destination Vehicle의 trajectory를 고려하여 Target Point로 data를 전송합니다.
+
+6. **Target Point:** 
+>미리 도착한 data는 Relay Node에서 holding 되었다가 Target Point(Rendezvous)를 지나는 Destination Vehicle에게 전송됩니다.
+
+
+##### 구현해야할 것
+1. **Implementation of Target Point Selection**
+>Based on delivery probability that the packet will arrive earlier than the destination vehicle at the target point Can be computed by (1) packet's delivery delay distribution (2) destination vehicle's travel delay distribution
+![ss6]()
+
+![sssdf](https://github.com/HyunJunKwon/GraduationProject/blob/master/TrajectoryBasedStatisticalForwardingforMultihopInfrastructure_to_VehicleDataDelivery/screenshots/ss1.png?raw=true)
+![ddd}(https://github.com/HyunJunKwon/GraduationProject/blob/master/TrajectoryBasedStatisticalForwardingforMultihopInfrastructure_to_VehicleDataDelivery/screenshots/ss2.png?raw=true)
+![df](https://github.com/HyunJunKwon/GraduationProject/blob/master/TrajectoryBasedStatisticalForwardingforMultihopInfrastructure_to_VehicleDataDelivery/screenshots/ss3.png?raw=true)
+![ddds](https://github.com/HyunJunKwon/GraduationProject/blob/master/TrajectoryBasedStatisticalForwardingforMultihopInfrastructure_to_VehicleDataDelivery/screenshots/ss4.png?raw=true)
+
+2. **Implementation of Packet Transmission toward to Target Point**
+![x](https://github.com/HyunJunKwon/GraduationProject/blob/master/TrajectoryBasedStatisticalForwardingforMultihopInfrastructure_to_VehicleDataDelivery/screenshots/ss5.png?raw=true)
+![ssxxx](https://github.com/HyunJunKwon/GraduationProject/blob/master/TrajectoryBasedStatisticalForwardingforMultihopInfrastructure_to_VehicleDataDelivery/screenshots/ss6.png?raw=true)
+3. **Implementation of Packet Transmission from Target Point to Vehicle**
 
 
