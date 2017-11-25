@@ -29,4 +29,16 @@ network in order to minimize the packet delivery delay while satisfying the user
 
 3. **Install Veins**.
 
-4. **For futher infomation, check (Part1_Installation)**
+4. **For futher infomation, check (Part1_Installation, and so on...)**
+
+
+
+## Korean
+
+##### 개요
+>Vehicular Ad Hoc Networks (VANETs)는 현재 도로 네트워크에서 운전 안전을 위한 영역에서 가장 떠오르는 주제입니다. 현재 Vehicle-to-Infrastructure을 위한 scheme은 연구 되어있는 상황이지만, Infrastructure-to-Vehicle을 위한 연구는 끊임없이 움직이는 차량에 어려움을 겪고 있습니다. 이에 차량의 궤적(Trajectory)를 통해 미리 차량이 갈 곳(Rendezvous)에 data를 전송하여 Infrastructure-to-Vehicle를 구현할 수 있는 scheme을 연구하고 구현을 시도하였습니다.
+
+
+##### 시스템 구성
+
+
