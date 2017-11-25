@@ -1,0 +1,1343 @@
+#
+# OMNeT++/OMNEST Makefile for TBDVADD
+#
+# This file was generated with the command:
+#  opp_makemake -f --deep -O out
+#
+
+# Name of target to be created (-o option)
+TARGET = TBDVADD$(EXE_SUFFIX)
+
+# User interface (uncomment one) (-u option)
+USERIF_LIBS = $(ALL_ENV_LIBS) # that is, $(TKENV_LIBS) $(CMDENV_LIBS)
+#USERIF_LIBS = $(CMDENV_LIBS)
+#USERIF_LIBS = $(TKENV_LIBS)
+
+# C++ include paths (with -I)
+INCLUDE_PATH = \
+    -I. \
+    -Idoc \
+    -Iexamples \
+    -Iexamples/veins \
+    -Iexamples/veins/VADDResults \
+    -Iexamples/veins/changed \
+    -Iexamples/veins/results \
+    -Iimages \
+    -Iimages/status \
+    -Isrc \
+    -Isrc/base \
+    -Isrc/base/connectionManager \
+    -Isrc/base/messages \
+    -Isrc/base/modules \
+    -Isrc/base/phyLayer \
+    -Isrc/base/utils \
+    -Isrc/graph-configuration \
+    -Isrc/inet \
+    -Isrc/modules \
+    -Isrc/modules/analogueModel \
+    -Isrc/modules/application \
+    -Isrc/modules/application/ieee80211p \
+    -Isrc/modules/application/traci \
+    -Isrc/modules/mac \
+    -Isrc/modules/mac/ieee80211p \
+    -Isrc/modules/messages \
+    -Isrc/modules/mobility \
+    -Isrc/modules/mobility/traci \
+    -Isrc/modules/nic \
+    -Isrc/modules/obstacle \
+    -Isrc/modules/phy \
+    -Isrc/modules/utility \
+    -Isrc/modules/world \
+    -Isrc/modules/world/annotations \
+    -Isrc/nodes \
+    -Isrc/scripts \
+    -Itests \
+    -Itests/traci
+
+# Additional object and library files to link with
+EXTRA_OBJS =
+
+# Additional libraries (-L, -l options)
+LIBS =
+
+# Output directory
+PROJECT_OUTPUT_DIR = out
+PROJECTRELATIVE_PATH =
+O = $(PROJECT_OUTPUT_DIR)/$(CONFIGNAME)/$(PROJECTRELATIVE_PATH)
+
+# Object files for local .cc and .msg files
+OBJS = \
+    $O/src/base/connectionManager/NicEntryDebug.o \
+    $O/src/base/connectionManager/ChannelAccess.o \
+    $O/src/base/connectionManager/ConnectionManager.o \
+    $O/src/base/connectionManager/NicEntryDirect.o \
+    $O/src/base/connectionManager/BaseConnectionManager.o \
+    $O/src/base/modules/BaseWorldUtility.o \
+    $O/src/base/modules/BaseMobility.o \
+    $O/src/base/modules/BaseMacLayer.o \
+    $O/src/base/modules/BaseModule.o \
+    $O/src/base/modules/BatteryAccess.o \
+    $O/src/base/modules/BaseLayer.o \
+    $O/src/base/modules/BaseBattery.o \
+    $O/src/base/modules/BaseApplLayer.o \
+    $O/src/base/phyLayer/MappingBase.o \
+    $O/src/base/phyLayer/Decider.o \
+    $O/src/base/phyLayer/MappingUtils.o \
+    $O/src/base/phyLayer/BaseDecider.o \
+    $O/src/base/phyLayer/ChannelInfo.o \
+    $O/src/base/phyLayer/PhyUtils.o \
+    $O/src/base/phyLayer/BasePhyLayer.o \
+    $O/src/base/phyLayer/ChannelState.o \
+    $O/src/base/phyLayer/Signal.o \
+    $O/src/base/utils/winsupport.o \
+    $O/src/base/utils/asserts.o \
+    $O/src/base/utils/SimpleAddress.o \
+    $O/src/base/utils/NetwToMacControlInfo.o \
+    $O/src/inet/Coord.o \
+    $O/src/modules/analogueModel/TwoRayInterferenceModel.o \
+    $O/src/modules/analogueModel/LogNormalShadowing.o \
+    $O/src/modules/analogueModel/BreakpointPathlossModel.o \
+    $O/src/modules/analogueModel/SimplePathlossModel.o \
+    $O/src/modules/analogueModel/PERModel.o \
+    $O/src/modules/analogueModel/SimpleObstacleShadowing.o \
+    $O/src/modules/analogueModel/JakesFading.o \
+    $O/src/modules/application/ieee80211p/VADDBaseWaveApplLayer.o \
+    $O/src/modules/application/ieee80211p/BaseWaveApplLayer.o \
+    $O/src/modules/application/traci/TraCIDemo11p.o \
+    $O/src/modules/application/traci/TraCITestApp.o \
+    $O/src/modules/application/traci/TraCIDemoRSU11p.o \
+    $O/src/modules/application/traci/VADD11p.o \
+    $O/src/modules/application/traci/VADDRSU11p.o \
+    $O/src/modules/mac/ieee80211p/NetLane_Linear_Algebra.o \
+    $O/src/modules/mac/ieee80211p/Mac1609_4.o \
+    $O/src/modules/mac/ieee80211p/Allpairs_Shortest_Path.o \
+    $O/src/modules/mac/ieee80211p/ReadFile.o \
+    $O/src/modules/mac/ieee80211p/RoadGraph.o \
+    $O/src/modules/mac/ieee80211p/Mac1609_4_orig.o \
+    $O/src/modules/messages/Mac80211Pkt_m_orig.o \
+    $O/src/modules/mobility/traci/TraCIScenarioManagerLaunchd.o \
+    $O/src/modules/mobility/traci/TraCIBuffer.o \
+    $O/src/modules/mobility/traci/TraCIScenarioManager_Original.o \
+    $O/src/modules/mobility/traci/TraCIMobility.o \
+    $O/src/modules/mobility/traci/TraCICommandInterface.o \
+    $O/src/modules/mobility/traci/TraCIScenarioManager_TMAC.o \
+    $O/src/modules/mobility/traci/TraCIScenarioManager.o \
+    $O/src/modules/mobility/traci/TraCIScenarioManagerInet.o \
+    $O/src/modules/mobility/traci/TraCIColor.o \
+    $O/src/modules/mobility/traci/TraCIConnection.o \
+    $O/src/modules/obstacle/ObstacleControl.o \
+    $O/src/modules/obstacle/Obstacle.o \
+    $O/src/modules/phy/SNRThresholdDecider.o \
+    $O/src/modules/phy/Decider80211p.o \
+    $O/src/modules/phy/PhyLayer80211p.o \
+    $O/src/modules/world/annotations/AnnotationManager.o \
+    $O/src/modules/world/annotations/AnnotationDummy.o \
+    $O/src/base/messages/AirFrame_m.o \
+    $O/src/base/messages/ChannelSenseRequest_m.o \
+    $O/src/base/messages/MacPkt_m.o \
+    $O/src/base/messages/BorderMsg_m.o \
+    $O/src/modules/messages/packetToSend_m.o \
+    $O/src/modules/messages/VRTandPKT_m.o \
+    $O/src/modules/messages/AirFrame11p_m.o \
+    $O/src/modules/messages/Previous_VRTandPKT_m.o \
+    $O/src/modules/messages/Junct_Vehicles_m.o \
+    $O/src/modules/messages/Mac80211Pkt_orig_m.o \
+    $O/src/modules/messages/pkAck_m.o \
+    $O/src/modules/messages/Vehicle_Routing_Table_m.o \
+    $O/src/modules/messages/Mac80211Pkt_m.o \
+    $O/src/modules/messages/WaveShortMessage_m.o
+
+# Message files
+MSGFILES = \
+    src/base/messages/AirFrame.msg \
+    src/base/messages/ChannelSenseRequest.msg \
+    src/base/messages/MacPkt.msg \
+    src/base/messages/BorderMsg.msg \
+    src/modules/messages/packetToSend.msg \
+    src/modules/messages/VRTandPKT.msg \
+    src/modules/messages/AirFrame11p.msg \
+    src/modules/messages/Previous_VRTandPKT.msg \
+    src/modules/messages/Junct_Vehicles.msg \
+    src/modules/messages/Mac80211Pkt_orig.msg \
+    src/modules/messages/pkAck.msg \
+    src/modules/messages/Vehicle_Routing_Table.msg \
+    src/modules/messages/Mac80211Pkt.msg \
+    src/modules/messages/WaveShortMessage.msg
+
+#------------------------------------------------------------------------------
+
+# Pull in OMNeT++ configuration (Makefile.inc or configuser.vc)
+
+ifneq ("$(OMNETPP_CONFIGFILE)","")
+CONFIGFILE = $(OMNETPP_CONFIGFILE)
+else
+ifneq ("$(OMNETPP_ROOT)","")
+CONFIGFILE = $(OMNETPP_ROOT)/Makefile.inc
+else
+CONFIGFILE = $(shell opp_configfilepath)
+endif
+endif
+
+ifeq ("$(wildcard $(CONFIGFILE))","")
+$(error Config file '$(CONFIGFILE)' does not exist -- add the OMNeT++ bin directory to the path so that opp_configfilepath can be found, or set the OMNETPP_CONFIGFILE variable to point to Makefile.inc)
+endif
+
+include $(CONFIGFILE)
+
+# Simulation kernel and user interface libraries
+OMNETPP_LIB_SUBDIR = $(OMNETPP_LIB_DIR)/$(TOOLCHAIN_NAME)
+OMNETPP_LIBS = -L"$(OMNETPP_LIB_SUBDIR)" -L"$(OMNETPP_LIB_DIR)" -loppmain$D $(USERIF_LIBS) $(KERNEL_LIBS) $(SYS_LIBS)
+
+COPTS = $(CFLAGS)  $(INCLUDE_PATH) -I$(OMNETPP_INCL_DIR)
+MSGCOPTS = $(INCLUDE_PATH)
+
+# we want to recompile everything if COPTS changes,
+# so we store COPTS into $COPTS_FILE and have object
+# files depend on it (except when "make depend" was called)
+COPTS_FILE = $O/.last-copts
+ifneq ($(MAKECMDGOALS),depend)
+ifneq ("$(COPTS)","$(shell cat $(COPTS_FILE) 2>/dev/null || echo '')")
+$(shell $(MKPATH) "$O" && echo "$(COPTS)" >$(COPTS_FILE))
+endif
+endif
+
+#------------------------------------------------------------------------------
+# User-supplied makefile fragment(s)
+# >>>
+# <<<
+#------------------------------------------------------------------------------
+
+# Main target
+all: $O/$(TARGET)
+	$(Q)$(LN) $O/$(TARGET) .
+
+$O/$(TARGET): $(OBJS)  $(wildcard $(EXTRA_OBJS)) Makefile
+	@$(MKPATH) $O
+	@echo Creating executable: $@
+	$(Q)$(CXX) $(LDFLAGS) -o $O/$(TARGET)  $(OBJS) $(EXTRA_OBJS) $(AS_NEEDED_OFF) $(WHOLE_ARCHIVE_ON) $(LIBS) $(WHOLE_ARCHIVE_OFF) $(OMNETPP_LIBS)
+
+.PHONY: all clean cleanall depend msgheaders
+
+.SUFFIXES: .cc
+
+$O/%.o: %.cc $(COPTS_FILE)
+	@$(MKPATH) $(dir $@)
+	$(qecho) "$<"
+	$(Q)$(CXX) -c $(CXXFLAGS) $(COPTS) -o $@ $<
+
+%_m.cc %_m.h: %.msg
+	$(qecho) MSGC: $<
+	$(Q)$(MSGC) -s _m.cc $(MSGCOPTS) $?
+
+msgheaders: $(MSGFILES:.msg=_m.h)
+
+clean:
+	$(qecho) Cleaning...
+	$(Q)-rm -rf $O
+	$(Q)-rm -f TBDVADD TBDVADD.exe libTBDVADD.so libTBDVADD.a libTBDVADD.dll libTBDVADD.dylib
+	$(Q)-rm -f ./*_m.cc ./*_m.h
+	$(Q)-rm -f doc/*_m.cc doc/*_m.h
+	$(Q)-rm -f examples/*_m.cc examples/*_m.h
+	$(Q)-rm -f examples/veins/*_m.cc examples/veins/*_m.h
+	$(Q)-rm -f examples/veins/VADDResults/*_m.cc examples/veins/VADDResults/*_m.h
+	$(Q)-rm -f examples/veins/changed/*_m.cc examples/veins/changed/*_m.h
+	$(Q)-rm -f examples/veins/results/*_m.cc examples/veins/results/*_m.h
+	$(Q)-rm -f images/*_m.cc images/*_m.h
+	$(Q)-rm -f images/status/*_m.cc images/status/*_m.h
+	$(Q)-rm -f src/*_m.cc src/*_m.h
+	$(Q)-rm -f src/base/*_m.cc src/base/*_m.h
+	$(Q)-rm -f src/base/connectionManager/*_m.cc src/base/connectionManager/*_m.h
+	$(Q)-rm -f src/base/messages/*_m.cc src/base/messages/*_m.h
+	$(Q)-rm -f src/base/modules/*_m.cc src/base/modules/*_m.h
+	$(Q)-rm -f src/base/phyLayer/*_m.cc src/base/phyLayer/*_m.h
+	$(Q)-rm -f src/base/utils/*_m.cc src/base/utils/*_m.h
+	$(Q)-rm -f src/graph-configuration/*_m.cc src/graph-configuration/*_m.h
+	$(Q)-rm -f src/inet/*_m.cc src/inet/*_m.h
+	$(Q)-rm -f src/modules/*_m.cc src/modules/*_m.h
+	$(Q)-rm -f src/modules/analogueModel/*_m.cc src/modules/analogueModel/*_m.h
+	$(Q)-rm -f src/modules/application/*_m.cc src/modules/application/*_m.h
+	$(Q)-rm -f src/modules/application/ieee80211p/*_m.cc src/modules/application/ieee80211p/*_m.h
+	$(Q)-rm -f src/modules/application/traci/*_m.cc src/modules/application/traci/*_m.h
+	$(Q)-rm -f src/modules/mac/*_m.cc src/modules/mac/*_m.h
+	$(Q)-rm -f src/modules/mac/ieee80211p/*_m.cc src/modules/mac/ieee80211p/*_m.h
+	$(Q)-rm -f src/modules/messages/*_m.cc src/modules/messages/*_m.h
+	$(Q)-rm -f src/modules/mobility/*_m.cc src/modules/mobility/*_m.h
+	$(Q)-rm -f src/modules/mobility/traci/*_m.cc src/modules/mobility/traci/*_m.h
+	$(Q)-rm -f src/modules/nic/*_m.cc src/modules/nic/*_m.h
+	$(Q)-rm -f src/modules/obstacle/*_m.cc src/modules/obstacle/*_m.h
+	$(Q)-rm -f src/modules/phy/*_m.cc src/modules/phy/*_m.h
+	$(Q)-rm -f src/modules/utility/*_m.cc src/modules/utility/*_m.h
+	$(Q)-rm -f src/modules/world/*_m.cc src/modules/world/*_m.h
+	$(Q)-rm -f src/modules/world/annotations/*_m.cc src/modules/world/annotations/*_m.h
+	$(Q)-rm -f src/nodes/*_m.cc src/nodes/*_m.h
+	$(Q)-rm -f src/scripts/*_m.cc src/scripts/*_m.h
+	$(Q)-rm -f tests/*_m.cc tests/*_m.h
+	$(Q)-rm -f tests/traci/*_m.cc tests/traci/*_m.h
+
+cleanall: clean
+	$(Q)-rm -rf $(PROJECT_OUTPUT_DIR)
+
+depend:
+	$(qecho) Creating dependencies...
+	$(Q)$(MAKEDEPEND) $(INCLUDE_PATH) -f Makefile -P\$$O/ -- $(MSG_CC_FILES)  ./*.cc doc/*.cc examples/*.cc examples/veins/*.cc examples/veins/VADDResults/*.cc examples/veins/changed/*.cc examples/veins/results/*.cc images/*.cc images/status/*.cc src/*.cc src/base/*.cc src/base/connectionManager/*.cc src/base/messages/*.cc src/base/modules/*.cc src/base/phyLayer/*.cc src/base/utils/*.cc src/graph-configuration/*.cc src/inet/*.cc src/modules/*.cc src/modules/analogueModel/*.cc src/modules/application/*.cc src/modules/application/ieee80211p/*.cc src/modules/application/traci/*.cc src/modules/mac/*.cc src/modules/mac/ieee80211p/*.cc src/modules/messages/*.cc src/modules/mobility/*.cc src/modules/mobility/traci/*.cc src/modules/nic/*.cc src/modules/obstacle/*.cc src/modules/phy/*.cc src/modules/utility/*.cc src/modules/world/*.cc src/modules/world/annotations/*.cc src/nodes/*.cc src/scripts/*.cc tests/*.cc tests/traci/*.cc
+
+# DO NOT DELETE THIS LINE -- make depend depends on it.
+$O/src/base/connectionManager/BaseConnectionManager.o: src/base/connectionManager/BaseConnectionManager.cc \
+	src/base/connectionManager/BaseConnectionManager.h \
+	src/base/connectionManager/NicEntry.h \
+	src/base/connectionManager/NicEntryDebug.h \
+	src/base/connectionManager/NicEntryDirect.h \
+	src/base/modules/BaseWorldUtility.h \
+	src/base/utils/FindModule.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/miximkerneldefs.h \
+	src/inet/Coord.h \
+	src/inet/FWMath.h
+$O/src/base/connectionManager/ChannelAccess.o: src/base/connectionManager/ChannelAccess.cc \
+	src/base/connectionManager/BaseConnectionManager.h \
+	src/base/connectionManager/ChannelAccess.h \
+	src/base/connectionManager/NicEntry.h \
+	src/base/modules/BaseBattery.h \
+	src/base/modules/BaseMobility.h \
+	src/base/modules/BaseModule.h \
+	src/base/modules/BaseWorldUtility.h \
+	src/base/modules/BatteryAccess.h \
+	src/base/utils/FindModule.h \
+	src/base/utils/HostState.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/Move.h \
+	src/base/utils/miximkerneldefs.h \
+	src/inet/Coord.h \
+	src/inet/FWMath.h
+$O/src/base/connectionManager/ConnectionManager.o: src/base/connectionManager/ConnectionManager.cc \
+	src/base/connectionManager/BaseConnectionManager.h \
+	src/base/connectionManager/ConnectionManager.h \
+	src/base/connectionManager/NicEntry.h \
+	src/base/modules/BaseWorldUtility.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/miximkerneldefs.h \
+	src/inet/Coord.h \
+	src/inet/FWMath.h
+$O/src/base/connectionManager/NicEntryDebug.o: src/base/connectionManager/NicEntryDebug.cc \
+	src/base/connectionManager/ChannelAccess.h \
+	src/base/connectionManager/NicEntry.h \
+	src/base/connectionManager/NicEntryDebug.h \
+	src/base/modules/BaseBattery.h \
+	src/base/modules/BaseMobility.h \
+	src/base/modules/BaseModule.h \
+	src/base/modules/BaseWorldUtility.h \
+	src/base/modules/BatteryAccess.h \
+	src/base/utils/FindModule.h \
+	src/base/utils/HostState.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/Move.h \
+	src/base/utils/miximkerneldefs.h \
+	src/inet/Coord.h \
+	src/inet/FWMath.h
+$O/src/base/connectionManager/NicEntryDirect.o: src/base/connectionManager/NicEntryDirect.cc \
+	src/base/connectionManager/ChannelAccess.h \
+	src/base/connectionManager/NicEntry.h \
+	src/base/connectionManager/NicEntryDirect.h \
+	src/base/modules/BaseBattery.h \
+	src/base/modules/BaseMobility.h \
+	src/base/modules/BaseModule.h \
+	src/base/modules/BaseWorldUtility.h \
+	src/base/modules/BatteryAccess.h \
+	src/base/utils/FindModule.h \
+	src/base/utils/HostState.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/Move.h \
+	src/base/utils/miximkerneldefs.h \
+	src/inet/Coord.h \
+	src/inet/FWMath.h
+$O/src/base/messages/AirFrame_m.o: src/base/messages/AirFrame_m.cc \
+	src/base/messages/AirFrame_m.h \
+	src/base/phyLayer/Interpolation.h \
+	src/base/phyLayer/Mapping.h \
+	src/base/phyLayer/MappingBase.h \
+	src/base/phyLayer/MappingUtils.h \
+	src/base/phyLayer/Signal_.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/miximkerneldefs.h
+$O/src/base/messages/BorderMsg_m.o: src/base/messages/BorderMsg_m.cc \
+	src/base/messages/BorderMsg_m.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/miximkerneldefs.h \
+	src/inet/Coord.h \
+	src/inet/FWMath.h
+$O/src/base/messages/ChannelSenseRequest_m.o: src/base/messages/ChannelSenseRequest_m.cc \
+	src/base/messages/ChannelSenseRequest_m.h \
+	src/base/phyLayer/ChannelState.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/miximkerneldefs.h
+$O/src/base/messages/MacPkt_m.o: src/base/messages/MacPkt_m.cc \
+	src/base/messages/MacPkt_m.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/SimpleAddress.h \
+	src/base/utils/miximkerneldefs.h
+$O/src/base/modules/BaseApplLayer.o: src/base/modules/BaseApplLayer.cc \
+	src/base/modules/BaseApplLayer.h \
+	src/base/modules/BaseBattery.h \
+	src/base/modules/BaseLayer.h \
+	src/base/modules/BaseModule.h \
+	src/base/modules/BatteryAccess.h \
+	src/base/utils/HostState.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/PassedMessage.h \
+	src/base/utils/SimpleAddress.h \
+	src/base/utils/miximkerneldefs.h
+$O/src/base/modules/BaseBattery.o: src/base/modules/BaseBattery.cc \
+	src/base/modules/BaseBattery.h \
+	src/base/modules/BaseModule.h \
+	src/base/utils/HostState.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/miximkerneldefs.h
+$O/src/base/modules/BaseLayer.o: src/base/modules/BaseLayer.cc \
+	src/base/modules/BaseBattery.h \
+	src/base/modules/BaseLayer.h \
+	src/base/modules/BaseModule.h \
+	src/base/modules/BatteryAccess.h \
+	src/base/utils/HostState.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/PassedMessage.h \
+	src/base/utils/miximkerneldefs.h
+$O/src/base/modules/BaseMacLayer.o: src/base/modules/BaseMacLayer.cc \
+	src/base/connectionManager/ChannelAccess.h \
+	src/base/messages/MacPkt_m.h \
+	src/base/modules/AddressingInterface.h \
+	src/base/modules/BaseBattery.h \
+	src/base/modules/BaseLayer.h \
+	src/base/modules/BaseMacLayer.h \
+	src/base/modules/BaseMobility.h \
+	src/base/modules/BaseModule.h \
+	src/base/modules/BaseWorldUtility.h \
+	src/base/modules/BatteryAccess.h \
+	src/base/phyLayer/AnalogueModel.h \
+	src/base/phyLayer/ChannelState.h \
+	src/base/phyLayer/Interpolation.h \
+	src/base/phyLayer/MacToPhyControlInfo.h \
+	src/base/phyLayer/MacToPhyInterface.h \
+	src/base/phyLayer/Mapping.h \
+	src/base/phyLayer/MappingBase.h \
+	src/base/phyLayer/MappingUtils.h \
+	src/base/phyLayer/PhyUtils.h \
+	src/base/phyLayer/Signal_.h \
+	src/base/utils/FindModule.h \
+	src/base/utils/HostState.h \
+	src/base/utils/MacToNetwControlInfo.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/Move.h \
+	src/base/utils/NetwToMacControlInfo.h \
+	src/base/utils/PassedMessage.h \
+	src/base/utils/SimpleAddress.h \
+	src/base/utils/miximkerneldefs.h \
+	src/inet/Coord.h \
+	src/inet/FWMath.h
+$O/src/base/modules/BaseMobility.o: src/base/modules/BaseMobility.cc \
+	src/base/messages/BorderMsg_m.h \
+	src/base/modules/BaseBattery.h \
+	src/base/modules/BaseMobility.h \
+	src/base/modules/BaseModule.h \
+	src/base/modules/BaseWorldUtility.h \
+	src/base/modules/BatteryAccess.h \
+	src/base/utils/FindModule.h \
+	src/base/utils/HostState.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/Move.h \
+	src/base/utils/miximkerneldefs.h \
+	src/inet/Coord.h \
+	src/inet/FWMath.h
+$O/src/base/modules/BaseModule.o: src/base/modules/BaseModule.cc \
+	src/base/modules/BaseModule.h \
+	src/base/utils/FindModule.h \
+	src/base/utils/HostState.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/miximkerneldefs.h
+$O/src/base/modules/BaseWorldUtility.o: src/base/modules/BaseWorldUtility.cc \
+	src/base/connectionManager/BaseConnectionManager.h \
+	src/base/connectionManager/NicEntry.h \
+	src/base/modules/BaseWorldUtility.h \
+	src/base/utils/FindModule.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/miximkerneldefs.h \
+	src/inet/Coord.h \
+	src/inet/FWMath.h
+$O/src/base/modules/BatteryAccess.o: src/base/modules/BatteryAccess.cc \
+	src/base/modules/BaseBattery.h \
+	src/base/modules/BaseModule.h \
+	src/base/modules/BatteryAccess.h \
+	src/base/utils/FindModule.h \
+	src/base/utils/HostState.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/miximkerneldefs.h
+$O/src/base/phyLayer/BaseDecider.o: src/base/phyLayer/BaseDecider.cc \
+	src/base/messages/AirFrame_m.h \
+	src/base/messages/ChannelSenseRequest_m.h \
+	src/base/phyLayer/BaseDecider.h \
+	src/base/phyLayer/ChannelState.h \
+	src/base/phyLayer/Decider.h \
+	src/base/phyLayer/DeciderToPhyInterface.h \
+	src/base/phyLayer/Interpolation.h \
+	src/base/phyLayer/Mapping.h \
+	src/base/phyLayer/MappingBase.h \
+	src/base/phyLayer/MappingUtils.h \
+	src/base/phyLayer/Signal_.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/miximkerneldefs.h
+$O/src/base/phyLayer/BasePhyLayer.o: src/base/phyLayer/BasePhyLayer.cc \
+	src/base/connectionManager/BaseConnectionManager.h \
+	src/base/connectionManager/ChannelAccess.h \
+	src/base/connectionManager/NicEntry.h \
+	src/base/messages/AirFrame_m.h \
+	src/base/messages/ChannelSenseRequest_m.h \
+	src/base/modules/BaseBattery.h \
+	src/base/modules/BaseMobility.h \
+	src/base/modules/BaseModule.h \
+	src/base/modules/BaseWorldUtility.h \
+	src/base/modules/BatteryAccess.h \
+	src/base/phyLayer/AnalogueModel.h \
+	src/base/phyLayer/BasePhyLayer.h \
+	src/base/phyLayer/ChannelInfo.h \
+	src/base/phyLayer/ChannelState.h \
+	src/base/phyLayer/Decider.h \
+	src/base/phyLayer/DeciderToPhyInterface.h \
+	src/base/phyLayer/Interpolation.h \
+	src/base/phyLayer/MacToPhyControlInfo.h \
+	src/base/phyLayer/MacToPhyInterface.h \
+	src/base/phyLayer/Mapping.h \
+	src/base/phyLayer/MappingBase.h \
+	src/base/phyLayer/MappingUtils.h \
+	src/base/phyLayer/PhyToMacControlInfo.h \
+	src/base/phyLayer/PhyUtils.h \
+	src/base/phyLayer/Signal_.h \
+	src/base/utils/FindModule.h \
+	src/base/utils/HostState.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/Move.h \
+	src/base/utils/miximkerneldefs.h \
+	src/inet/Coord.h \
+	src/inet/FWMath.h
+$O/src/base/phyLayer/ChannelInfo.o: src/base/phyLayer/ChannelInfo.cc \
+	src/base/messages/AirFrame_m.h \
+	src/base/phyLayer/ChannelInfo.h \
+	src/base/phyLayer/Interpolation.h \
+	src/base/phyLayer/Mapping.h \
+	src/base/phyLayer/MappingBase.h \
+	src/base/phyLayer/MappingUtils.h \
+	src/base/phyLayer/Signal_.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/miximkerneldefs.h
+$O/src/base/phyLayer/ChannelState.o: src/base/phyLayer/ChannelState.cc \
+	src/base/phyLayer/ChannelState.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/miximkerneldefs.h
+$O/src/base/phyLayer/Decider.o: src/base/phyLayer/Decider.cc \
+	src/base/messages/ChannelSenseRequest_m.h \
+	src/base/phyLayer/ChannelState.h \
+	src/base/phyLayer/Decider.h \
+	src/base/phyLayer/DeciderToPhyInterface.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/miximkerneldefs.h
+$O/src/base/phyLayer/MappingBase.o: src/base/phyLayer/MappingBase.cc \
+	src/base/phyLayer/Interpolation.h \
+	src/base/phyLayer/MappingBase.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/miximkerneldefs.h
+$O/src/base/phyLayer/MappingUtils.o: src/base/phyLayer/MappingUtils.cc \
+	src/base/phyLayer/Interpolation.h \
+	src/base/phyLayer/MappingBase.h \
+	src/base/phyLayer/MappingUtils.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/miximkerneldefs.h
+$O/src/base/phyLayer/PhyUtils.o: src/base/phyLayer/PhyUtils.cc \
+	src/base/messages/AirFrame_m.h \
+	src/base/phyLayer/AnalogueModel.h \
+	src/base/phyLayer/Interpolation.h \
+	src/base/phyLayer/Mapping.h \
+	src/base/phyLayer/MappingBase.h \
+	src/base/phyLayer/MappingUtils.h \
+	src/base/phyLayer/PhyUtils.h \
+	src/base/phyLayer/Signal_.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/miximkerneldefs.h \
+	src/inet/Coord.h \
+	src/inet/FWMath.h
+$O/src/base/phyLayer/Signal.o: src/base/phyLayer/Signal.cc \
+	src/base/phyLayer/Interpolation.h \
+	src/base/phyLayer/Mapping.h \
+	src/base/phyLayer/MappingBase.h \
+	src/base/phyLayer/MappingUtils.h \
+	src/base/phyLayer/Signal_.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/miximkerneldefs.h
+$O/src/base/utils/NetwToMacControlInfo.o: src/base/utils/NetwToMacControlInfo.cc \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/NetwToMacControlInfo.h \
+	src/base/utils/SimpleAddress.h \
+	src/base/utils/miximkerneldefs.h
+$O/src/base/utils/SimpleAddress.o: src/base/utils/SimpleAddress.cc \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/SimpleAddress.h \
+	src/base/utils/miximkerneldefs.h
+$O/src/base/utils/asserts.o: src/base/utils/asserts.cc \
+	src/base/utils/asserts.h
+$O/src/base/utils/winsupport.o: src/base/utils/winsupport.cc \
+	src/base/utils/winsupport.h
+$O/src/inet/Coord.o: src/inet/Coord.cc \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/miximkerneldefs.h \
+	src/inet/Coord.h \
+	src/inet/FWMath.h
+$O/src/modules/analogueModel/BreakpointPathlossModel.o: src/modules/analogueModel/BreakpointPathlossModel.cc \
+	src/base/messages/AirFrame_m.h \
+	src/base/phyLayer/AnalogueModel.h \
+	src/base/phyLayer/Interpolation.h \
+	src/base/phyLayer/Mapping.h \
+	src/base/phyLayer/MappingBase.h \
+	src/base/phyLayer/MappingUtils.h \
+	src/base/phyLayer/Signal_.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/miximkerneldefs.h \
+	src/inet/Coord.h \
+	src/inet/FWMath.h \
+	src/modules/analogueModel/BreakpointPathlossModel.h
+$O/src/modules/analogueModel/JakesFading.o: src/modules/analogueModel/JakesFading.cc \
+	src/base/connectionManager/ChannelAccess.h \
+	src/base/messages/AirFrame_m.h \
+	src/base/modules/BaseBattery.h \
+	src/base/modules/BaseMobility.h \
+	src/base/modules/BaseModule.h \
+	src/base/modules/BaseWorldUtility.h \
+	src/base/modules/BatteryAccess.h \
+	src/base/phyLayer/AnalogueModel.h \
+	src/base/phyLayer/Interpolation.h \
+	src/base/phyLayer/Mapping.h \
+	src/base/phyLayer/MappingBase.h \
+	src/base/phyLayer/MappingUtils.h \
+	src/base/phyLayer/Signal_.h \
+	src/base/utils/FindModule.h \
+	src/base/utils/HostState.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/Move.h \
+	src/base/utils/miximkerneldefs.h \
+	src/inet/Coord.h \
+	src/inet/FWMath.h \
+	src/modules/analogueModel/JakesFading.h
+$O/src/modules/analogueModel/LogNormalShadowing.o: src/modules/analogueModel/LogNormalShadowing.cc \
+	src/base/messages/AirFrame_m.h \
+	src/base/phyLayer/AnalogueModel.h \
+	src/base/phyLayer/Interpolation.h \
+	src/base/phyLayer/Mapping.h \
+	src/base/phyLayer/MappingBase.h \
+	src/base/phyLayer/MappingUtils.h \
+	src/base/phyLayer/Signal_.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/miximkerneldefs.h \
+	src/inet/Coord.h \
+	src/inet/FWMath.h \
+	src/modules/analogueModel/LogNormalShadowing.h
+$O/src/modules/analogueModel/PERModel.o: src/modules/analogueModel/PERModel.cc \
+	src/base/messages/AirFrame_m.h \
+	src/base/phyLayer/AnalogueModel.h \
+	src/base/phyLayer/Interpolation.h \
+	src/base/phyLayer/Mapping.h \
+	src/base/phyLayer/MappingBase.h \
+	src/base/phyLayer/MappingUtils.h \
+	src/base/phyLayer/Signal_.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/miximkerneldefs.h \
+	src/inet/Coord.h \
+	src/inet/FWMath.h \
+	src/modules/analogueModel/PERModel.h
+$O/src/modules/analogueModel/SimpleObstacleShadowing.o: src/modules/analogueModel/SimpleObstacleShadowing.cc \
+	src/base/messages/AirFrame_m.h \
+	src/base/modules/BaseWorldUtility.h \
+	src/base/phyLayer/AnalogueModel.h \
+	src/base/phyLayer/Interpolation.h \
+	src/base/phyLayer/Mapping.h \
+	src/base/phyLayer/MappingBase.h \
+	src/base/phyLayer/MappingUtils.h \
+	src/base/phyLayer/Signal_.h \
+	src/base/utils/FindModule.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/Move.h \
+	src/base/utils/miximkerneldefs.h \
+	src/inet/Coord.h \
+	src/inet/FWMath.h \
+	src/modules/analogueModel/SimpleObstacleShadowing.h \
+	src/modules/obstacle/Obstacle.h \
+	src/modules/obstacle/ObstacleControl.h \
+	src/modules/world/annotations/AnnotationManager.h
+$O/src/modules/analogueModel/SimplePathlossModel.o: src/modules/analogueModel/SimplePathlossModel.cc \
+	src/base/messages/AirFrame_m.h \
+	src/base/modules/BaseWorldUtility.h \
+	src/base/phyLayer/AnalogueModel.h \
+	src/base/phyLayer/Interpolation.h \
+	src/base/phyLayer/Mapping.h \
+	src/base/phyLayer/MappingBase.h \
+	src/base/phyLayer/MappingUtils.h \
+	src/base/phyLayer/Signal_.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/miximkerneldefs.h \
+	src/inet/Coord.h \
+	src/inet/FWMath.h \
+	src/modules/analogueModel/SimplePathlossModel.h
+$O/src/modules/analogueModel/TwoRayInterferenceModel.o: src/modules/analogueModel/TwoRayInterferenceModel.cc \
+	src/base/messages/AirFrame_m.h \
+	src/base/modules/BaseWorldUtility.h \
+	src/base/phyLayer/AnalogueModel.h \
+	src/base/phyLayer/Interpolation.h \
+	src/base/phyLayer/Mapping.h \
+	src/base/phyLayer/MappingBase.h \
+	src/base/phyLayer/MappingUtils.h \
+	src/base/phyLayer/Signal_.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/miximkerneldefs.h \
+	src/inet/Coord.h \
+	src/inet/FWMath.h \
+	src/modules/analogueModel/TwoRayInterferenceModel.h
+$O/src/modules/application/ieee80211p/BaseWaveApplLayer.o: src/modules/application/ieee80211p/BaseWaveApplLayer.cc \
+	src/base/connectionManager/ChannelAccess.h \
+	src/base/modules/BaseApplLayer.h \
+	src/base/modules/BaseBattery.h \
+	src/base/modules/BaseLayer.h \
+	src/base/modules/BaseMobility.h \
+	src/base/modules/BaseModule.h \
+	src/base/modules/BaseWorldUtility.h \
+	src/base/modules/BatteryAccess.h \
+	src/base/utils/FindModule.h \
+	src/base/utils/HostState.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/Move.h \
+	src/base/utils/NetwToMacControlInfo.h \
+	src/base/utils/PassedMessage.h \
+	src/base/utils/SimpleAddress.h \
+	src/base/utils/miximkerneldefs.h \
+	src/inet/Coord.h \
+	src/inet/FWMath.h \
+	src/modules/application/ieee80211p/BaseWaveApplLayer.h \
+	src/modules/mac/ieee80211p/Allpairs_Shortest_Path.h \
+	src/modules/mac/ieee80211p/NetLane_Linear_Algebra.h \
+	src/modules/mac/ieee80211p/NetlaneGraphStruct.h \
+	src/modules/mac/ieee80211p/ReadFile.h \
+	src/modules/mac/ieee80211p/RoadGraph.h \
+	src/modules/mac/ieee80211p/WaveAppToMac1609_4Interface.h \
+	src/modules/messages/WaveShortMessage_m.h \
+	src/modules/utility/Consts80211p.h
+$O/src/modules/application/ieee80211p/VADDBaseWaveApplLayer.o: src/modules/application/ieee80211p/VADDBaseWaveApplLayer.cc \
+	src/base/connectionManager/BaseConnectionManager.h \
+	src/base/connectionManager/ChannelAccess.h \
+	src/base/connectionManager/ConnectionManager.h \
+	src/base/connectionManager/NicEntry.h \
+	src/base/modules/BaseApplLayer.h \
+	src/base/modules/BaseBattery.h \
+	src/base/modules/BaseLayer.h \
+	src/base/modules/BaseMobility.h \
+	src/base/modules/BaseModule.h \
+	src/base/modules/BaseWorldUtility.h \
+	src/base/modules/BatteryAccess.h \
+	src/base/utils/FindModule.h \
+	src/base/utils/HostState.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/Move.h \
+	src/base/utils/NetwToMacControlInfo.h \
+	src/base/utils/PassedMessage.h \
+	src/base/utils/SimpleAddress.h \
+	src/base/utils/miximkerneldefs.h \
+	src/inet/Coord.h \
+	src/inet/FWMath.h \
+	src/modules/application/ieee80211p/VADDBaseWaveApplLayer.h \
+	src/modules/mac/ieee80211p/Allpairs_Shortest_Path.h \
+	src/modules/mac/ieee80211p/NetLane_Linear_Algebra.h \
+	src/modules/mac/ieee80211p/NetlaneGraphStruct.h \
+	src/modules/mac/ieee80211p/ReadFile.h \
+	src/modules/mac/ieee80211p/RoadGraph.h \
+	src/modules/mac/ieee80211p/WaveAppToMac1609_4Interface.h \
+	src/modules/messages/VRTandPKT_m.h \
+	src/modules/mobility/traci/TraCIBuffer.h \
+	src/modules/mobility/traci/TraCIColor.h \
+	src/modules/mobility/traci/TraCICommandInterface.h \
+	src/modules/mobility/traci/TraCIConnection.h \
+	src/modules/mobility/traci/TraCICoord.h \
+	src/modules/mobility/traci/TraCIMobility.h \
+	src/modules/mobility/traci/TraCIScenarioManager.h \
+	src/modules/obstacle/Obstacle.h \
+	src/modules/obstacle/ObstacleControl.h \
+	src/modules/utility/Consts80211p.h \
+	src/modules/world/annotations/AnnotationManager.h
+$O/src/modules/application/traci/TraCIDemo11p.o: src/modules/application/traci/TraCIDemo11p.cc \
+	src/base/connectionManager/BaseConnectionManager.h \
+	src/base/connectionManager/ChannelAccess.h \
+	src/base/connectionManager/ConnectionManager.h \
+	src/base/connectionManager/NicEntry.h \
+	src/base/modules/BaseApplLayer.h \
+	src/base/modules/BaseBattery.h \
+	src/base/modules/BaseLayer.h \
+	src/base/modules/BaseMobility.h \
+	src/base/modules/BaseModule.h \
+	src/base/modules/BaseWorldUtility.h \
+	src/base/modules/BatteryAccess.h \
+	src/base/utils/FindModule.h \
+	src/base/utils/HostState.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/Move.h \
+	src/base/utils/NetwToMacControlInfo.h \
+	src/base/utils/PassedMessage.h \
+	src/base/utils/SimpleAddress.h \
+	src/base/utils/miximkerneldefs.h \
+	src/inet/Coord.h \
+	src/inet/FWMath.h \
+	src/modules/application/ieee80211p/BaseWaveApplLayer.h \
+	src/modules/application/traci/TraCIDemo11p.h \
+	src/modules/mac/ieee80211p/Allpairs_Shortest_Path.h \
+	src/modules/mac/ieee80211p/NetLane_Linear_Algebra.h \
+	src/modules/mac/ieee80211p/NetlaneGraphStruct.h \
+	src/modules/mac/ieee80211p/ReadFile.h \
+	src/modules/mac/ieee80211p/RoadGraph.h \
+	src/modules/mac/ieee80211p/WaveAppToMac1609_4Interface.h \
+	src/modules/messages/WaveShortMessage_m.h \
+	src/modules/mobility/traci/TraCIBuffer.h \
+	src/modules/mobility/traci/TraCIColor.h \
+	src/modules/mobility/traci/TraCICommandInterface.h \
+	src/modules/mobility/traci/TraCIConnection.h \
+	src/modules/mobility/traci/TraCICoord.h \
+	src/modules/mobility/traci/TraCIMobility.h \
+	src/modules/mobility/traci/TraCIScenarioManager.h \
+	src/modules/obstacle/Obstacle.h \
+	src/modules/obstacle/ObstacleControl.h \
+	src/modules/utility/Consts80211p.h \
+	src/modules/world/annotations/AnnotationManager.h
+$O/src/modules/application/traci/TraCIDemoRSU11p.o: src/modules/application/traci/TraCIDemoRSU11p.cc \
+	src/base/connectionManager/BaseConnectionManager.h \
+	src/base/connectionManager/ChannelAccess.h \
+	src/base/connectionManager/ConnectionManager.h \
+	src/base/connectionManager/NicEntry.h \
+	src/base/modules/BaseApplLayer.h \
+	src/base/modules/BaseBattery.h \
+	src/base/modules/BaseLayer.h \
+	src/base/modules/BaseMobility.h \
+	src/base/modules/BaseModule.h \
+	src/base/modules/BaseWorldUtility.h \
+	src/base/modules/BatteryAccess.h \
+	src/base/utils/FindModule.h \
+	src/base/utils/HostState.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/Move.h \
+	src/base/utils/NetwToMacControlInfo.h \
+	src/base/utils/PassedMessage.h \
+	src/base/utils/SimpleAddress.h \
+	src/base/utils/miximkerneldefs.h \
+	src/inet/Coord.h \
+	src/inet/FWMath.h \
+	src/modules/application/ieee80211p/BaseWaveApplLayer.h \
+	src/modules/application/traci/TraCIDemoRSU11p.h \
+	src/modules/mac/ieee80211p/Allpairs_Shortest_Path.h \
+	src/modules/mac/ieee80211p/NetLane_Linear_Algebra.h \
+	src/modules/mac/ieee80211p/NetlaneGraphStruct.h \
+	src/modules/mac/ieee80211p/ReadFile.h \
+	src/modules/mac/ieee80211p/RoadGraph.h \
+	src/modules/mac/ieee80211p/WaveAppToMac1609_4Interface.h \
+	src/modules/messages/WaveShortMessage_m.h \
+	src/modules/mobility/traci/TraCIBuffer.h \
+	src/modules/mobility/traci/TraCIColor.h \
+	src/modules/mobility/traci/TraCICommandInterface.h \
+	src/modules/mobility/traci/TraCIConnection.h \
+	src/modules/mobility/traci/TraCICoord.h \
+	src/modules/mobility/traci/TraCIMobility.h \
+	src/modules/mobility/traci/TraCIScenarioManager.h \
+	src/modules/obstacle/Obstacle.h \
+	src/modules/obstacle/ObstacleControl.h \
+	src/modules/utility/Consts80211p.h \
+	src/modules/world/annotations/AnnotationManager.h
+$O/src/modules/application/traci/TraCITestApp.o: src/modules/application/traci/TraCITestApp.cc \
+	src/base/connectionManager/BaseConnectionManager.h \
+	src/base/connectionManager/ConnectionManager.h \
+	src/base/connectionManager/NicEntry.h \
+	src/base/modules/BaseApplLayer.h \
+	src/base/modules/BaseBattery.h \
+	src/base/modules/BaseLayer.h \
+	src/base/modules/BaseMobility.h \
+	src/base/modules/BaseModule.h \
+	src/base/modules/BaseWorldUtility.h \
+	src/base/modules/BatteryAccess.h \
+	src/base/utils/FindModule.h \
+	src/base/utils/HostState.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/Move.h \
+	src/base/utils/PassedMessage.h \
+	src/base/utils/SimpleAddress.h \
+	src/base/utils/asserts.h \
+	src/base/utils/miximkerneldefs.h \
+	src/inet/Coord.h \
+	src/inet/FWMath.h \
+	src/modules/application/traci/TraCITestApp.h \
+	src/modules/mobility/traci/TraCIBuffer.h \
+	src/modules/mobility/traci/TraCIColor.h \
+	src/modules/mobility/traci/TraCICommandInterface.h \
+	src/modules/mobility/traci/TraCIConnection.h \
+	src/modules/mobility/traci/TraCICoord.h \
+	src/modules/mobility/traci/TraCIMobility.h \
+	src/modules/mobility/traci/TraCIScenarioManager.h \
+	src/modules/obstacle/Obstacle.h \
+	src/modules/obstacle/ObstacleControl.h \
+	src/modules/world/annotations/AnnotationManager.h
+$O/src/modules/application/traci/VADD11p.o: src/modules/application/traci/VADD11p.cc \
+	src/base/connectionManager/BaseConnectionManager.h \
+	src/base/connectionManager/ChannelAccess.h \
+	src/base/connectionManager/ConnectionManager.h \
+	src/base/connectionManager/NicEntry.h \
+	src/base/modules/BaseApplLayer.h \
+	src/base/modules/BaseBattery.h \
+	src/base/modules/BaseLayer.h \
+	src/base/modules/BaseMobility.h \
+	src/base/modules/BaseModule.h \
+	src/base/modules/BaseWorldUtility.h \
+	src/base/modules/BatteryAccess.h \
+	src/base/utils/FindModule.h \
+	src/base/utils/HostState.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/Move.h \
+	src/base/utils/NetwToMacControlInfo.h \
+	src/base/utils/PassedMessage.h \
+	src/base/utils/SimpleAddress.h \
+	src/base/utils/miximkerneldefs.h \
+	src/inet/Coord.h \
+	src/inet/FWMath.h \
+	src/modules/application/ieee80211p/VADDBaseWaveApplLayer.h \
+	src/modules/application/traci/VADD11p.h \
+	src/modules/mac/ieee80211p/Allpairs_Shortest_Path.h \
+	src/modules/mac/ieee80211p/NetLane_Linear_Algebra.h \
+	src/modules/mac/ieee80211p/NetlaneGraphStruct.h \
+	src/modules/mac/ieee80211p/ReadFile.h \
+	src/modules/mac/ieee80211p/RoadGraph.h \
+	src/modules/mac/ieee80211p/WaveAppToMac1609_4Interface.h \
+	src/modules/messages/VRTandPKT_m.h \
+	src/modules/mobility/traci/TraCIBuffer.h \
+	src/modules/mobility/traci/TraCIColor.h \
+	src/modules/mobility/traci/TraCICommandInterface.h \
+	src/modules/mobility/traci/TraCIConnection.h \
+	src/modules/mobility/traci/TraCICoord.h \
+	src/modules/mobility/traci/TraCIMobility.h \
+	src/modules/mobility/traci/TraCIScenarioManager.h \
+	src/modules/obstacle/Obstacle.h \
+	src/modules/obstacle/ObstacleControl.h \
+	src/modules/utility/Consts80211p.h \
+	src/modules/world/annotations/AnnotationManager.h
+$O/src/modules/application/traci/VADDRSU11p.o: src/modules/application/traci/VADDRSU11p.cc \
+	src/base/connectionManager/BaseConnectionManager.h \
+	src/base/connectionManager/ChannelAccess.h \
+	src/base/connectionManager/ConnectionManager.h \
+	src/base/connectionManager/NicEntry.h \
+	src/base/modules/BaseApplLayer.h \
+	src/base/modules/BaseBattery.h \
+	src/base/modules/BaseLayer.h \
+	src/base/modules/BaseMobility.h \
+	src/base/modules/BaseModule.h \
+	src/base/modules/BaseWorldUtility.h \
+	src/base/modules/BatteryAccess.h \
+	src/base/utils/FindModule.h \
+	src/base/utils/HostState.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/Move.h \
+	src/base/utils/NetwToMacControlInfo.h \
+	src/base/utils/PassedMessage.h \
+	src/base/utils/SimpleAddress.h \
+	src/base/utils/miximkerneldefs.h \
+	src/inet/Coord.h \
+	src/inet/FWMath.h \
+	src/modules/application/ieee80211p/VADDBaseWaveApplLayer.h \
+	src/modules/application/traci/VADDRSU11p.h \
+	src/modules/mac/ieee80211p/Allpairs_Shortest_Path.h \
+	src/modules/mac/ieee80211p/NetLane_Linear_Algebra.h \
+	src/modules/mac/ieee80211p/NetlaneGraphStruct.h \
+	src/modules/mac/ieee80211p/ReadFile.h \
+	src/modules/mac/ieee80211p/RoadGraph.h \
+	src/modules/mac/ieee80211p/WaveAppToMac1609_4Interface.h \
+	src/modules/messages/VRTandPKT_m.h \
+	src/modules/mobility/traci/TraCIBuffer.h \
+	src/modules/mobility/traci/TraCIColor.h \
+	src/modules/mobility/traci/TraCICommandInterface.h \
+	src/modules/mobility/traci/TraCIConnection.h \
+	src/modules/mobility/traci/TraCICoord.h \
+	src/modules/mobility/traci/TraCIMobility.h \
+	src/modules/mobility/traci/TraCIScenarioManager.h \
+	src/modules/obstacle/Obstacle.h \
+	src/modules/obstacle/ObstacleControl.h \
+	src/modules/utility/Consts80211p.h \
+	src/modules/world/annotations/AnnotationManager.h
+$O/src/modules/mac/ieee80211p/Allpairs_Shortest_Path.o: src/modules/mac/ieee80211p/Allpairs_Shortest_Path.cc \
+	src/modules/mac/ieee80211p/Allpairs_Shortest_Path.h \
+	src/modules/mac/ieee80211p/NetlaneGraphStruct.h \
+	src/modules/mac/ieee80211p/ReadFile.h \
+	src/modules/mac/ieee80211p/RoadGraph.h
+$O/src/modules/mac/ieee80211p/Mac1609_4.o: src/modules/mac/ieee80211p/Mac1609_4.cc \
+	src/base/connectionManager/BaseConnectionManager.h \
+	src/base/connectionManager/ChannelAccess.h \
+	src/base/connectionManager/ConnectionManager.h \
+	src/base/connectionManager/NicEntry.h \
+	src/base/messages/AirFrame_m.h \
+	src/base/messages/ChannelSenseRequest_m.h \
+	src/base/messages/MacPkt_m.h \
+	src/base/modules/BaseApplLayer.h \
+	src/base/modules/BaseBattery.h \
+	src/base/modules/BaseLayer.h \
+	src/base/modules/BaseMacLayer.h \
+	src/base/modules/BaseMobility.h \
+	src/base/modules/BaseModule.h \
+	src/base/modules/BaseWorldUtility.h \
+	src/base/modules/BatteryAccess.h \
+	src/base/phyLayer/AnalogueModel.h \
+	src/base/phyLayer/BaseDecider.h \
+	src/base/phyLayer/BasePhyLayer.h \
+	src/base/phyLayer/ChannelInfo.h \
+	src/base/phyLayer/ChannelState.h \
+	src/base/phyLayer/Decider.h \
+	src/base/phyLayer/DeciderToPhyInterface.h \
+	src/base/phyLayer/Interpolation.h \
+	src/base/phyLayer/MacToPhyControlInfo.h \
+	src/base/phyLayer/MacToPhyInterface.h \
+	src/base/phyLayer/Mapping.h \
+	src/base/phyLayer/MappingBase.h \
+	src/base/phyLayer/MappingUtils.h \
+	src/base/phyLayer/PhyUtils.h \
+	src/base/phyLayer/Signal_.h \
+	src/base/utils/FindModule.h \
+	src/base/utils/HostState.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/Move.h \
+	src/base/utils/NetwToMacControlInfo.h \
+	src/base/utils/PassedMessage.h \
+	src/base/utils/SimpleAddress.h \
+	src/base/utils/miximkerneldefs.h \
+	src/inet/Coord.h \
+	src/inet/FWMath.h \
+	src/modules/analogueModel/JakesFading.h \
+	src/modules/analogueModel/LogNormalShadowing.h \
+	src/modules/analogueModel/SimplePathlossModel.h \
+	src/modules/application/ieee80211p/VADDBaseWaveApplLayer.h \
+	src/modules/application/traci/VADD11p.h \
+	src/modules/application/traci/VADDRSU11p.h \
+	src/modules/mac/ieee80211p/Allpairs_Shortest_Path.h \
+	src/modules/mac/ieee80211p/Mac1609_4.h \
+	src/modules/mac/ieee80211p/Mac80211pToPhy11pInterface.h \
+	src/modules/mac/ieee80211p/NetLane_Linear_Algebra.h \
+	src/modules/mac/ieee80211p/NetlaneGraphStruct.h \
+	src/modules/mac/ieee80211p/ReadFile.h \
+	src/modules/mac/ieee80211p/RoadGraph.h \
+	src/modules/mac/ieee80211p/WaveAppToMac1609_4Interface.h \
+	src/modules/messages/Mac80211Pkt_m.h \
+	src/modules/messages/VRTandPKT_m.h \
+	src/modules/mobility/traci/TraCIBuffer.h \
+	src/modules/mobility/traci/TraCIColor.h \
+	src/modules/mobility/traci/TraCICommandInterface.h \
+	src/modules/mobility/traci/TraCIConnection.h \
+	src/modules/mobility/traci/TraCICoord.h \
+	src/modules/mobility/traci/TraCIMobility.h \
+	src/modules/mobility/traci/TraCIScenarioManager.h \
+	src/modules/obstacle/Obstacle.h \
+	src/modules/obstacle/ObstacleControl.h \
+	src/modules/phy/Decider80211p.h \
+	src/modules/phy/Decider80211pToPhy80211pInterface.h \
+	src/modules/phy/PhyLayer80211p.h \
+	src/modules/phy/SNRThresholdDecider.h \
+	src/modules/utility/Consts80211p.h \
+	src/modules/world/annotations/AnnotationManager.h
+$O/src/modules/mac/ieee80211p/Mac1609_4_orig.o: src/modules/mac/ieee80211p/Mac1609_4_orig.cc
+$O/src/modules/mac/ieee80211p/NetLane_Linear_Algebra.o: src/modules/mac/ieee80211p/NetLane_Linear_Algebra.cc \
+	src/modules/mac/ieee80211p/Allpairs_Shortest_Path.h \
+	src/modules/mac/ieee80211p/NetLane_Linear_Algebra.h \
+	src/modules/mac/ieee80211p/NetlaneGraphStruct.h \
+	src/modules/mac/ieee80211p/ReadFile.h \
+	src/modules/mac/ieee80211p/RoadGraph.h
+$O/src/modules/mac/ieee80211p/ReadFile.o: src/modules/mac/ieee80211p/ReadFile.cc \
+	src/modules/mac/ieee80211p/ReadFile.h
+$O/src/modules/mac/ieee80211p/RoadGraph.o: src/modules/mac/ieee80211p/RoadGraph.cc \
+	src/modules/mac/ieee80211p/NetlaneGraphStruct.h \
+	src/modules/mac/ieee80211p/ReadFile.h \
+	src/modules/mac/ieee80211p/RoadGraph.h
+$O/src/modules/messages/AirFrame11p_m.o: src/modules/messages/AirFrame11p_m.cc \
+	src/base/messages/AirFrame_m.h \
+	src/base/phyLayer/Interpolation.h \
+	src/base/phyLayer/Mapping.h \
+	src/base/phyLayer/MappingBase.h \
+	src/base/phyLayer/MappingUtils.h \
+	src/base/phyLayer/Signal_.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/miximkerneldefs.h \
+	src/modules/messages/AirFrame11p_m.h
+$O/src/modules/messages/Junct_Vehicles_m.o: src/modules/messages/Junct_Vehicles_m.cc \
+	src/modules/messages/Junct_Vehicles_m.h
+$O/src/modules/messages/Mac80211Pkt_m.o: src/modules/messages/Mac80211Pkt_m.cc \
+	src/base/messages/MacPkt_m.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/SimpleAddress.h \
+	src/base/utils/miximkerneldefs.h \
+	src/inet/Coord.h \
+	src/inet/FWMath.h \
+	src/modules/messages/Mac80211Pkt_m.h
+$O/src/modules/messages/Mac80211Pkt_m_orig.o: src/modules/messages/Mac80211Pkt_m_orig.cc
+$O/src/modules/messages/Mac80211Pkt_orig_m.o: src/modules/messages/Mac80211Pkt_orig_m.cc \
+	src/modules/messages/Mac80211Pkt_orig_m.h
+$O/src/modules/messages/Previous_VRTandPKT_m.o: src/modules/messages/Previous_VRTandPKT_m.cc \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/miximkerneldefs.h \
+	src/inet/Coord.h \
+	src/inet/FWMath.h \
+	src/modules/messages/Previous_VRTandPKT_m.h
+$O/src/modules/messages/VRTandPKT_m.o: src/modules/messages/VRTandPKT_m.cc \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/miximkerneldefs.h \
+	src/inet/Coord.h \
+	src/inet/FWMath.h \
+	src/modules/messages/VRTandPKT_m.h
+$O/src/modules/messages/Vehicle_Routing_Table_m.o: src/modules/messages/Vehicle_Routing_Table_m.cc \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/miximkerneldefs.h \
+	src/inet/Coord.h \
+	src/inet/FWMath.h \
+	src/modules/messages/Vehicle_Routing_Table_m.h
+$O/src/modules/messages/WaveShortMessage_m.o: src/modules/messages/WaveShortMessage_m.cc \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/miximkerneldefs.h \
+	src/inet/Coord.h \
+	src/inet/FWMath.h \
+	src/modules/messages/WaveShortMessage_m.h
+$O/src/modules/messages/packetToSend_m.o: src/modules/messages/packetToSend_m.cc \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/miximkerneldefs.h \
+	src/inet/Coord.h \
+	src/inet/FWMath.h \
+	src/modules/messages/packetToSend_m.h
+$O/src/modules/messages/pkAck_m.o: src/modules/messages/pkAck_m.cc \
+	src/modules/messages/pkAck_m.h
+$O/src/modules/mobility/traci/TraCIBuffer.o: src/modules/mobility/traci/TraCIBuffer.cc \
+	src/modules/mobility/traci/TraCIBuffer.h \
+	src/modules/mobility/traci/TraCIConstants.h \
+	src/modules/mobility/traci/TraCICoord.h
+$O/src/modules/mobility/traci/TraCIColor.o: src/modules/mobility/traci/TraCIColor.cc \
+	src/modules/mobility/traci/TraCIColor.h
+$O/src/modules/mobility/traci/TraCICommandInterface.o: src/modules/mobility/traci/TraCICommandInterface.cc \
+	src/modules/mobility/traci/TraCIBuffer.h \
+	src/modules/mobility/traci/TraCIColor.h \
+	src/modules/mobility/traci/TraCICommandInterface.h \
+	src/modules/mobility/traci/TraCIConnection.h \
+	src/modules/mobility/traci/TraCIConstants.h \
+	src/modules/mobility/traci/TraCICoord.h
+$O/src/modules/mobility/traci/TraCIConnection.o: src/modules/mobility/traci/TraCIConnection.cc \
+	src/modules/mobility/traci/TraCIBuffer.h \
+	src/modules/mobility/traci/TraCIConnection.h \
+	src/modules/mobility/traci/TraCIConstants.h
+$O/src/modules/mobility/traci/TraCIMobility.o: src/modules/mobility/traci/TraCIMobility.cc \
+	src/base/connectionManager/BaseConnectionManager.h \
+	src/base/connectionManager/ConnectionManager.h \
+	src/base/connectionManager/NicEntry.h \
+	src/base/modules/BaseBattery.h \
+	src/base/modules/BaseMobility.h \
+	src/base/modules/BaseModule.h \
+	src/base/modules/BaseWorldUtility.h \
+	src/base/modules/BatteryAccess.h \
+	src/base/utils/FindModule.h \
+	src/base/utils/HostState.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/Move.h \
+	src/base/utils/miximkerneldefs.h \
+	src/inet/Coord.h \
+	src/inet/FWMath.h \
+	src/modules/mobility/traci/TraCIBuffer.h \
+	src/modules/mobility/traci/TraCIColor.h \
+	src/modules/mobility/traci/TraCICommandInterface.h \
+	src/modules/mobility/traci/TraCIConnection.h \
+	src/modules/mobility/traci/TraCICoord.h \
+	src/modules/mobility/traci/TraCIMobility.h \
+	src/modules/mobility/traci/TraCIScenarioManager.h \
+	src/modules/obstacle/Obstacle.h \
+	src/modules/obstacle/ObstacleControl.h \
+	src/modules/world/annotations/AnnotationManager.h
+$O/src/modules/mobility/traci/TraCIScenarioManager.o: src/modules/mobility/traci/TraCIScenarioManager.cc \
+	src/base/connectionManager/BaseConnectionManager.h \
+	src/base/connectionManager/ConnectionManager.h \
+	src/base/connectionManager/NicEntry.h \
+	src/base/modules/BaseBattery.h \
+	src/base/modules/BaseMobility.h \
+	src/base/modules/BaseModule.h \
+	src/base/modules/BaseWorldUtility.h \
+	src/base/modules/BatteryAccess.h \
+	src/base/utils/FindModule.h \
+	src/base/utils/HostState.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/Move.h \
+	src/base/utils/miximkerneldefs.h \
+	src/inet/Coord.h \
+	src/inet/FWMath.h \
+	src/modules/mobility/traci/TraCIBuffer.h \
+	src/modules/mobility/traci/TraCIColor.h \
+	src/modules/mobility/traci/TraCICommandInterface.h \
+	src/modules/mobility/traci/TraCIConnection.h \
+	src/modules/mobility/traci/TraCIConstants.h \
+	src/modules/mobility/traci/TraCICoord.h \
+	src/modules/mobility/traci/TraCIMobility.h \
+	src/modules/mobility/traci/TraCIScenarioManager.h \
+	src/modules/mobility/traci/TraCIScenarioManagerInet.h \
+	src/modules/obstacle/Obstacle.h \
+	src/modules/obstacle/ObstacleControl.h \
+	src/modules/world/annotations/AnnotationManager.h
+$O/src/modules/mobility/traci/TraCIScenarioManagerInet.o: src/modules/mobility/traci/TraCIScenarioManagerInet.cc \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/miximkerneldefs.h \
+	src/inet/Coord.h \
+	src/inet/FWMath.h
+$O/src/modules/mobility/traci/TraCIScenarioManagerLaunchd.o: src/modules/mobility/traci/TraCIScenarioManagerLaunchd.cc \
+	src/base/connectionManager/BaseConnectionManager.h \
+	src/base/connectionManager/ConnectionManager.h \
+	src/base/connectionManager/NicEntry.h \
+	src/base/modules/BaseWorldUtility.h \
+	src/base/utils/FindModule.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/miximkerneldefs.h \
+	src/inet/Coord.h \
+	src/inet/FWMath.h \
+	src/modules/mobility/traci/TraCIBuffer.h \
+	src/modules/mobility/traci/TraCIColor.h \
+	src/modules/mobility/traci/TraCICommandInterface.h \
+	src/modules/mobility/traci/TraCIConnection.h \
+	src/modules/mobility/traci/TraCIConstants.h \
+	src/modules/mobility/traci/TraCICoord.h \
+	src/modules/mobility/traci/TraCIScenarioManager.h \
+	src/modules/mobility/traci/TraCIScenarioManagerLaunchd.h \
+	src/modules/obstacle/Obstacle.h \
+	src/modules/obstacle/ObstacleControl.h \
+	src/modules/world/annotations/AnnotationManager.h
+$O/src/modules/mobility/traci/TraCIScenarioManager_Original.o: src/modules/mobility/traci/TraCIScenarioManager_Original.cc
+$O/src/modules/mobility/traci/TraCIScenarioManager_TMAC.o: src/modules/mobility/traci/TraCIScenarioManager_TMAC.cc
+$O/src/modules/obstacle/Obstacle.o: src/modules/obstacle/Obstacle.cc \
+	src/base/utils/FindModule.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/miximkerneldefs.h \
+	src/inet/Coord.h \
+	src/inet/FWMath.h \
+	src/modules/obstacle/Obstacle.h \
+	src/modules/world/annotations/AnnotationManager.h
+$O/src/modules/obstacle/ObstacleControl.o: src/modules/obstacle/ObstacleControl.cc \
+	src/base/utils/FindModule.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/miximkerneldefs.h \
+	src/inet/Coord.h \
+	src/inet/FWMath.h \
+	src/modules/obstacle/Obstacle.h \
+	src/modules/obstacle/ObstacleControl.h \
+	src/modules/world/annotations/AnnotationManager.h
+$O/src/modules/phy/Decider80211p.o: src/modules/phy/Decider80211p.cc \
+	src/base/messages/AirFrame_m.h \
+	src/base/messages/ChannelSenseRequest_m.h \
+	src/base/messages/MacPkt_m.h \
+	src/base/phyLayer/AnalogueModel.h \
+	src/base/phyLayer/BaseDecider.h \
+	src/base/phyLayer/ChannelState.h \
+	src/base/phyLayer/Decider.h \
+	src/base/phyLayer/DeciderToPhyInterface.h \
+	src/base/phyLayer/Interpolation.h \
+	src/base/phyLayer/MacToPhyInterface.h \
+	src/base/phyLayer/Mapping.h \
+	src/base/phyLayer/MappingBase.h \
+	src/base/phyLayer/MappingUtils.h \
+	src/base/phyLayer/PhyUtils.h \
+	src/base/phyLayer/Signal_.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/SimpleAddress.h \
+	src/base/utils/miximkerneldefs.h \
+	src/inet/Coord.h \
+	src/inet/FWMath.h \
+	src/modules/mac/ieee80211p/Mac80211pToPhy11pInterface.h \
+	src/modules/messages/AirFrame11p_m.h \
+	src/modules/messages/Mac80211Pkt_m.h \
+	src/modules/phy/Decider80211p.h \
+	src/modules/phy/Decider80211pToPhy80211pInterface.h \
+	src/modules/phy/DeciderResult80211.h \
+	src/modules/utility/Consts80211p.h
+$O/src/modules/phy/PhyLayer80211p.o: src/modules/phy/PhyLayer80211p.cc \
+	src/base/connectionManager/BaseConnectionManager.h \
+	src/base/connectionManager/ChannelAccess.h \
+	src/base/connectionManager/NicEntry.h \
+	src/base/messages/AirFrame_m.h \
+	src/base/messages/ChannelSenseRequest_m.h \
+	src/base/modules/BaseBattery.h \
+	src/base/modules/BaseMobility.h \
+	src/base/modules/BaseModule.h \
+	src/base/modules/BaseWorldUtility.h \
+	src/base/modules/BatteryAccess.h \
+	src/base/phyLayer/AnalogueModel.h \
+	src/base/phyLayer/BaseDecider.h \
+	src/base/phyLayer/BasePhyLayer.h \
+	src/base/phyLayer/ChannelInfo.h \
+	src/base/phyLayer/ChannelState.h \
+	src/base/phyLayer/Decider.h \
+	src/base/phyLayer/DeciderToPhyInterface.h \
+	src/base/phyLayer/Interpolation.h \
+	src/base/phyLayer/MacToPhyControlInfo.h \
+	src/base/phyLayer/MacToPhyInterface.h \
+	src/base/phyLayer/Mapping.h \
+	src/base/phyLayer/MappingBase.h \
+	src/base/phyLayer/MappingUtils.h \
+	src/base/phyLayer/PhyUtils.h \
+	src/base/phyLayer/Signal_.h \
+	src/base/utils/FindModule.h \
+	src/base/utils/HostState.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/Move.h \
+	src/base/utils/miximkerneldefs.h \
+	src/inet/Coord.h \
+	src/inet/FWMath.h \
+	src/modules/analogueModel/BreakpointPathlossModel.h \
+	src/modules/analogueModel/JakesFading.h \
+	src/modules/analogueModel/LogNormalShadowing.h \
+	src/modules/analogueModel/PERModel.h \
+	src/modules/analogueModel/SimpleObstacleShadowing.h \
+	src/modules/analogueModel/SimplePathlossModel.h \
+	src/modules/analogueModel/TwoRayInterferenceModel.h \
+	src/modules/mac/ieee80211p/Mac80211pToPhy11pInterface.h \
+	src/modules/messages/AirFrame11p_m.h \
+	src/modules/obstacle/Obstacle.h \
+	src/modules/obstacle/ObstacleControl.h \
+	src/modules/phy/Decider80211p.h \
+	src/modules/phy/Decider80211pToPhy80211pInterface.h \
+	src/modules/phy/PhyLayer80211p.h \
+	src/modules/phy/SNRThresholdDecider.h \
+	src/modules/utility/Consts80211p.h \
+	src/modules/world/annotations/AnnotationManager.h
+$O/src/modules/phy/SNRThresholdDecider.o: src/modules/phy/SNRThresholdDecider.cc \
+	src/base/messages/AirFrame_m.h \
+	src/base/messages/ChannelSenseRequest_m.h \
+	src/base/phyLayer/BaseDecider.h \
+	src/base/phyLayer/ChannelState.h \
+	src/base/phyLayer/Decider.h \
+	src/base/phyLayer/DeciderToPhyInterface.h \
+	src/base/phyLayer/Interpolation.h \
+	src/base/phyLayer/Mapping.h \
+	src/base/phyLayer/MappingBase.h \
+	src/base/phyLayer/MappingUtils.h \
+	src/base/phyLayer/Signal_.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/miximkerneldefs.h \
+	src/modules/phy/SNRThresholdDecider.h
+$O/src/modules/world/annotations/AnnotationDummy.o: src/modules/world/annotations/AnnotationDummy.cc \
+	src/modules/world/annotations/AnnotationDummy.h
+$O/src/modules/world/annotations/AnnotationManager.o: src/modules/world/annotations/AnnotationManager.cc \
+	src/base/connectionManager/BaseConnectionManager.h \
+	src/base/connectionManager/ConnectionManager.h \
+	src/base/connectionManager/NicEntry.h \
+	src/base/modules/BaseWorldUtility.h \
+	src/base/utils/FindModule.h \
+	src/base/utils/MiXiMDefs.h \
+	src/base/utils/miximkerneldefs.h \
+	src/inet/Coord.h \
+	src/inet/FWMath.h \
+	src/modules/mobility/traci/TraCIBuffer.h \
+	src/modules/mobility/traci/TraCIColor.h \
+	src/modules/mobility/traci/TraCICommandInterface.h \
+	src/modules/mobility/traci/TraCIConnection.h \
+	src/modules/mobility/traci/TraCICoord.h \
+	src/modules/mobility/traci/TraCIScenarioManager.h \
+	src/modules/obstacle/Obstacle.h \
+	src/modules/obstacle/ObstacleControl.h \
+	src/modules/world/annotations/AnnotationManager.h
+

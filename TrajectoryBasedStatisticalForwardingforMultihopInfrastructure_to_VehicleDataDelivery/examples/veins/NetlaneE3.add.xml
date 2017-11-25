@@ -1,0 +1,1722 @@
+<additional>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_0/1_0/0to0/1">
+		<detEntry lane="1/0to0/0_0" pos="0.1"/>
+		<detEntry lane="1/0to0/0_1" pos="0.1"/>
+		<detEntry lane="1/0to0/0_2" pos="0.1"/>
+		<detEntry lane="0/1to0/0_0" pos="0.1"/>
+		<detEntry lane="0/1to0/0_1" pos="0.1"/>
+		<detEntry lane="0/1to0/0_2" pos="0.1"/>
+		<detExit lane="0/0to0/1_0" pos="-.1"/>
+		<detExit lane="0/0to0/1_1" pos="-.1"/>
+		<detExit lane="0/0to0/1_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_0/1_0/2to0/1">
+		<detEntry lane="0/2to0/1_0" pos="0.1"/>
+		<detEntry lane="0/2to0/1_1" pos="0.1"/>
+		<detEntry lane="0/2to0/1_2" pos="0.1"/>
+		<detExit lane="0/2to0/1_0" pos="-.1"/>
+		<detExit lane="0/2to0/1_1" pos="-.1"/>
+		<detExit lane="0/2to0/1_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_0/1_1/1to0/1">
+		<detEntry lane="1/1to0/1_0" pos="0.1"/>
+		<detEntry lane="1/1to0/1_1" pos="0.1"/>
+		<detEntry lane="1/1to0/1_2" pos="0.1"/>
+		<detExit lane="1/1to0/1_0" pos="-.1"/>
+		<detExit lane="1/1to0/1_1" pos="-.1"/>
+		<detExit lane="1/1to0/1_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_1/0_0/0to1/0">
+		<detEntry lane="1/0to0/0_0" pos="0.1"/>
+		<detEntry lane="1/0to0/0_1" pos="0.1"/>
+		<detEntry lane="1/0to0/0_2" pos="0.1"/>
+		<detEntry lane="0/1to0/0_0" pos="0.1"/>
+		<detEntry lane="0/1to0/0_1" pos="0.1"/>
+		<detEntry lane="0/1to0/0_2" pos="0.1"/>
+		<detExit lane="0/0to1/0_0" pos="-.1"/>
+		<detExit lane="0/0to1/0_1" pos="-.1"/>
+		<detExit lane="0/0to1/0_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_1/0_1/1to1/0">
+		<detEntry lane="1/1to1/0_0" pos="0.1"/>
+		<detEntry lane="1/1to1/0_1" pos="0.1"/>
+		<detEntry lane="1/1to1/0_2" pos="0.1"/>
+		<detExit lane="1/1to1/0_0" pos="-.1"/>
+		<detExit lane="1/1to1/0_1" pos="-.1"/>
+		<detExit lane="1/1to1/0_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_1/0_2/0to1/0">
+		<detEntry lane="2/0to1/0_0" pos="0.1"/>
+		<detEntry lane="2/0to1/0_1" pos="0.1"/>
+		<detEntry lane="2/0to1/0_2" pos="0.1"/>
+		<detExit lane="2/0to1/0_0" pos="-.1"/>
+		<detExit lane="2/0to1/0_1" pos="-.1"/>
+		<detExit lane="2/0to1/0_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_0/2_0/1to0/2">
+		<detEntry lane="0/1to0/2_0" pos="0.1"/>
+		<detEntry lane="0/1to0/2_1" pos="0.1"/>
+		<detEntry lane="0/1to0/2_2" pos="0.1"/>
+		<detExit lane="0/1to0/2_0" pos="-.1"/>
+		<detExit lane="0/1to0/2_1" pos="-.1"/>
+		<detExit lane="0/1to0/2_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_0/2_0/3to0/2">
+		<detEntry lane="0/3to0/2_0" pos="0.1"/>
+		<detEntry lane="0/3to0/2_1" pos="0.1"/>
+		<detEntry lane="0/3to0/2_2" pos="0.1"/>
+		<detExit lane="0/3to0/2_0" pos="-.1"/>
+		<detExit lane="0/3to0/2_1" pos="-.1"/>
+		<detExit lane="0/3to0/2_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_0/2_1/2to0/2">
+		<detEntry lane="1/2to0/2_0" pos="0.1"/>
+		<detEntry lane="1/2to0/2_1" pos="0.1"/>
+		<detEntry lane="1/2to0/2_2" pos="0.1"/>
+		<detExit lane="1/2to0/2_0" pos="-.1"/>
+		<detExit lane="1/2to0/2_1" pos="-.1"/>
+		<detExit lane="1/2to0/2_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_1/1_0/1to1/1">
+		<detEntry lane="0/1to1/1_0" pos="0.1"/>
+		<detEntry lane="0/1to1/1_1" pos="0.1"/>
+		<detEntry lane="0/1to1/1_2" pos="0.1"/>
+		<detExit lane="0/1to1/1_0" pos="-.1"/>
+		<detExit lane="0/1to1/1_1" pos="-.1"/>
+		<detExit lane="0/1to1/1_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_1/1_1/0to1/1">
+		<detEntry lane="1/0to1/1_0" pos="0.1"/>
+		<detEntry lane="1/0to1/1_1" pos="0.1"/>
+		<detEntry lane="1/0to1/1_2" pos="0.1"/>
+		<detExit lane="1/0to1/1_0" pos="-.1"/>
+		<detExit lane="1/0to1/1_1" pos="-.1"/>
+		<detExit lane="1/0to1/1_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_1/1_1/2to1/1">
+		<detEntry lane="1/2to1/1_0" pos="0.1"/>
+		<detEntry lane="1/2to1/1_1" pos="0.1"/>
+		<detEntry lane="1/2to1/1_2" pos="0.1"/>
+		<detExit lane="1/2to1/1_0" pos="-.1"/>
+		<detExit lane="1/2to1/1_1" pos="-.1"/>
+		<detExit lane="1/2to1/1_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_1/1_2/1to1/1">
+		<detEntry lane="2/1to1/1_0" pos="0.1"/>
+		<detEntry lane="2/1to1/1_1" pos="0.1"/>
+		<detEntry lane="2/1to1/1_2" pos="0.1"/>
+		<detExit lane="2/1to1/1_0" pos="-.1"/>
+		<detExit lane="2/1to1/1_1" pos="-.1"/>
+		<detExit lane="2/1to1/1_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_0/3_0/2to0/3">
+		<detEntry lane="0/2to0/3_0" pos="0.1"/>
+		<detEntry lane="0/2to0/3_1" pos="0.1"/>
+		<detEntry lane="0/2to0/3_2" pos="0.1"/>
+		<detExit lane="0/2to0/3_0" pos="-.1"/>
+		<detExit lane="0/2to0/3_1" pos="-.1"/>
+		<detExit lane="0/2to0/3_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_0/3_0/4to0/3">
+		<detEntry lane="0/4to0/3_0" pos="0.1"/>
+		<detEntry lane="0/4to0/3_1" pos="0.1"/>
+		<detEntry lane="0/4to0/3_2" pos="0.1"/>
+		<detExit lane="0/4to0/3_0" pos="-.1"/>
+		<detExit lane="0/4to0/3_1" pos="-.1"/>
+		<detExit lane="0/4to0/3_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_0/3_1/3to0/3">
+		<detEntry lane="1/3to0/3_0" pos="0.1"/>
+		<detEntry lane="1/3to0/3_1" pos="0.1"/>
+		<detEntry lane="1/3to0/3_2" pos="0.1"/>
+		<detExit lane="1/3to0/3_0" pos="-.1"/>
+		<detExit lane="1/3to0/3_1" pos="-.1"/>
+		<detExit lane="1/3to0/3_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_1/2_0/2to1/2">
+		<detEntry lane="0/2to1/2_0" pos="0.1"/>
+		<detEntry lane="0/2to1/2_1" pos="0.1"/>
+		<detEntry lane="0/2to1/2_2" pos="0.1"/>
+		<detExit lane="0/2to1/2_0" pos="-.1"/>
+		<detExit lane="0/2to1/2_1" pos="-.1"/>
+		<detExit lane="0/2to1/2_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_1/2_1/1to1/2">
+		<detEntry lane="1/1to1/2_0" pos="0.1"/>
+		<detEntry lane="1/1to1/2_1" pos="0.1"/>
+		<detEntry lane="1/1to1/2_2" pos="0.1"/>
+		<detExit lane="1/1to1/2_0" pos="-.1"/>
+		<detExit lane="1/1to1/2_1" pos="-.1"/>
+		<detExit lane="1/1to1/2_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_1/2_1/3to1/2">
+		<detEntry lane="1/3to1/2_0" pos="0.1"/>
+		<detEntry lane="1/3to1/2_1" pos="0.1"/>
+		<detEntry lane="1/3to1/2_2" pos="0.1"/>
+		<detExit lane="1/3to1/2_0" pos="-.1"/>
+		<detExit lane="1/3to1/2_1" pos="-.1"/>
+		<detExit lane="1/3to1/2_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_1/2_2/2to1/2">
+		<detEntry lane="2/2to1/2_0" pos="0.1"/>
+		<detEntry lane="2/2to1/2_1" pos="0.1"/>
+		<detEntry lane="2/2to1/2_2" pos="0.1"/>
+		<detExit lane="2/2to1/2_0" pos="-.1"/>
+		<detExit lane="2/2to1/2_1" pos="-.1"/>
+		<detExit lane="2/2to1/2_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_0/4_0/3to0/4">
+		<detEntry lane="0/3to0/4_0" pos="0.1"/>
+		<detEntry lane="0/3to0/4_1" pos="0.1"/>
+		<detEntry lane="0/3to0/4_2" pos="0.1"/>
+		<detExit lane="0/3to0/4_0" pos="-.1"/>
+		<detExit lane="0/3to0/4_1" pos="-.1"/>
+		<detExit lane="0/3to0/4_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_0/4_0/5to0/4">
+		<detEntry lane="0/5to0/4_0" pos="0.1"/>
+		<detEntry lane="0/5to0/4_1" pos="0.1"/>
+		<detEntry lane="0/5to0/4_2" pos="0.1"/>
+		<detExit lane="0/5to0/4_0" pos="-.1"/>
+		<detExit lane="0/5to0/4_1" pos="-.1"/>
+		<detExit lane="0/5to0/4_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_0/4_1/4to0/4">
+		<detEntry lane="1/4to0/4_0" pos="0.1"/>
+		<detEntry lane="1/4to0/4_1" pos="0.1"/>
+		<detEntry lane="1/4to0/4_2" pos="0.1"/>
+		<detExit lane="1/4to0/4_0" pos="-.1"/>
+		<detExit lane="1/4to0/4_1" pos="-.1"/>
+		<detExit lane="1/4to0/4_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_1/3_0/3to1/3">
+		<detEntry lane="0/3to1/3_0" pos="0.1"/>
+		<detEntry lane="0/3to1/3_1" pos="0.1"/>
+		<detEntry lane="0/3to1/3_2" pos="0.1"/>
+		<detExit lane="0/3to1/3_0" pos="-.1"/>
+		<detExit lane="0/3to1/3_1" pos="-.1"/>
+		<detExit lane="0/3to1/3_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_1/3_1/2to1/3">
+		<detEntry lane="1/2to1/3_0" pos="0.1"/>
+		<detEntry lane="1/2to1/3_1" pos="0.1"/>
+		<detEntry lane="1/2to1/3_2" pos="0.1"/>
+		<detExit lane="1/2to1/3_0" pos="-.1"/>
+		<detExit lane="1/2to1/3_1" pos="-.1"/>
+		<detExit lane="1/2to1/3_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_1/3_1/4to1/3">
+		<detEntry lane="1/4to1/3_0" pos="0.1"/>
+		<detEntry lane="1/4to1/3_1" pos="0.1"/>
+		<detEntry lane="1/4to1/3_2" pos="0.1"/>
+		<detExit lane="1/4to1/3_0" pos="-.1"/>
+		<detExit lane="1/4to1/3_1" pos="-.1"/>
+		<detExit lane="1/4to1/3_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_1/3_2/3to1/3">
+		<detEntry lane="2/3to1/3_0" pos="0.1"/>
+		<detEntry lane="2/3to1/3_1" pos="0.1"/>
+		<detEntry lane="2/3to1/3_2" pos="0.1"/>
+		<detExit lane="2/3to1/3_0" pos="-.1"/>
+		<detExit lane="2/3to1/3_1" pos="-.1"/>
+		<detExit lane="2/3to1/3_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_0/5_0/4to0/5">
+		<detEntry lane="0/4to0/5_0" pos="0.1"/>
+		<detEntry lane="0/4to0/5_1" pos="0.1"/>
+		<detEntry lane="0/4to0/5_2" pos="0.1"/>
+		<detExit lane="0/4to0/5_0" pos="-.1"/>
+		<detExit lane="0/4to0/5_1" pos="-.1"/>
+		<detExit lane="0/4to0/5_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_0/5_0/6to0/5">
+		<detEntry lane="0/6to0/5_0" pos="0.1"/>
+		<detEntry lane="0/6to0/5_1" pos="0.1"/>
+		<detEntry lane="0/6to0/5_2" pos="0.1"/>
+		<detExit lane="0/6to0/5_0" pos="-.1"/>
+		<detExit lane="0/6to0/5_1" pos="-.1"/>
+		<detExit lane="0/6to0/5_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_0/5_1/5to0/5">
+		<detEntry lane="1/5to0/5_0" pos="0.1"/>
+		<detEntry lane="1/5to0/5_1" pos="0.1"/>
+		<detEntry lane="1/5to0/5_2" pos="0.1"/>
+		<detExit lane="1/5to0/5_0" pos="-.1"/>
+		<detExit lane="1/5to0/5_1" pos="-.1"/>
+		<detExit lane="1/5to0/5_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_1/4_0/4to1/4">
+		<detEntry lane="0/4to1/4_0" pos="0.1"/>
+		<detEntry lane="0/4to1/4_1" pos="0.1"/>
+		<detEntry lane="0/4to1/4_2" pos="0.1"/>
+		<detExit lane="0/4to1/4_0" pos="-.1"/>
+		<detExit lane="0/4to1/4_1" pos="-.1"/>
+		<detExit lane="0/4to1/4_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_1/4_1/3to1/4">
+		<detEntry lane="1/3to1/4_0" pos="0.1"/>
+		<detEntry lane="1/3to1/4_1" pos="0.1"/>
+		<detEntry lane="1/3to1/4_2" pos="0.1"/>
+		<detExit lane="1/3to1/4_0" pos="-.1"/>
+		<detExit lane="1/3to1/4_1" pos="-.1"/>
+		<detExit lane="1/3to1/4_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_1/4_1/5to1/4">
+		<detEntry lane="1/5to1/4_0" pos="0.1"/>
+		<detEntry lane="1/5to1/4_1" pos="0.1"/>
+		<detEntry lane="1/5to1/4_2" pos="0.1"/>
+		<detExit lane="1/5to1/4_0" pos="-.1"/>
+		<detExit lane="1/5to1/4_1" pos="-.1"/>
+		<detExit lane="1/5to1/4_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_1/4_2/4to1/4">
+		<detEntry lane="2/4to1/4_0" pos="0.1"/>
+		<detEntry lane="2/4to1/4_1" pos="0.1"/>
+		<detEntry lane="2/4to1/4_2" pos="0.1"/>
+		<detExit lane="2/4to1/4_0" pos="-.1"/>
+		<detExit lane="2/4to1/4_1" pos="-.1"/>
+		<detExit lane="2/4to1/4_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_0/6_0/5to0/6">
+		<detEntry lane="0/5to0/6_0" pos="0.1"/>
+		<detEntry lane="0/5to0/6_1" pos="0.1"/>
+		<detEntry lane="0/5to0/6_2" pos="0.1"/>
+		<detExit lane="0/5to0/6_0" pos="-.1"/>
+		<detExit lane="0/5to0/6_1" pos="-.1"/>
+		<detExit lane="0/5to0/6_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_0/6_0/7to0/6">
+		<detEntry lane="0/7to0/6_0" pos="0.1"/>
+		<detEntry lane="0/7to0/6_1" pos="0.1"/>
+		<detEntry lane="0/7to0/6_2" pos="0.1"/>
+		<detExit lane="0/7to0/6_0" pos="-.1"/>
+		<detExit lane="0/7to0/6_1" pos="-.1"/>
+		<detExit lane="0/7to0/6_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_0/6_1/6to0/6">
+		<detEntry lane="1/6to0/6_0" pos="0.1"/>
+		<detEntry lane="1/6to0/6_1" pos="0.1"/>
+		<detEntry lane="1/6to0/6_2" pos="0.1"/>
+		<detExit lane="1/6to0/6_0" pos="-.1"/>
+		<detExit lane="1/6to0/6_1" pos="-.1"/>
+		<detExit lane="1/6to0/6_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_1/5_0/5to1/5">
+		<detEntry lane="0/5to1/5_0" pos="0.1"/>
+		<detEntry lane="0/5to1/5_1" pos="0.1"/>
+		<detEntry lane="0/5to1/5_2" pos="0.1"/>
+		<detExit lane="0/5to1/5_0" pos="-.1"/>
+		<detExit lane="0/5to1/5_1" pos="-.1"/>
+		<detExit lane="0/5to1/5_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_1/5_1/4to1/5">
+		<detEntry lane="1/4to1/5_0" pos="0.1"/>
+		<detEntry lane="1/4to1/5_1" pos="0.1"/>
+		<detEntry lane="1/4to1/5_2" pos="0.1"/>
+		<detExit lane="1/4to1/5_0" pos="-.1"/>
+		<detExit lane="1/4to1/5_1" pos="-.1"/>
+		<detExit lane="1/4to1/5_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_1/5_1/6to1/5">
+		<detEntry lane="1/6to1/5_0" pos="0.1"/>
+		<detEntry lane="1/6to1/5_1" pos="0.1"/>
+		<detEntry lane="1/6to1/5_2" pos="0.1"/>
+		<detExit lane="1/6to1/5_0" pos="-.1"/>
+		<detExit lane="1/6to1/5_1" pos="-.1"/>
+		<detExit lane="1/6to1/5_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_1/5_2/5to1/5">
+		<detEntry lane="2/5to1/5_0" pos="0.1"/>
+		<detEntry lane="2/5to1/5_1" pos="0.1"/>
+		<detEntry lane="2/5to1/5_2" pos="0.1"/>
+		<detExit lane="2/5to1/5_0" pos="-.1"/>
+		<detExit lane="2/5to1/5_1" pos="-.1"/>
+		<detExit lane="2/5to1/5_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_0/7_0/6to0/7">
+		<detEntry lane="0/6to0/7_0" pos="0.1"/>
+		<detEntry lane="0/6to0/7_1" pos="0.1"/>
+		<detEntry lane="0/6to0/7_2" pos="0.1"/>
+		<detExit lane="0/6to0/7_0" pos="-.1"/>
+		<detExit lane="0/6to0/7_1" pos="-.1"/>
+		<detExit lane="0/6to0/7_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_0/7_0/8to0/7">
+		<detEntry lane="1/8to0/8_0" pos="0.1"/>
+		<detEntry lane="1/8to0/8_1" pos="0.1"/>
+		<detEntry lane="1/8to0/8_2" pos="0.1"/>
+		<detEntry lane="0/7to0/8_0" pos="0.1"/>
+		<detEntry lane="0/7to0/8_1" pos="0.1"/>
+		<detEntry lane="0/7to0/8_2" pos="0.1"/>
+		<detExit lane="0/8to0/7_0" pos="-.1"/>
+		<detExit lane="0/8to0/7_1" pos="-.1"/>
+		<detExit lane="0/8to0/7_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_0/7_1/7to0/7">
+		<detEntry lane="1/7to0/7_0" pos="0.1"/>
+		<detEntry lane="1/7to0/7_1" pos="0.1"/>
+		<detEntry lane="1/7to0/7_2" pos="0.1"/>
+		<detExit lane="1/7to0/7_0" pos="-.1"/>
+		<detExit lane="1/7to0/7_1" pos="-.1"/>
+		<detExit lane="1/7to0/7_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_1/6_0/6to1/6">
+		<detEntry lane="0/6to1/6_0" pos="0.1"/>
+		<detEntry lane="0/6to1/6_1" pos="0.1"/>
+		<detEntry lane="0/6to1/6_2" pos="0.1"/>
+		<detExit lane="0/6to1/6_0" pos="-.1"/>
+		<detExit lane="0/6to1/6_1" pos="-.1"/>
+		<detExit lane="0/6to1/6_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_1/6_1/5to1/6">
+		<detEntry lane="1/5to1/6_0" pos="0.1"/>
+		<detEntry lane="1/5to1/6_1" pos="0.1"/>
+		<detEntry lane="1/5to1/6_2" pos="0.1"/>
+		<detExit lane="1/5to1/6_0" pos="-.1"/>
+		<detExit lane="1/5to1/6_1" pos="-.1"/>
+		<detExit lane="1/5to1/6_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_1/6_1/7to1/6">
+		<detEntry lane="1/7to1/6_0" pos="0.1"/>
+		<detEntry lane="1/7to1/6_1" pos="0.1"/>
+		<detEntry lane="1/7to1/6_2" pos="0.1"/>
+		<detExit lane="1/7to1/6_0" pos="-.1"/>
+		<detExit lane="1/7to1/6_1" pos="-.1"/>
+		<detExit lane="1/7to1/6_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_1/6_2/6to1/6">
+		<detEntry lane="2/6to1/6_0" pos="0.1"/>
+		<detEntry lane="2/6to1/6_1" pos="0.1"/>
+		<detEntry lane="2/6to1/6_2" pos="0.1"/>
+		<detExit lane="2/6to1/6_0" pos="-.1"/>
+		<detExit lane="2/6to1/6_1" pos="-.1"/>
+		<detExit lane="2/6to1/6_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_1/7_0/7to1/7">
+		<detEntry lane="0/7to1/7_0" pos="0.1"/>
+		<detEntry lane="0/7to1/7_1" pos="0.1"/>
+		<detEntry lane="0/7to1/7_2" pos="0.1"/>
+		<detExit lane="0/7to1/7_0" pos="-.1"/>
+		<detExit lane="0/7to1/7_1" pos="-.1"/>
+		<detExit lane="0/7to1/7_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_1/7_1/6to1/7">
+		<detEntry lane="1/6to1/7_0" pos="0.1"/>
+		<detEntry lane="1/6to1/7_1" pos="0.1"/>
+		<detEntry lane="1/6to1/7_2" pos="0.1"/>
+		<detExit lane="1/6to1/7_0" pos="-.1"/>
+		<detExit lane="1/6to1/7_1" pos="-.1"/>
+		<detExit lane="1/6to1/7_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_1/7_1/8to1/7">
+		<detEntry lane="1/8to1/7_0" pos="0.1"/>
+		<detEntry lane="1/8to1/7_1" pos="0.1"/>
+		<detEntry lane="1/8to1/7_2" pos="0.1"/>
+		<detExit lane="1/8to1/7_0" pos="-.1"/>
+		<detExit lane="1/8to1/7_1" pos="-.1"/>
+		<detExit lane="1/8to1/7_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_1/7_2/7to1/7">
+		<detEntry lane="2/7to1/7_0" pos="0.1"/>
+		<detEntry lane="2/7to1/7_1" pos="0.1"/>
+		<detEntry lane="2/7to1/7_2" pos="0.1"/>
+		<detExit lane="2/7to1/7_0" pos="-.1"/>
+		<detExit lane="2/7to1/7_1" pos="-.1"/>
+		<detExit lane="2/7to1/7_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_1/8_0/8to1/8">
+		<detEntry lane="1/8to0/8_0" pos="0.1"/>
+		<detEntry lane="1/8to0/8_1" pos="0.1"/>
+		<detEntry lane="1/8to0/8_2" pos="0.1"/>
+		<detEntry lane="0/7to0/8_0" pos="0.1"/>
+		<detEntry lane="0/7to0/8_1" pos="0.1"/>
+		<detEntry lane="0/7to0/8_2" pos="0.1"/>
+		<detExit lane="0/8to1/8_0" pos="-.1"/>
+		<detExit lane="0/8to1/8_1" pos="-.1"/>
+		<detExit lane="0/8to1/8_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_1/8_1/7to1/8">
+		<detEntry lane="1/7to1/8_0" pos="0.1"/>
+		<detEntry lane="1/7to1/8_1" pos="0.1"/>
+		<detEntry lane="1/7to1/8_2" pos="0.1"/>
+		<detExit lane="1/7to1/8_0" pos="-.1"/>
+		<detExit lane="1/7to1/8_1" pos="-.1"/>
+		<detExit lane="1/7to1/8_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_1/8_2/8to1/8">
+		<detEntry lane="2/8to1/8_0" pos="0.1"/>
+		<detEntry lane="2/8to1/8_1" pos="0.1"/>
+		<detEntry lane="2/8to1/8_2" pos="0.1"/>
+		<detExit lane="2/8to1/8_0" pos="-.1"/>
+		<detExit lane="2/8to1/8_1" pos="-.1"/>
+		<detExit lane="2/8to1/8_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_2/0_1/0to2/0">
+		<detEntry lane="1/0to2/0_0" pos="0.1"/>
+		<detEntry lane="1/0to2/0_1" pos="0.1"/>
+		<detEntry lane="1/0to2/0_2" pos="0.1"/>
+		<detExit lane="1/0to2/0_0" pos="-.1"/>
+		<detExit lane="1/0to2/0_1" pos="-.1"/>
+		<detExit lane="1/0to2/0_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_2/0_2/1to2/0">
+		<detEntry lane="2/1to2/0_0" pos="0.1"/>
+		<detEntry lane="2/1to2/0_1" pos="0.1"/>
+		<detEntry lane="2/1to2/0_2" pos="0.1"/>
+		<detExit lane="2/1to2/0_0" pos="-.1"/>
+		<detExit lane="2/1to2/0_1" pos="-.1"/>
+		<detExit lane="2/1to2/0_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_2/0_3/0to2/0">
+		<detEntry lane="3/0to2/0_0" pos="0.1"/>
+		<detEntry lane="3/0to2/0_1" pos="0.1"/>
+		<detEntry lane="3/0to2/0_2" pos="0.1"/>
+		<detExit lane="3/0to2/0_0" pos="-.1"/>
+		<detExit lane="3/0to2/0_1" pos="-.1"/>
+		<detExit lane="3/0to2/0_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_2/1_1/1to2/1">
+		<detEntry lane="1/1to2/1_0" pos="0.1"/>
+		<detEntry lane="1/1to2/1_1" pos="0.1"/>
+		<detEntry lane="1/1to2/1_2" pos="0.1"/>
+		<detExit lane="1/1to2/1_0" pos="-.1"/>
+		<detExit lane="1/1to2/1_1" pos="-.1"/>
+		<detExit lane="1/1to2/1_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_2/1_2/0to2/1">
+		<detEntry lane="2/0to2/1_0" pos="0.1"/>
+		<detEntry lane="2/0to2/1_1" pos="0.1"/>
+		<detEntry lane="2/0to2/1_2" pos="0.1"/>
+		<detExit lane="2/0to2/1_0" pos="-.1"/>
+		<detExit lane="2/0to2/1_1" pos="-.1"/>
+		<detExit lane="2/0to2/1_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_2/1_2/2to2/1">
+		<detEntry lane="2/2to2/1_0" pos="0.1"/>
+		<detEntry lane="2/2to2/1_1" pos="0.1"/>
+		<detEntry lane="2/2to2/1_2" pos="0.1"/>
+		<detExit lane="2/2to2/1_0" pos="-.1"/>
+		<detExit lane="2/2to2/1_1" pos="-.1"/>
+		<detExit lane="2/2to2/1_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_2/1_3/1to2/1">
+		<detEntry lane="3/1to2/1_0" pos="0.1"/>
+		<detEntry lane="3/1to2/1_1" pos="0.1"/>
+		<detEntry lane="3/1to2/1_2" pos="0.1"/>
+		<detExit lane="3/1to2/1_0" pos="-.1"/>
+		<detExit lane="3/1to2/1_1" pos="-.1"/>
+		<detExit lane="3/1to2/1_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_2/2_1/2to2/2">
+		<detEntry lane="1/2to2/2_0" pos="0.1"/>
+		<detEntry lane="1/2to2/2_1" pos="0.1"/>
+		<detEntry lane="1/2to2/2_2" pos="0.1"/>
+		<detExit lane="1/2to2/2_0" pos="-.1"/>
+		<detExit lane="1/2to2/2_1" pos="-.1"/>
+		<detExit lane="1/2to2/2_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_2/2_2/1to2/2">
+		<detEntry lane="2/1to2/2_0" pos="0.1"/>
+		<detEntry lane="2/1to2/2_1" pos="0.1"/>
+		<detEntry lane="2/1to2/2_2" pos="0.1"/>
+		<detExit lane="2/1to2/2_0" pos="-.1"/>
+		<detExit lane="2/1to2/2_1" pos="-.1"/>
+		<detExit lane="2/1to2/2_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_2/2_2/3to2/2">
+		<detEntry lane="2/3to2/2_0" pos="0.1"/>
+		<detEntry lane="2/3to2/2_1" pos="0.1"/>
+		<detEntry lane="2/3to2/2_2" pos="0.1"/>
+		<detExit lane="2/3to2/2_0" pos="-.1"/>
+		<detExit lane="2/3to2/2_1" pos="-.1"/>
+		<detExit lane="2/3to2/2_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_2/2_3/2to2/2">
+		<detEntry lane="3/2to2/2_0" pos="0.1"/>
+		<detEntry lane="3/2to2/2_1" pos="0.1"/>
+		<detEntry lane="3/2to2/2_2" pos="0.1"/>
+		<detExit lane="3/2to2/2_0" pos="-.1"/>
+		<detExit lane="3/2to2/2_1" pos="-.1"/>
+		<detExit lane="3/2to2/2_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_2/3_1/3to2/3">
+		<detEntry lane="1/3to2/3_0" pos="0.1"/>
+		<detEntry lane="1/3to2/3_1" pos="0.1"/>
+		<detEntry lane="1/3to2/3_2" pos="0.1"/>
+		<detExit lane="1/3to2/3_0" pos="-.1"/>
+		<detExit lane="1/3to2/3_1" pos="-.1"/>
+		<detExit lane="1/3to2/3_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_2/3_2/2to2/3">
+		<detEntry lane="2/2to2/3_0" pos="0.1"/>
+		<detEntry lane="2/2to2/3_1" pos="0.1"/>
+		<detEntry lane="2/2to2/3_2" pos="0.1"/>
+		<detExit lane="2/2to2/3_0" pos="-.1"/>
+		<detExit lane="2/2to2/3_1" pos="-.1"/>
+		<detExit lane="2/2to2/3_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_2/3_2/4to2/3">
+		<detEntry lane="2/4to2/3_0" pos="0.1"/>
+		<detEntry lane="2/4to2/3_1" pos="0.1"/>
+		<detEntry lane="2/4to2/3_2" pos="0.1"/>
+		<detExit lane="2/4to2/3_0" pos="-.1"/>
+		<detExit lane="2/4to2/3_1" pos="-.1"/>
+		<detExit lane="2/4to2/3_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_2/3_3/3to2/3">
+		<detEntry lane="3/3to2/3_0" pos="0.1"/>
+		<detEntry lane="3/3to2/3_1" pos="0.1"/>
+		<detEntry lane="3/3to2/3_2" pos="0.1"/>
+		<detExit lane="3/3to2/3_0" pos="-.1"/>
+		<detExit lane="3/3to2/3_1" pos="-.1"/>
+		<detExit lane="3/3to2/3_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_2/4_1/4to2/4">
+		<detEntry lane="1/4to2/4_0" pos="0.1"/>
+		<detEntry lane="1/4to2/4_1" pos="0.1"/>
+		<detEntry lane="1/4to2/4_2" pos="0.1"/>
+		<detExit lane="1/4to2/4_0" pos="-.1"/>
+		<detExit lane="1/4to2/4_1" pos="-.1"/>
+		<detExit lane="1/4to2/4_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_2/4_2/3to2/4">
+		<detEntry lane="2/3to2/4_0" pos="0.1"/>
+		<detEntry lane="2/3to2/4_1" pos="0.1"/>
+		<detEntry lane="2/3to2/4_2" pos="0.1"/>
+		<detExit lane="2/3to2/4_0" pos="-.1"/>
+		<detExit lane="2/3to2/4_1" pos="-.1"/>
+		<detExit lane="2/3to2/4_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_2/4_2/5to2/4">
+		<detEntry lane="2/5to2/4_0" pos="0.1"/>
+		<detEntry lane="2/5to2/4_1" pos="0.1"/>
+		<detEntry lane="2/5to2/4_2" pos="0.1"/>
+		<detExit lane="2/5to2/4_0" pos="-.1"/>
+		<detExit lane="2/5to2/4_1" pos="-.1"/>
+		<detExit lane="2/5to2/4_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_2/4_3/4to2/4">
+		<detEntry lane="3/4to2/4_0" pos="0.1"/>
+		<detEntry lane="3/4to2/4_1" pos="0.1"/>
+		<detEntry lane="3/4to2/4_2" pos="0.1"/>
+		<detExit lane="3/4to2/4_0" pos="-.1"/>
+		<detExit lane="3/4to2/4_1" pos="-.1"/>
+		<detExit lane="3/4to2/4_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_2/5_1/5to2/5">
+		<detEntry lane="1/5to2/5_0" pos="0.1"/>
+		<detEntry lane="1/5to2/5_1" pos="0.1"/>
+		<detEntry lane="1/5to2/5_2" pos="0.1"/>
+		<detExit lane="1/5to2/5_0" pos="-.1"/>
+		<detExit lane="1/5to2/5_1" pos="-.1"/>
+		<detExit lane="1/5to2/5_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_2/5_2/4to2/5">
+		<detEntry lane="2/4to2/5_0" pos="0.1"/>
+		<detEntry lane="2/4to2/5_1" pos="0.1"/>
+		<detEntry lane="2/4to2/5_2" pos="0.1"/>
+		<detExit lane="2/4to2/5_0" pos="-.1"/>
+		<detExit lane="2/4to2/5_1" pos="-.1"/>
+		<detExit lane="2/4to2/5_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_2/5_2/6to2/5">
+		<detEntry lane="2/6to2/5_0" pos="0.1"/>
+		<detEntry lane="2/6to2/5_1" pos="0.1"/>
+		<detEntry lane="2/6to2/5_2" pos="0.1"/>
+		<detExit lane="2/6to2/5_0" pos="-.1"/>
+		<detExit lane="2/6to2/5_1" pos="-.1"/>
+		<detExit lane="2/6to2/5_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_2/5_3/5to2/5">
+		<detEntry lane="3/5to2/5_0" pos="0.1"/>
+		<detEntry lane="3/5to2/5_1" pos="0.1"/>
+		<detEntry lane="3/5to2/5_2" pos="0.1"/>
+		<detExit lane="3/5to2/5_0" pos="-.1"/>
+		<detExit lane="3/5to2/5_1" pos="-.1"/>
+		<detExit lane="3/5to2/5_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_2/6_1/6to2/6">
+		<detEntry lane="1/6to2/6_0" pos="0.1"/>
+		<detEntry lane="1/6to2/6_1" pos="0.1"/>
+		<detEntry lane="1/6to2/6_2" pos="0.1"/>
+		<detExit lane="1/6to2/6_0" pos="-.1"/>
+		<detExit lane="1/6to2/6_1" pos="-.1"/>
+		<detExit lane="1/6to2/6_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_2/6_2/5to2/6">
+		<detEntry lane="2/5to2/6_0" pos="0.1"/>
+		<detEntry lane="2/5to2/6_1" pos="0.1"/>
+		<detEntry lane="2/5to2/6_2" pos="0.1"/>
+		<detExit lane="2/5to2/6_0" pos="-.1"/>
+		<detExit lane="2/5to2/6_1" pos="-.1"/>
+		<detExit lane="2/5to2/6_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_2/6_2/7to2/6">
+		<detEntry lane="2/7to2/6_0" pos="0.1"/>
+		<detEntry lane="2/7to2/6_1" pos="0.1"/>
+		<detEntry lane="2/7to2/6_2" pos="0.1"/>
+		<detExit lane="2/7to2/6_0" pos="-.1"/>
+		<detExit lane="2/7to2/6_1" pos="-.1"/>
+		<detExit lane="2/7to2/6_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_2/6_3/6to2/6">
+		<detEntry lane="3/6to2/6_0" pos="0.1"/>
+		<detEntry lane="3/6to2/6_1" pos="0.1"/>
+		<detEntry lane="3/6to2/6_2" pos="0.1"/>
+		<detExit lane="3/6to2/6_0" pos="-.1"/>
+		<detExit lane="3/6to2/6_1" pos="-.1"/>
+		<detExit lane="3/6to2/6_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_2/7_1/7to2/7">
+		<detEntry lane="1/7to2/7_0" pos="0.1"/>
+		<detEntry lane="1/7to2/7_1" pos="0.1"/>
+		<detEntry lane="1/7to2/7_2" pos="0.1"/>
+		<detExit lane="1/7to2/7_0" pos="-.1"/>
+		<detExit lane="1/7to2/7_1" pos="-.1"/>
+		<detExit lane="1/7to2/7_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_2/7_2/6to2/7">
+		<detEntry lane="2/6to2/7_0" pos="0.1"/>
+		<detEntry lane="2/6to2/7_1" pos="0.1"/>
+		<detEntry lane="2/6to2/7_2" pos="0.1"/>
+		<detExit lane="2/6to2/7_0" pos="-.1"/>
+		<detExit lane="2/6to2/7_1" pos="-.1"/>
+		<detExit lane="2/6to2/7_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_2/7_2/8to2/7">
+		<detEntry lane="2/8to2/7_0" pos="0.1"/>
+		<detEntry lane="2/8to2/7_1" pos="0.1"/>
+		<detEntry lane="2/8to2/7_2" pos="0.1"/>
+		<detExit lane="2/8to2/7_0" pos="-.1"/>
+		<detExit lane="2/8to2/7_1" pos="-.1"/>
+		<detExit lane="2/8to2/7_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_2/7_3/7to2/7">
+		<detEntry lane="3/7to2/7_0" pos="0.1"/>
+		<detEntry lane="3/7to2/7_1" pos="0.1"/>
+		<detEntry lane="3/7to2/7_2" pos="0.1"/>
+		<detExit lane="3/7to2/7_0" pos="-.1"/>
+		<detExit lane="3/7to2/7_1" pos="-.1"/>
+		<detExit lane="3/7to2/7_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_2/8_1/8to2/8">
+		<detEntry lane="1/8to2/8_0" pos="0.1"/>
+		<detEntry lane="1/8to2/8_1" pos="0.1"/>
+		<detEntry lane="1/8to2/8_2" pos="0.1"/>
+		<detExit lane="1/8to2/8_0" pos="-.1"/>
+		<detExit lane="1/8to2/8_1" pos="-.1"/>
+		<detExit lane="1/8to2/8_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_2/8_2/7to2/8">
+		<detEntry lane="2/7to2/8_0" pos="0.1"/>
+		<detEntry lane="2/7to2/8_1" pos="0.1"/>
+		<detEntry lane="2/7to2/8_2" pos="0.1"/>
+		<detExit lane="2/7to2/8_0" pos="-.1"/>
+		<detExit lane="2/7to2/8_1" pos="-.1"/>
+		<detExit lane="2/7to2/8_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_2/8_3/8to2/8">
+		<detEntry lane="3/8to2/8_0" pos="0.1"/>
+		<detEntry lane="3/8to2/8_1" pos="0.1"/>
+		<detEntry lane="3/8to2/8_2" pos="0.1"/>
+		<detExit lane="3/8to2/8_0" pos="-.1"/>
+		<detExit lane="3/8to2/8_1" pos="-.1"/>
+		<detExit lane="3/8to2/8_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_3/0_2/0to3/0">
+		<detEntry lane="2/0to3/0_0" pos="0.1"/>
+		<detEntry lane="2/0to3/0_1" pos="0.1"/>
+		<detEntry lane="2/0to3/0_2" pos="0.1"/>
+		<detExit lane="2/0to3/0_0" pos="-.1"/>
+		<detExit lane="2/0to3/0_1" pos="-.1"/>
+		<detExit lane="2/0to3/0_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_3/0_3/1to3/0">
+		<detEntry lane="3/1to3/0_0" pos="0.1"/>
+		<detEntry lane="3/1to3/0_1" pos="0.1"/>
+		<detEntry lane="3/1to3/0_2" pos="0.1"/>
+		<detExit lane="3/1to3/0_0" pos="-.1"/>
+		<detExit lane="3/1to3/0_1" pos="-.1"/>
+		<detExit lane="3/1to3/0_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_3/0_4/0to3/0">
+		<detEntry lane="4/0to3/0_0" pos="0.1"/>
+		<detEntry lane="4/0to3/0_1" pos="0.1"/>
+		<detEntry lane="4/0to3/0_2" pos="0.1"/>
+		<detExit lane="4/0to3/0_0" pos="-.1"/>
+		<detExit lane="4/0to3/0_1" pos="-.1"/>
+		<detExit lane="4/0to3/0_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_3/1_2/1to3/1">
+		<detEntry lane="2/1to3/1_0" pos="0.1"/>
+		<detEntry lane="2/1to3/1_1" pos="0.1"/>
+		<detEntry lane="2/1to3/1_2" pos="0.1"/>
+		<detExit lane="2/1to3/1_0" pos="-.1"/>
+		<detExit lane="2/1to3/1_1" pos="-.1"/>
+		<detExit lane="2/1to3/1_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_3/1_3/0to3/1">
+		<detEntry lane="3/0to3/1_0" pos="0.1"/>
+		<detEntry lane="3/0to3/1_1" pos="0.1"/>
+		<detEntry lane="3/0to3/1_2" pos="0.1"/>
+		<detExit lane="3/0to3/1_0" pos="-.1"/>
+		<detExit lane="3/0to3/1_1" pos="-.1"/>
+		<detExit lane="3/0to3/1_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_3/1_3/2to3/1">
+		<detEntry lane="3/2to3/1_0" pos="0.1"/>
+		<detEntry lane="3/2to3/1_1" pos="0.1"/>
+		<detEntry lane="3/2to3/1_2" pos="0.1"/>
+		<detExit lane="3/2to3/1_0" pos="-.1"/>
+		<detExit lane="3/2to3/1_1" pos="-.1"/>
+		<detExit lane="3/2to3/1_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_3/1_4/1to3/1">
+		<detEntry lane="4/1to3/1_0" pos="0.1"/>
+		<detEntry lane="4/1to3/1_1" pos="0.1"/>
+		<detEntry lane="4/1to3/1_2" pos="0.1"/>
+		<detExit lane="4/1to3/1_0" pos="-.1"/>
+		<detExit lane="4/1to3/1_1" pos="-.1"/>
+		<detExit lane="4/1to3/1_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_3/2_2/2to3/2">
+		<detEntry lane="2/2to3/2_0" pos="0.1"/>
+		<detEntry lane="2/2to3/2_1" pos="0.1"/>
+		<detEntry lane="2/2to3/2_2" pos="0.1"/>
+		<detExit lane="2/2to3/2_0" pos="-.1"/>
+		<detExit lane="2/2to3/2_1" pos="-.1"/>
+		<detExit lane="2/2to3/2_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_3/2_3/1to3/2">
+		<detEntry lane="3/1to3/2_0" pos="0.1"/>
+		<detEntry lane="3/1to3/2_1" pos="0.1"/>
+		<detEntry lane="3/1to3/2_2" pos="0.1"/>
+		<detExit lane="3/1to3/2_0" pos="-.1"/>
+		<detExit lane="3/1to3/2_1" pos="-.1"/>
+		<detExit lane="3/1to3/2_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_3/2_3/3to3/2">
+		<detEntry lane="3/3to3/2_0" pos="0.1"/>
+		<detEntry lane="3/3to3/2_1" pos="0.1"/>
+		<detEntry lane="3/3to3/2_2" pos="0.1"/>
+		<detExit lane="3/3to3/2_0" pos="-.1"/>
+		<detExit lane="3/3to3/2_1" pos="-.1"/>
+		<detExit lane="3/3to3/2_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_3/2_4/2to3/2">
+		<detEntry lane="4/2to3/2_0" pos="0.1"/>
+		<detEntry lane="4/2to3/2_1" pos="0.1"/>
+		<detEntry lane="4/2to3/2_2" pos="0.1"/>
+		<detExit lane="4/2to3/2_0" pos="-.1"/>
+		<detExit lane="4/2to3/2_1" pos="-.1"/>
+		<detExit lane="4/2to3/2_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_3/3_2/3to3/3">
+		<detEntry lane="2/3to3/3_0" pos="0.1"/>
+		<detEntry lane="2/3to3/3_1" pos="0.1"/>
+		<detEntry lane="2/3to3/3_2" pos="0.1"/>
+		<detExit lane="2/3to3/3_0" pos="-.1"/>
+		<detExit lane="2/3to3/3_1" pos="-.1"/>
+		<detExit lane="2/3to3/3_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_3/3_3/2to3/3">
+		<detEntry lane="3/2to3/3_0" pos="0.1"/>
+		<detEntry lane="3/2to3/3_1" pos="0.1"/>
+		<detEntry lane="3/2to3/3_2" pos="0.1"/>
+		<detExit lane="3/2to3/3_0" pos="-.1"/>
+		<detExit lane="3/2to3/3_1" pos="-.1"/>
+		<detExit lane="3/2to3/3_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_3/3_3/4to3/3">
+		<detEntry lane="3/4to3/3_0" pos="0.1"/>
+		<detEntry lane="3/4to3/3_1" pos="0.1"/>
+		<detEntry lane="3/4to3/3_2" pos="0.1"/>
+		<detExit lane="3/4to3/3_0" pos="-.1"/>
+		<detExit lane="3/4to3/3_1" pos="-.1"/>
+		<detExit lane="3/4to3/3_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_3/3_4/3to3/3">
+		<detEntry lane="4/3to3/3_0" pos="0.1"/>
+		<detEntry lane="4/3to3/3_1" pos="0.1"/>
+		<detEntry lane="4/3to3/3_2" pos="0.1"/>
+		<detExit lane="4/3to3/3_0" pos="-.1"/>
+		<detExit lane="4/3to3/3_1" pos="-.1"/>
+		<detExit lane="4/3to3/3_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_3/4_2/4to3/4">
+		<detEntry lane="2/4to3/4_0" pos="0.1"/>
+		<detEntry lane="2/4to3/4_1" pos="0.1"/>
+		<detEntry lane="2/4to3/4_2" pos="0.1"/>
+		<detExit lane="2/4to3/4_0" pos="-.1"/>
+		<detExit lane="2/4to3/4_1" pos="-.1"/>
+		<detExit lane="2/4to3/4_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_3/4_3/3to3/4">
+		<detEntry lane="3/3to3/4_0" pos="0.1"/>
+		<detEntry lane="3/3to3/4_1" pos="0.1"/>
+		<detEntry lane="3/3to3/4_2" pos="0.1"/>
+		<detExit lane="3/3to3/4_0" pos="-.1"/>
+		<detExit lane="3/3to3/4_1" pos="-.1"/>
+		<detExit lane="3/3to3/4_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_3/4_3/5to3/4">
+		<detEntry lane="3/5to3/4_0" pos="0.1"/>
+		<detEntry lane="3/5to3/4_1" pos="0.1"/>
+		<detEntry lane="3/5to3/4_2" pos="0.1"/>
+		<detExit lane="3/5to3/4_0" pos="-.1"/>
+		<detExit lane="3/5to3/4_1" pos="-.1"/>
+		<detExit lane="3/5to3/4_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_3/4_4/4to3/4">
+		<detEntry lane="4/4to3/4_0" pos="0.1"/>
+		<detEntry lane="4/4to3/4_1" pos="0.1"/>
+		<detEntry lane="4/4to3/4_2" pos="0.1"/>
+		<detExit lane="4/4to3/4_0" pos="-.1"/>
+		<detExit lane="4/4to3/4_1" pos="-.1"/>
+		<detExit lane="4/4to3/4_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_3/5_2/5to3/5">
+		<detEntry lane="2/5to3/5_0" pos="0.1"/>
+		<detEntry lane="2/5to3/5_1" pos="0.1"/>
+		<detEntry lane="2/5to3/5_2" pos="0.1"/>
+		<detExit lane="2/5to3/5_0" pos="-.1"/>
+		<detExit lane="2/5to3/5_1" pos="-.1"/>
+		<detExit lane="2/5to3/5_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_3/5_3/4to3/5">
+		<detEntry lane="3/4to3/5_0" pos="0.1"/>
+		<detEntry lane="3/4to3/5_1" pos="0.1"/>
+		<detEntry lane="3/4to3/5_2" pos="0.1"/>
+		<detExit lane="3/4to3/5_0" pos="-.1"/>
+		<detExit lane="3/4to3/5_1" pos="-.1"/>
+		<detExit lane="3/4to3/5_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_3/5_3/6to3/5">
+		<detEntry lane="3/6to3/5_0" pos="0.1"/>
+		<detEntry lane="3/6to3/5_1" pos="0.1"/>
+		<detEntry lane="3/6to3/5_2" pos="0.1"/>
+		<detExit lane="3/6to3/5_0" pos="-.1"/>
+		<detExit lane="3/6to3/5_1" pos="-.1"/>
+		<detExit lane="3/6to3/5_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_3/5_4/5to3/5">
+		<detEntry lane="4/5to3/5_0" pos="0.1"/>
+		<detEntry lane="4/5to3/5_1" pos="0.1"/>
+		<detEntry lane="4/5to3/5_2" pos="0.1"/>
+		<detExit lane="4/5to3/5_0" pos="-.1"/>
+		<detExit lane="4/5to3/5_1" pos="-.1"/>
+		<detExit lane="4/5to3/5_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_3/6_2/6to3/6">
+		<detEntry lane="2/6to3/6_0" pos="0.1"/>
+		<detEntry lane="2/6to3/6_1" pos="0.1"/>
+		<detEntry lane="2/6to3/6_2" pos="0.1"/>
+		<detExit lane="2/6to3/6_0" pos="-.1"/>
+		<detExit lane="2/6to3/6_1" pos="-.1"/>
+		<detExit lane="2/6to3/6_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_3/6_3/5to3/6">
+		<detEntry lane="3/5to3/6_0" pos="0.1"/>
+		<detEntry lane="3/5to3/6_1" pos="0.1"/>
+		<detEntry lane="3/5to3/6_2" pos="0.1"/>
+		<detExit lane="3/5to3/6_0" pos="-.1"/>
+		<detExit lane="3/5to3/6_1" pos="-.1"/>
+		<detExit lane="3/5to3/6_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_3/6_3/7to3/6">
+		<detEntry lane="3/7to3/6_0" pos="0.1"/>
+		<detEntry lane="3/7to3/6_1" pos="0.1"/>
+		<detEntry lane="3/7to3/6_2" pos="0.1"/>
+		<detExit lane="3/7to3/6_0" pos="-.1"/>
+		<detExit lane="3/7to3/6_1" pos="-.1"/>
+		<detExit lane="3/7to3/6_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_3/6_4/6to3/6">
+		<detEntry lane="4/6to3/6_0" pos="0.1"/>
+		<detEntry lane="4/6to3/6_1" pos="0.1"/>
+		<detEntry lane="4/6to3/6_2" pos="0.1"/>
+		<detExit lane="4/6to3/6_0" pos="-.1"/>
+		<detExit lane="4/6to3/6_1" pos="-.1"/>
+		<detExit lane="4/6to3/6_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_3/7_2/7to3/7">
+		<detEntry lane="2/7to3/7_0" pos="0.1"/>
+		<detEntry lane="2/7to3/7_1" pos="0.1"/>
+		<detEntry lane="2/7to3/7_2" pos="0.1"/>
+		<detExit lane="2/7to3/7_0" pos="-.1"/>
+		<detExit lane="2/7to3/7_1" pos="-.1"/>
+		<detExit lane="2/7to3/7_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_3/7_3/6to3/7">
+		<detEntry lane="3/6to3/7_0" pos="0.1"/>
+		<detEntry lane="3/6to3/7_1" pos="0.1"/>
+		<detEntry lane="3/6to3/7_2" pos="0.1"/>
+		<detExit lane="3/6to3/7_0" pos="-.1"/>
+		<detExit lane="3/6to3/7_1" pos="-.1"/>
+		<detExit lane="3/6to3/7_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_3/7_3/8to3/7">
+		<detEntry lane="3/8to3/7_0" pos="0.1"/>
+		<detEntry lane="3/8to3/7_1" pos="0.1"/>
+		<detEntry lane="3/8to3/7_2" pos="0.1"/>
+		<detExit lane="3/8to3/7_0" pos="-.1"/>
+		<detExit lane="3/8to3/7_1" pos="-.1"/>
+		<detExit lane="3/8to3/7_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_3/7_4/7to3/7">
+		<detEntry lane="4/7to3/7_0" pos="0.1"/>
+		<detEntry lane="4/7to3/7_1" pos="0.1"/>
+		<detEntry lane="4/7to3/7_2" pos="0.1"/>
+		<detExit lane="4/7to3/7_0" pos="-.1"/>
+		<detExit lane="4/7to3/7_1" pos="-.1"/>
+		<detExit lane="4/7to3/7_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_3/8_2/8to3/8">
+		<detEntry lane="2/8to3/8_0" pos="0.1"/>
+		<detEntry lane="2/8to3/8_1" pos="0.1"/>
+		<detEntry lane="2/8to3/8_2" pos="0.1"/>
+		<detExit lane="2/8to3/8_0" pos="-.1"/>
+		<detExit lane="2/8to3/8_1" pos="-.1"/>
+		<detExit lane="2/8to3/8_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_3/8_3/7to3/8">
+		<detEntry lane="3/7to3/8_0" pos="0.1"/>
+		<detEntry lane="3/7to3/8_1" pos="0.1"/>
+		<detEntry lane="3/7to3/8_2" pos="0.1"/>
+		<detExit lane="3/7to3/8_0" pos="-.1"/>
+		<detExit lane="3/7to3/8_1" pos="-.1"/>
+		<detExit lane="3/7to3/8_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_3/8_4/8to3/8">
+		<detEntry lane="4/8to3/8_0" pos="0.1"/>
+		<detEntry lane="4/8to3/8_1" pos="0.1"/>
+		<detEntry lane="4/8to3/8_2" pos="0.1"/>
+		<detExit lane="4/8to3/8_0" pos="-.1"/>
+		<detExit lane="4/8to3/8_1" pos="-.1"/>
+		<detExit lane="4/8to3/8_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_4/0_3/0to4/0">
+		<detEntry lane="3/0to4/0_0" pos="0.1"/>
+		<detEntry lane="3/0to4/0_1" pos="0.1"/>
+		<detEntry lane="3/0to4/0_2" pos="0.1"/>
+		<detExit lane="3/0to4/0_0" pos="-.1"/>
+		<detExit lane="3/0to4/0_1" pos="-.1"/>
+		<detExit lane="3/0to4/0_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_4/0_4/1to4/0">
+		<detEntry lane="4/1to4/0_0" pos="0.1"/>
+		<detEntry lane="4/1to4/0_1" pos="0.1"/>
+		<detEntry lane="4/1to4/0_2" pos="0.1"/>
+		<detExit lane="4/1to4/0_0" pos="-.1"/>
+		<detExit lane="4/1to4/0_1" pos="-.1"/>
+		<detExit lane="4/1to4/0_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_4/0_5/0to4/0">
+		<detEntry lane="5/0to4/0_0" pos="0.1"/>
+		<detEntry lane="5/0to4/0_1" pos="0.1"/>
+		<detEntry lane="5/0to4/0_2" pos="0.1"/>
+		<detExit lane="5/0to4/0_0" pos="-.1"/>
+		<detExit lane="5/0to4/0_1" pos="-.1"/>
+		<detExit lane="5/0to4/0_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_4/1_3/1to4/1">
+		<detEntry lane="3/1to4/1_0" pos="0.1"/>
+		<detEntry lane="3/1to4/1_1" pos="0.1"/>
+		<detEntry lane="3/1to4/1_2" pos="0.1"/>
+		<detExit lane="3/1to4/1_0" pos="-.1"/>
+		<detExit lane="3/1to4/1_1" pos="-.1"/>
+		<detExit lane="3/1to4/1_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_4/1_4/0to4/1">
+		<detEntry lane="4/0to4/1_0" pos="0.1"/>
+		<detEntry lane="4/0to4/1_1" pos="0.1"/>
+		<detEntry lane="4/0to4/1_2" pos="0.1"/>
+		<detExit lane="4/0to4/1_0" pos="-.1"/>
+		<detExit lane="4/0to4/1_1" pos="-.1"/>
+		<detExit lane="4/0to4/1_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_4/1_4/2to4/1">
+		<detEntry lane="4/2to4/1_0" pos="0.1"/>
+		<detEntry lane="4/2to4/1_1" pos="0.1"/>
+		<detEntry lane="4/2to4/1_2" pos="0.1"/>
+		<detExit lane="4/2to4/1_0" pos="-.1"/>
+		<detExit lane="4/2to4/1_1" pos="-.1"/>
+		<detExit lane="4/2to4/1_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_4/1_5/1to4/1">
+		<detEntry lane="5/1to4/1_0" pos="0.1"/>
+		<detEntry lane="5/1to4/1_1" pos="0.1"/>
+		<detEntry lane="5/1to4/1_2" pos="0.1"/>
+		<detExit lane="5/1to4/1_0" pos="-.1"/>
+		<detExit lane="5/1to4/1_1" pos="-.1"/>
+		<detExit lane="5/1to4/1_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_4/2_3/2to4/2">
+		<detEntry lane="3/2to4/2_0" pos="0.1"/>
+		<detEntry lane="3/2to4/2_1" pos="0.1"/>
+		<detEntry lane="3/2to4/2_2" pos="0.1"/>
+		<detExit lane="3/2to4/2_0" pos="-.1"/>
+		<detExit lane="3/2to4/2_1" pos="-.1"/>
+		<detExit lane="3/2to4/2_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_4/2_4/1to4/2">
+		<detEntry lane="4/1to4/2_0" pos="0.1"/>
+		<detEntry lane="4/1to4/2_1" pos="0.1"/>
+		<detEntry lane="4/1to4/2_2" pos="0.1"/>
+		<detExit lane="4/1to4/2_0" pos="-.1"/>
+		<detExit lane="4/1to4/2_1" pos="-.1"/>
+		<detExit lane="4/1to4/2_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_4/2_4/3to4/2">
+		<detEntry lane="4/3to4/2_0" pos="0.1"/>
+		<detEntry lane="4/3to4/2_1" pos="0.1"/>
+		<detEntry lane="4/3to4/2_2" pos="0.1"/>
+		<detExit lane="4/3to4/2_0" pos="-.1"/>
+		<detExit lane="4/3to4/2_1" pos="-.1"/>
+		<detExit lane="4/3to4/2_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_4/2_5/2to4/2">
+		<detEntry lane="5/2to4/2_0" pos="0.1"/>
+		<detEntry lane="5/2to4/2_1" pos="0.1"/>
+		<detEntry lane="5/2to4/2_2" pos="0.1"/>
+		<detExit lane="5/2to4/2_0" pos="-.1"/>
+		<detExit lane="5/2to4/2_1" pos="-.1"/>
+		<detExit lane="5/2to4/2_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_4/3_3/3to4/3">
+		<detEntry lane="3/3to4/3_0" pos="0.1"/>
+		<detEntry lane="3/3to4/3_1" pos="0.1"/>
+		<detEntry lane="3/3to4/3_2" pos="0.1"/>
+		<detExit lane="3/3to4/3_0" pos="-.1"/>
+		<detExit lane="3/3to4/3_1" pos="-.1"/>
+		<detExit lane="3/3to4/3_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_4/3_4/2to4/3">
+		<detEntry lane="4/2to4/3_0" pos="0.1"/>
+		<detEntry lane="4/2to4/3_1" pos="0.1"/>
+		<detEntry lane="4/2to4/3_2" pos="0.1"/>
+		<detExit lane="4/2to4/3_0" pos="-.1"/>
+		<detExit lane="4/2to4/3_1" pos="-.1"/>
+		<detExit lane="4/2to4/3_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_4/3_4/4to4/3">
+		<detEntry lane="4/4to4/3_0" pos="0.1"/>
+		<detEntry lane="4/4to4/3_1" pos="0.1"/>
+		<detEntry lane="4/4to4/3_2" pos="0.1"/>
+		<detExit lane="4/4to4/3_0" pos="-.1"/>
+		<detExit lane="4/4to4/3_1" pos="-.1"/>
+		<detExit lane="4/4to4/3_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_4/3_5/3to4/3">
+		<detEntry lane="5/3to4/3_0" pos="0.1"/>
+		<detEntry lane="5/3to4/3_1" pos="0.1"/>
+		<detEntry lane="5/3to4/3_2" pos="0.1"/>
+		<detExit lane="5/3to4/3_0" pos="-.1"/>
+		<detExit lane="5/3to4/3_1" pos="-.1"/>
+		<detExit lane="5/3to4/3_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_4/4_3/4to4/4">
+		<detEntry lane="3/4to4/4_0" pos="0.1"/>
+		<detEntry lane="3/4to4/4_1" pos="0.1"/>
+		<detEntry lane="3/4to4/4_2" pos="0.1"/>
+		<detExit lane="3/4to4/4_0" pos="-.1"/>
+		<detExit lane="3/4to4/4_1" pos="-.1"/>
+		<detExit lane="3/4to4/4_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_4/4_4/3to4/4">
+		<detEntry lane="4/3to4/4_0" pos="0.1"/>
+		<detEntry lane="4/3to4/4_1" pos="0.1"/>
+		<detEntry lane="4/3to4/4_2" pos="0.1"/>
+		<detExit lane="4/3to4/4_0" pos="-.1"/>
+		<detExit lane="4/3to4/4_1" pos="-.1"/>
+		<detExit lane="4/3to4/4_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_4/4_4/5to4/4">
+		<detEntry lane="4/5to4/4_0" pos="0.1"/>
+		<detEntry lane="4/5to4/4_1" pos="0.1"/>
+		<detEntry lane="4/5to4/4_2" pos="0.1"/>
+		<detExit lane="4/5to4/4_0" pos="-.1"/>
+		<detExit lane="4/5to4/4_1" pos="-.1"/>
+		<detExit lane="4/5to4/4_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_4/4_5/4to4/4">
+		<detEntry lane="5/4to4/4_0" pos="0.1"/>
+		<detEntry lane="5/4to4/4_1" pos="0.1"/>
+		<detEntry lane="5/4to4/4_2" pos="0.1"/>
+		<detExit lane="5/4to4/4_0" pos="-.1"/>
+		<detExit lane="5/4to4/4_1" pos="-.1"/>
+		<detExit lane="5/4to4/4_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_4/5_3/5to4/5">
+		<detEntry lane="3/5to4/5_0" pos="0.1"/>
+		<detEntry lane="3/5to4/5_1" pos="0.1"/>
+		<detEntry lane="3/5to4/5_2" pos="0.1"/>
+		<detExit lane="3/5to4/5_0" pos="-.1"/>
+		<detExit lane="3/5to4/5_1" pos="-.1"/>
+		<detExit lane="3/5to4/5_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_4/5_4/4to4/5">
+		<detEntry lane="4/4to4/5_0" pos="0.1"/>
+		<detEntry lane="4/4to4/5_1" pos="0.1"/>
+		<detEntry lane="4/4to4/5_2" pos="0.1"/>
+		<detExit lane="4/4to4/5_0" pos="-.1"/>
+		<detExit lane="4/4to4/5_1" pos="-.1"/>
+		<detExit lane="4/4to4/5_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_4/5_4/6to4/5">
+		<detEntry lane="4/6to4/5_0" pos="0.1"/>
+		<detEntry lane="4/6to4/5_1" pos="0.1"/>
+		<detEntry lane="4/6to4/5_2" pos="0.1"/>
+		<detExit lane="4/6to4/5_0" pos="-.1"/>
+		<detExit lane="4/6to4/5_1" pos="-.1"/>
+		<detExit lane="4/6to4/5_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_4/5_5/5to4/5">
+		<detEntry lane="5/5to4/5_0" pos="0.1"/>
+		<detEntry lane="5/5to4/5_1" pos="0.1"/>
+		<detEntry lane="5/5to4/5_2" pos="0.1"/>
+		<detExit lane="5/5to4/5_0" pos="-.1"/>
+		<detExit lane="5/5to4/5_1" pos="-.1"/>
+		<detExit lane="5/5to4/5_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_4/6_3/6to4/6">
+		<detEntry lane="3/6to4/6_0" pos="0.1"/>
+		<detEntry lane="3/6to4/6_1" pos="0.1"/>
+		<detEntry lane="3/6to4/6_2" pos="0.1"/>
+		<detExit lane="3/6to4/6_0" pos="-.1"/>
+		<detExit lane="3/6to4/6_1" pos="-.1"/>
+		<detExit lane="3/6to4/6_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_4/6_4/5to4/6">
+		<detEntry lane="4/5to4/6_0" pos="0.1"/>
+		<detEntry lane="4/5to4/6_1" pos="0.1"/>
+		<detEntry lane="4/5to4/6_2" pos="0.1"/>
+		<detExit lane="4/5to4/6_0" pos="-.1"/>
+		<detExit lane="4/5to4/6_1" pos="-.1"/>
+		<detExit lane="4/5to4/6_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_4/6_4/7to4/6">
+		<detEntry lane="4/7to4/6_0" pos="0.1"/>
+		<detEntry lane="4/7to4/6_1" pos="0.1"/>
+		<detEntry lane="4/7to4/6_2" pos="0.1"/>
+		<detExit lane="4/7to4/6_0" pos="-.1"/>
+		<detExit lane="4/7to4/6_1" pos="-.1"/>
+		<detExit lane="4/7to4/6_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_4/6_5/6to4/6">
+		<detEntry lane="5/6to4/6_0" pos="0.1"/>
+		<detEntry lane="5/6to4/6_1" pos="0.1"/>
+		<detEntry lane="5/6to4/6_2" pos="0.1"/>
+		<detExit lane="5/6to4/6_0" pos="-.1"/>
+		<detExit lane="5/6to4/6_1" pos="-.1"/>
+		<detExit lane="5/6to4/6_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_4/7_3/7to4/7">
+		<detEntry lane="3/7to4/7_0" pos="0.1"/>
+		<detEntry lane="3/7to4/7_1" pos="0.1"/>
+		<detEntry lane="3/7to4/7_2" pos="0.1"/>
+		<detExit lane="3/7to4/7_0" pos="-.1"/>
+		<detExit lane="3/7to4/7_1" pos="-.1"/>
+		<detExit lane="3/7to4/7_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_4/7_4/6to4/7">
+		<detEntry lane="4/6to4/7_0" pos="0.1"/>
+		<detEntry lane="4/6to4/7_1" pos="0.1"/>
+		<detEntry lane="4/6to4/7_2" pos="0.1"/>
+		<detExit lane="4/6to4/7_0" pos="-.1"/>
+		<detExit lane="4/6to4/7_1" pos="-.1"/>
+		<detExit lane="4/6to4/7_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_4/7_4/8to4/7">
+		<detEntry lane="4/8to4/7_0" pos="0.1"/>
+		<detEntry lane="4/8to4/7_1" pos="0.1"/>
+		<detEntry lane="4/8to4/7_2" pos="0.1"/>
+		<detExit lane="4/8to4/7_0" pos="-.1"/>
+		<detExit lane="4/8to4/7_1" pos="-.1"/>
+		<detExit lane="4/8to4/7_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_4/7_5/7to4/7">
+		<detEntry lane="5/7to4/7_0" pos="0.1"/>
+		<detEntry lane="5/7to4/7_1" pos="0.1"/>
+		<detEntry lane="5/7to4/7_2" pos="0.1"/>
+		<detExit lane="5/7to4/7_0" pos="-.1"/>
+		<detExit lane="5/7to4/7_1" pos="-.1"/>
+		<detExit lane="5/7to4/7_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_4/8_3/8to4/8">
+		<detEntry lane="3/8to4/8_0" pos="0.1"/>
+		<detEntry lane="3/8to4/8_1" pos="0.1"/>
+		<detEntry lane="3/8to4/8_2" pos="0.1"/>
+		<detExit lane="3/8to4/8_0" pos="-.1"/>
+		<detExit lane="3/8to4/8_1" pos="-.1"/>
+		<detExit lane="3/8to4/8_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_4/8_4/7to4/8">
+		<detEntry lane="4/7to4/8_0" pos="0.1"/>
+		<detEntry lane="4/7to4/8_1" pos="0.1"/>
+		<detEntry lane="4/7to4/8_2" pos="0.1"/>
+		<detExit lane="4/7to4/8_0" pos="-.1"/>
+		<detExit lane="4/7to4/8_1" pos="-.1"/>
+		<detExit lane="4/7to4/8_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_4/8_5/8to4/8">
+		<detEntry lane="5/8to4/8_0" pos="0.1"/>
+		<detEntry lane="5/8to4/8_1" pos="0.1"/>
+		<detEntry lane="5/8to4/8_2" pos="0.1"/>
+		<detExit lane="5/8to4/8_0" pos="-.1"/>
+		<detExit lane="5/8to4/8_1" pos="-.1"/>
+		<detExit lane="5/8to4/8_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_5/0_4/0to5/0">
+		<detEntry lane="4/0to5/0_0" pos="0.1"/>
+		<detEntry lane="4/0to5/0_1" pos="0.1"/>
+		<detEntry lane="4/0to5/0_2" pos="0.1"/>
+		<detExit lane="4/0to5/0_0" pos="-.1"/>
+		<detExit lane="4/0to5/0_1" pos="-.1"/>
+		<detExit lane="4/0to5/0_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_5/0_5/1to5/0">
+		<detEntry lane="5/1to5/0_0" pos="0.1"/>
+		<detEntry lane="5/1to5/0_1" pos="0.1"/>
+		<detEntry lane="5/1to5/0_2" pos="0.1"/>
+		<detExit lane="5/1to5/0_0" pos="-.1"/>
+		<detExit lane="5/1to5/0_1" pos="-.1"/>
+		<detExit lane="5/1to5/0_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_5/0_6/0to5/0">
+		<detEntry lane="6/1to6/0_0" pos="0.1"/>
+		<detEntry lane="6/1to6/0_1" pos="0.1"/>
+		<detEntry lane="6/1to6/0_2" pos="0.1"/>
+		<detEntry lane="5/0to6/0_0" pos="0.1"/>
+		<detEntry lane="5/0to6/0_1" pos="0.1"/>
+		<detEntry lane="5/0to6/0_2" pos="0.1"/>
+		<detExit lane="6/0to5/0_0" pos="-.1"/>
+		<detExit lane="6/0to5/0_1" pos="-.1"/>
+		<detExit lane="6/0to5/0_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_5/1_4/1to5/1">
+		<detEntry lane="4/1to5/1_0" pos="0.1"/>
+		<detEntry lane="4/1to5/1_1" pos="0.1"/>
+		<detEntry lane="4/1to5/1_2" pos="0.1"/>
+		<detExit lane="4/1to5/1_0" pos="-.1"/>
+		<detExit lane="4/1to5/1_1" pos="-.1"/>
+		<detExit lane="4/1to5/1_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_5/1_5/0to5/1">
+		<detEntry lane="5/0to5/1_0" pos="0.1"/>
+		<detEntry lane="5/0to5/1_1" pos="0.1"/>
+		<detEntry lane="5/0to5/1_2" pos="0.1"/>
+		<detExit lane="5/0to5/1_0" pos="-.1"/>
+		<detExit lane="5/0to5/1_1" pos="-.1"/>
+		<detExit lane="5/0to5/1_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_5/1_5/2to5/1">
+		<detEntry lane="5/2to5/1_0" pos="0.1"/>
+		<detEntry lane="5/2to5/1_1" pos="0.1"/>
+		<detEntry lane="5/2to5/1_2" pos="0.1"/>
+		<detExit lane="5/2to5/1_0" pos="-.1"/>
+		<detExit lane="5/2to5/1_1" pos="-.1"/>
+		<detExit lane="5/2to5/1_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_5/1_6/1to5/1">
+		<detEntry lane="6/1to5/1_0" pos="0.1"/>
+		<detEntry lane="6/1to5/1_1" pos="0.1"/>
+		<detEntry lane="6/1to5/1_2" pos="0.1"/>
+		<detExit lane="6/1to5/1_0" pos="-.1"/>
+		<detExit lane="6/1to5/1_1" pos="-.1"/>
+		<detExit lane="6/1to5/1_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_5/2_4/2to5/2">
+		<detEntry lane="4/2to5/2_0" pos="0.1"/>
+		<detEntry lane="4/2to5/2_1" pos="0.1"/>
+		<detEntry lane="4/2to5/2_2" pos="0.1"/>
+		<detExit lane="4/2to5/2_0" pos="-.1"/>
+		<detExit lane="4/2to5/2_1" pos="-.1"/>
+		<detExit lane="4/2to5/2_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_5/2_5/1to5/2">
+		<detEntry lane="5/1to5/2_0" pos="0.1"/>
+		<detEntry lane="5/1to5/2_1" pos="0.1"/>
+		<detEntry lane="5/1to5/2_2" pos="0.1"/>
+		<detExit lane="5/1to5/2_0" pos="-.1"/>
+		<detExit lane="5/1to5/2_1" pos="-.1"/>
+		<detExit lane="5/1to5/2_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_5/2_5/3to5/2">
+		<detEntry lane="5/3to5/2_0" pos="0.1"/>
+		<detEntry lane="5/3to5/2_1" pos="0.1"/>
+		<detEntry lane="5/3to5/2_2" pos="0.1"/>
+		<detExit lane="5/3to5/2_0" pos="-.1"/>
+		<detExit lane="5/3to5/2_1" pos="-.1"/>
+		<detExit lane="5/3to5/2_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_5/2_6/2to5/2">
+		<detEntry lane="6/2to5/2_0" pos="0.1"/>
+		<detEntry lane="6/2to5/2_1" pos="0.1"/>
+		<detEntry lane="6/2to5/2_2" pos="0.1"/>
+		<detExit lane="6/2to5/2_0" pos="-.1"/>
+		<detExit lane="6/2to5/2_1" pos="-.1"/>
+		<detExit lane="6/2to5/2_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_5/3_4/3to5/3">
+		<detEntry lane="4/3to5/3_0" pos="0.1"/>
+		<detEntry lane="4/3to5/3_1" pos="0.1"/>
+		<detEntry lane="4/3to5/3_2" pos="0.1"/>
+		<detExit lane="4/3to5/3_0" pos="-.1"/>
+		<detExit lane="4/3to5/3_1" pos="-.1"/>
+		<detExit lane="4/3to5/3_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_5/3_5/2to5/3">
+		<detEntry lane="5/2to5/3_0" pos="0.1"/>
+		<detEntry lane="5/2to5/3_1" pos="0.1"/>
+		<detEntry lane="5/2to5/3_2" pos="0.1"/>
+		<detExit lane="5/2to5/3_0" pos="-.1"/>
+		<detExit lane="5/2to5/3_1" pos="-.1"/>
+		<detExit lane="5/2to5/3_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_5/3_5/4to5/3">
+		<detEntry lane="5/4to5/3_0" pos="0.1"/>
+		<detEntry lane="5/4to5/3_1" pos="0.1"/>
+		<detEntry lane="5/4to5/3_2" pos="0.1"/>
+		<detExit lane="5/4to5/3_0" pos="-.1"/>
+		<detExit lane="5/4to5/3_1" pos="-.1"/>
+		<detExit lane="5/4to5/3_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_5/3_6/3to5/3">
+		<detEntry lane="6/3to5/3_0" pos="0.1"/>
+		<detEntry lane="6/3to5/3_1" pos="0.1"/>
+		<detEntry lane="6/3to5/3_2" pos="0.1"/>
+		<detExit lane="6/3to5/3_0" pos="-.1"/>
+		<detExit lane="6/3to5/3_1" pos="-.1"/>
+		<detExit lane="6/3to5/3_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_5/4_4/4to5/4">
+		<detEntry lane="4/4to5/4_0" pos="0.1"/>
+		<detEntry lane="4/4to5/4_1" pos="0.1"/>
+		<detEntry lane="4/4to5/4_2" pos="0.1"/>
+		<detExit lane="4/4to5/4_0" pos="-.1"/>
+		<detExit lane="4/4to5/4_1" pos="-.1"/>
+		<detExit lane="4/4to5/4_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_5/4_5/3to5/4">
+		<detEntry lane="5/3to5/4_0" pos="0.1"/>
+		<detEntry lane="5/3to5/4_1" pos="0.1"/>
+		<detEntry lane="5/3to5/4_2" pos="0.1"/>
+		<detExit lane="5/3to5/4_0" pos="-.1"/>
+		<detExit lane="5/3to5/4_1" pos="-.1"/>
+		<detExit lane="5/3to5/4_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_5/4_5/5to5/4">
+		<detEntry lane="5/5to5/4_0" pos="0.1"/>
+		<detEntry lane="5/5to5/4_1" pos="0.1"/>
+		<detEntry lane="5/5to5/4_2" pos="0.1"/>
+		<detExit lane="5/5to5/4_0" pos="-.1"/>
+		<detExit lane="5/5to5/4_1" pos="-.1"/>
+		<detExit lane="5/5to5/4_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_5/4_6/4to5/4">
+		<detEntry lane="6/4to5/4_0" pos="0.1"/>
+		<detEntry lane="6/4to5/4_1" pos="0.1"/>
+		<detEntry lane="6/4to5/4_2" pos="0.1"/>
+		<detExit lane="6/4to5/4_0" pos="-.1"/>
+		<detExit lane="6/4to5/4_1" pos="-.1"/>
+		<detExit lane="6/4to5/4_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_5/5_4/5to5/5">
+		<detEntry lane="4/5to5/5_0" pos="0.1"/>
+		<detEntry lane="4/5to5/5_1" pos="0.1"/>
+		<detEntry lane="4/5to5/5_2" pos="0.1"/>
+		<detExit lane="4/5to5/5_0" pos="-.1"/>
+		<detExit lane="4/5to5/5_1" pos="-.1"/>
+		<detExit lane="4/5to5/5_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_5/5_5/4to5/5">
+		<detEntry lane="5/4to5/5_0" pos="0.1"/>
+		<detEntry lane="5/4to5/5_1" pos="0.1"/>
+		<detEntry lane="5/4to5/5_2" pos="0.1"/>
+		<detExit lane="5/4to5/5_0" pos="-.1"/>
+		<detExit lane="5/4to5/5_1" pos="-.1"/>
+		<detExit lane="5/4to5/5_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_5/5_5/6to5/5">
+		<detEntry lane="5/6to5/5_0" pos="0.1"/>
+		<detEntry lane="5/6to5/5_1" pos="0.1"/>
+		<detEntry lane="5/6to5/5_2" pos="0.1"/>
+		<detExit lane="5/6to5/5_0" pos="-.1"/>
+		<detExit lane="5/6to5/5_1" pos="-.1"/>
+		<detExit lane="5/6to5/5_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_5/5_6/5to5/5">
+		<detEntry lane="6/5to5/5_0" pos="0.1"/>
+		<detEntry lane="6/5to5/5_1" pos="0.1"/>
+		<detEntry lane="6/5to5/5_2" pos="0.1"/>
+		<detExit lane="6/5to5/5_0" pos="-.1"/>
+		<detExit lane="6/5to5/5_1" pos="-.1"/>
+		<detExit lane="6/5to5/5_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_5/6_4/6to5/6">
+		<detEntry lane="4/6to5/6_0" pos="0.1"/>
+		<detEntry lane="4/6to5/6_1" pos="0.1"/>
+		<detEntry lane="4/6to5/6_2" pos="0.1"/>
+		<detExit lane="4/6to5/6_0" pos="-.1"/>
+		<detExit lane="4/6to5/6_1" pos="-.1"/>
+		<detExit lane="4/6to5/6_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_5/6_5/5to5/6">
+		<detEntry lane="5/5to5/6_0" pos="0.1"/>
+		<detEntry lane="5/5to5/6_1" pos="0.1"/>
+		<detEntry lane="5/5to5/6_2" pos="0.1"/>
+		<detExit lane="5/5to5/6_0" pos="-.1"/>
+		<detExit lane="5/5to5/6_1" pos="-.1"/>
+		<detExit lane="5/5to5/6_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_5/6_5/7to5/6">
+		<detEntry lane="5/7to5/6_0" pos="0.1"/>
+		<detEntry lane="5/7to5/6_1" pos="0.1"/>
+		<detEntry lane="5/7to5/6_2" pos="0.1"/>
+		<detExit lane="5/7to5/6_0" pos="-.1"/>
+		<detExit lane="5/7to5/6_1" pos="-.1"/>
+		<detExit lane="5/7to5/6_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_5/6_6/6to5/6">
+		<detEntry lane="6/6to5/6_0" pos="0.1"/>
+		<detEntry lane="6/6to5/6_1" pos="0.1"/>
+		<detEntry lane="6/6to5/6_2" pos="0.1"/>
+		<detExit lane="6/6to5/6_0" pos="-.1"/>
+		<detExit lane="6/6to5/6_1" pos="-.1"/>
+		<detExit lane="6/6to5/6_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_5/7_4/7to5/7">
+		<detEntry lane="4/7to5/7_0" pos="0.1"/>
+		<detEntry lane="4/7to5/7_1" pos="0.1"/>
+		<detEntry lane="4/7to5/7_2" pos="0.1"/>
+		<detExit lane="4/7to5/7_0" pos="-.1"/>
+		<detExit lane="4/7to5/7_1" pos="-.1"/>
+		<detExit lane="4/7to5/7_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_5/7_5/6to5/7">
+		<detEntry lane="5/6to5/7_0" pos="0.1"/>
+		<detEntry lane="5/6to5/7_1" pos="0.1"/>
+		<detEntry lane="5/6to5/7_2" pos="0.1"/>
+		<detExit lane="5/6to5/7_0" pos="-.1"/>
+		<detExit lane="5/6to5/7_1" pos="-.1"/>
+		<detExit lane="5/6to5/7_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_5/7_5/8to5/7">
+		<detEntry lane="5/8to5/7_0" pos="0.1"/>
+		<detEntry lane="5/8to5/7_1" pos="0.1"/>
+		<detEntry lane="5/8to5/7_2" pos="0.1"/>
+		<detExit lane="5/8to5/7_0" pos="-.1"/>
+		<detExit lane="5/8to5/7_1" pos="-.1"/>
+		<detExit lane="5/8to5/7_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_5/7_6/7to5/7">
+		<detEntry lane="6/7to5/7_0" pos="0.1"/>
+		<detEntry lane="6/7to5/7_1" pos="0.1"/>
+		<detEntry lane="6/7to5/7_2" pos="0.1"/>
+		<detExit lane="6/7to5/7_0" pos="-.1"/>
+		<detExit lane="6/7to5/7_1" pos="-.1"/>
+		<detExit lane="6/7to5/7_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_5/8_4/8to5/8">
+		<detEntry lane="4/8to5/8_0" pos="0.1"/>
+		<detEntry lane="4/8to5/8_1" pos="0.1"/>
+		<detEntry lane="4/8to5/8_2" pos="0.1"/>
+		<detExit lane="4/8to5/8_0" pos="-.1"/>
+		<detExit lane="4/8to5/8_1" pos="-.1"/>
+		<detExit lane="4/8to5/8_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_5/8_5/7to5/8">
+		<detEntry lane="5/7to5/8_0" pos="0.1"/>
+		<detEntry lane="5/7to5/8_1" pos="0.1"/>
+		<detEntry lane="5/7to5/8_2" pos="0.1"/>
+		<detExit lane="5/7to5/8_0" pos="-.1"/>
+		<detExit lane="5/7to5/8_1" pos="-.1"/>
+		<detExit lane="5/7to5/8_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_5/8_6/8to5/8">
+		<detEntry lane="5/8to6/8_0" pos="0.1"/>
+		<detEntry lane="5/8to6/8_1" pos="0.1"/>
+		<detEntry lane="5/8to6/8_2" pos="0.1"/>
+		<detEntry lane="6/7to6/8_0" pos="0.1"/>
+		<detEntry lane="6/7to6/8_1" pos="0.1"/>
+		<detEntry lane="6/7to6/8_2" pos="0.1"/>
+		<detExit lane="6/8to5/8_0" pos="-.1"/>
+		<detExit lane="6/8to5/8_1" pos="-.1"/>
+		<detExit lane="6/8to5/8_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_6/1_5/1to6/1">
+		<detEntry lane="5/1to6/1_0" pos="0.1"/>
+		<detEntry lane="5/1to6/1_1" pos="0.1"/>
+		<detEntry lane="5/1to6/1_2" pos="0.1"/>
+		<detExit lane="5/1to6/1_0" pos="-.1"/>
+		<detExit lane="5/1to6/1_1" pos="-.1"/>
+		<detExit lane="5/1to6/1_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_6/1_6/0to6/1">
+		<detEntry lane="6/1to6/0_0" pos="0.1"/>
+		<detEntry lane="6/1to6/0_1" pos="0.1"/>
+		<detEntry lane="6/1to6/0_2" pos="0.1"/>
+		<detEntry lane="5/0to6/0_0" pos="0.1"/>
+		<detEntry lane="5/0to6/0_1" pos="0.1"/>
+		<detEntry lane="5/0to6/0_2" pos="0.1"/>
+		<detExit lane="6/0to6/1_0" pos="-.1"/>
+		<detExit lane="6/0to6/1_1" pos="-.1"/>
+		<detExit lane="6/0to6/1_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_6/1_6/2to6/1">
+		<detEntry lane="6/2to6/1_0" pos="0.1"/>
+		<detEntry lane="6/2to6/1_1" pos="0.1"/>
+		<detEntry lane="6/2to6/1_2" pos="0.1"/>
+		<detExit lane="6/2to6/1_0" pos="-.1"/>
+		<detExit lane="6/2to6/1_1" pos="-.1"/>
+		<detExit lane="6/2to6/1_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_6/2_5/2to6/2">
+		<detEntry lane="5/2to6/2_0" pos="0.1"/>
+		<detEntry lane="5/2to6/2_1" pos="0.1"/>
+		<detEntry lane="5/2to6/2_2" pos="0.1"/>
+		<detExit lane="5/2to6/2_0" pos="-.1"/>
+		<detExit lane="5/2to6/2_1" pos="-.1"/>
+		<detExit lane="5/2to6/2_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_6/2_6/1to6/2">
+		<detEntry lane="6/1to6/2_0" pos="0.1"/>
+		<detEntry lane="6/1to6/2_1" pos="0.1"/>
+		<detEntry lane="6/1to6/2_2" pos="0.1"/>
+		<detExit lane="6/1to6/2_0" pos="-.1"/>
+		<detExit lane="6/1to6/2_1" pos="-.1"/>
+		<detExit lane="6/1to6/2_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_6/2_6/3to6/2">
+		<detEntry lane="6/3to6/2_0" pos="0.1"/>
+		<detEntry lane="6/3to6/2_1" pos="0.1"/>
+		<detEntry lane="6/3to6/2_2" pos="0.1"/>
+		<detExit lane="6/3to6/2_0" pos="-.1"/>
+		<detExit lane="6/3to6/2_1" pos="-.1"/>
+		<detExit lane="6/3to6/2_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_6/3_5/3to6/3">
+		<detEntry lane="5/3to6/3_0" pos="0.1"/>
+		<detEntry lane="5/3to6/3_1" pos="0.1"/>
+		<detEntry lane="5/3to6/3_2" pos="0.1"/>
+		<detExit lane="5/3to6/3_0" pos="-.1"/>
+		<detExit lane="5/3to6/3_1" pos="-.1"/>
+		<detExit lane="5/3to6/3_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_6/3_6/2to6/3">
+		<detEntry lane="6/2to6/3_0" pos="0.1"/>
+		<detEntry lane="6/2to6/3_1" pos="0.1"/>
+		<detEntry lane="6/2to6/3_2" pos="0.1"/>
+		<detExit lane="6/2to6/3_0" pos="-.1"/>
+		<detExit lane="6/2to6/3_1" pos="-.1"/>
+		<detExit lane="6/2to6/3_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_6/3_6/4to6/3">
+		<detEntry lane="6/4to6/3_0" pos="0.1"/>
+		<detEntry lane="6/4to6/3_1" pos="0.1"/>
+		<detEntry lane="6/4to6/3_2" pos="0.1"/>
+		<detExit lane="6/4to6/3_0" pos="-.1"/>
+		<detExit lane="6/4to6/3_1" pos="-.1"/>
+		<detExit lane="6/4to6/3_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_6/4_5/4to6/4">
+		<detEntry lane="5/4to6/4_0" pos="0.1"/>
+		<detEntry lane="5/4to6/4_1" pos="0.1"/>
+		<detEntry lane="5/4to6/4_2" pos="0.1"/>
+		<detExit lane="5/4to6/4_0" pos="-.1"/>
+		<detExit lane="5/4to6/4_1" pos="-.1"/>
+		<detExit lane="5/4to6/4_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_6/4_6/3to6/4">
+		<detEntry lane="6/3to6/4_0" pos="0.1"/>
+		<detEntry lane="6/3to6/4_1" pos="0.1"/>
+		<detEntry lane="6/3to6/4_2" pos="0.1"/>
+		<detExit lane="6/3to6/4_0" pos="-.1"/>
+		<detExit lane="6/3to6/4_1" pos="-.1"/>
+		<detExit lane="6/3to6/4_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_6/4_6/5to6/4">
+		<detEntry lane="6/5to6/4_0" pos="0.1"/>
+		<detEntry lane="6/5to6/4_1" pos="0.1"/>
+		<detEntry lane="6/5to6/4_2" pos="0.1"/>
+		<detExit lane="6/5to6/4_0" pos="-.1"/>
+		<detExit lane="6/5to6/4_1" pos="-.1"/>
+		<detExit lane="6/5to6/4_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_6/5_5/5to6/5">
+		<detEntry lane="5/5to6/5_0" pos="0.1"/>
+		<detEntry lane="5/5to6/5_1" pos="0.1"/>
+		<detEntry lane="5/5to6/5_2" pos="0.1"/>
+		<detExit lane="5/5to6/5_0" pos="-.1"/>
+		<detExit lane="5/5to6/5_1" pos="-.1"/>
+		<detExit lane="5/5to6/5_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_6/5_6/4to6/5">
+		<detEntry lane="6/4to6/5_0" pos="0.1"/>
+		<detEntry lane="6/4to6/5_1" pos="0.1"/>
+		<detEntry lane="6/4to6/5_2" pos="0.1"/>
+		<detExit lane="6/4to6/5_0" pos="-.1"/>
+		<detExit lane="6/4to6/5_1" pos="-.1"/>
+		<detExit lane="6/4to6/5_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_6/5_6/6to6/5">
+		<detEntry lane="6/6to6/5_0" pos="0.1"/>
+		<detEntry lane="6/6to6/5_1" pos="0.1"/>
+		<detEntry lane="6/6to6/5_2" pos="0.1"/>
+		<detExit lane="6/6to6/5_0" pos="-.1"/>
+		<detExit lane="6/6to6/5_1" pos="-.1"/>
+		<detExit lane="6/6to6/5_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_6/6_5/6to6/6">
+		<detEntry lane="5/6to6/6_0" pos="0.1"/>
+		<detEntry lane="5/6to6/6_1" pos="0.1"/>
+		<detEntry lane="5/6to6/6_2" pos="0.1"/>
+		<detExit lane="5/6to6/6_0" pos="-.1"/>
+		<detExit lane="5/6to6/6_1" pos="-.1"/>
+		<detExit lane="5/6to6/6_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_6/6_6/5to6/6">
+		<detEntry lane="6/5to6/6_0" pos="0.1"/>
+		<detEntry lane="6/5to6/6_1" pos="0.1"/>
+		<detEntry lane="6/5to6/6_2" pos="0.1"/>
+		<detExit lane="6/5to6/6_0" pos="-.1"/>
+		<detExit lane="6/5to6/6_1" pos="-.1"/>
+		<detExit lane="6/5to6/6_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_6/6_6/7to6/6">
+		<detEntry lane="6/7to6/6_0" pos="0.1"/>
+		<detEntry lane="6/7to6/6_1" pos="0.1"/>
+		<detEntry lane="6/7to6/6_2" pos="0.1"/>
+		<detExit lane="6/7to6/6_0" pos="-.1"/>
+		<detExit lane="6/7to6/6_1" pos="-.1"/>
+		<detExit lane="6/7to6/6_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_6/7_5/7to6/7">
+		<detEntry lane="5/7to6/7_0" pos="0.1"/>
+		<detEntry lane="5/7to6/7_1" pos="0.1"/>
+		<detEntry lane="5/7to6/7_2" pos="0.1"/>
+		<detExit lane="5/7to6/7_0" pos="-.1"/>
+		<detExit lane="5/7to6/7_1" pos="-.1"/>
+		<detExit lane="5/7to6/7_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_6/7_6/6to6/7">
+		<detEntry lane="6/6to6/7_0" pos="0.1"/>
+		<detEntry lane="6/6to6/7_1" pos="0.1"/>
+		<detEntry lane="6/6to6/7_2" pos="0.1"/>
+		<detExit lane="6/6to6/7_0" pos="-.1"/>
+		<detExit lane="6/6to6/7_1" pos="-.1"/>
+		<detExit lane="6/6to6/7_2" pos="-.1"/>
+	</e3Detector>
+	<e3Detector file="/home/aime/Downloads/veins-veins-vadd/examples/veins/Netlane.xml" freq="30" id="e3_6/7_6/8to6/7">
+		<detEntry lane="5/8to6/8_0" pos="0.1"/>
+		<detEntry lane="5/8to6/8_1" pos="0.1"/>
+		<detEntry lane="5/8to6/8_2" pos="0.1"/>
+		<detEntry lane="6/7to6/8_0" pos="0.1"/>
+		<detEntry lane="6/7to6/8_1" pos="0.1"/>
+		<detEntry lane="6/7to6/8_2" pos="0.1"/>
+		<detExit lane="6/8to6/7_0" pos="-.1"/>
+		<detExit lane="6/8to6/7_1" pos="-.1"/>
+		<detExit lane="6/8to6/7_2" pos="-.1"/>
+	</e3Detector>
+</additional>

@@ -1,0 +1,17 @@
+version 2
+run VehNumber_450-5-20171006-20:59:10-32333
+attr configname VehNumber_450
+attr datetime 20171006-20:59:10
+attr experiment VehNumber_450
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=5
+attr measurement ""
+attr network RSUExampleScenario
+attr processid 32333
+attr repetition 5
+attr replication #5
+attr resultdir results
+attr runnumber 5
+attr seedset 5
+
