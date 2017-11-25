@@ -8,5 +8,5 @@
 ![screenshot3](https://github.com/HyunJunKwon/GraduationProject/blob/master/veinsPractice/pictures/3.png?raw=true)
 
 ## 3.Collect vehicular traffic statistics
-
+![screenshot4](https://github.com/HyunJunKwon/GraduationProject/blob/master/veinsPractice/pictures/4.png?raw=true)
 
